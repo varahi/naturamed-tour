@@ -1,3 +1,5 @@
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl/Configuration/TypoScript/Page/" extensions="typoscript">
+
 plugin.tx_tmpl {
     view {
         templateRootPaths.0 = {$plugin.tx_tmpl.view.templateRootPaths.0}
@@ -17,4 +19,3 @@ plugin.tx_tmpl {
 
 config.contentObjectExceptionHandler = 0
 
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl/Configuration/TypoScript/Page/" extensions="typoscript">

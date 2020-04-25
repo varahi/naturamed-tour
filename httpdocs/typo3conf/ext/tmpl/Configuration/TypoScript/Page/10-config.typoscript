@@ -27,7 +27,7 @@ config {
     */
 
     # URL setup
-    absRefPrefix = auto
+    absRefPrefix =
 
     # some css and js cleanups
     removeDefaultJS = external
