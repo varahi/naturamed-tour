@@ -1,7 +1,44 @@
-plugin.tx_tmpl.view {
-    templateRootPaths.0 = EXT:tmpl/Resources/Private/Templates/
-    partialRootPaths.0 = EXT:tmpl/Resources/Private/Partials/
-    layoutRootPaths.0 = EXT:tmpl/Resources/Private/Layouts/
-}
+#
+# Defining some general constants
+#
 
-//template_path = typo3conf/ext/tmpl
+# basic config options
+config {
+    language = ru
+    locale = ru_RU.UTF-8
+    sys_language_uid = 0
+    locale_all = ru_Ru
+
+    header {
+        logoTitle = Naturamed-tour.ru
+        slogan = <span>13</span> лет с Вами!
+        phone {
+            title = Звонок бесплатный по России
+            tel = <a href="tel:88005550923">8 (800) 555-09-23</a>
+            callback = <a data-fancybox data-src="#callback-modal">Перезвонить Вам?</a>
+        }
+    }
+    contact {
+
+    }
+    footer {
+
+    }
+    navigation {
+        rootPid = 1
+        headerMenuDirectory = 93
+        mainMenuList = 1,13,48
+    }
+    page {
+        siteTitle =
+        copyright =
+        address =
+    }
+
+    meta {
+        description =
+        og_description =
+        twitter_description =
+        keywords =
+    }
+}

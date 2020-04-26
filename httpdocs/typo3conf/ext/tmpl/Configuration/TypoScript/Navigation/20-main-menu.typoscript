@@ -1,0 +1,61 @@
+lib.mainMenu = HMENU
+lib.mainMenu {
+    special = list
+    special.value = {$config.navigation.mainMenuList}
+    wrap = <div class="header-menu-main">|</div>
+    #entryLevel = 0
+    1 = TMENU
+    1 {
+        # wrap whole menu into <ul> list
+        wrap = <menu><ul>|</ul></menu>
+        # normal menu items
+        NO {
+            # for security concerne not to parse html from the field
+            stdWrap.htmlSpecialChars = 1
+            # wrap each menu item into <li>
+            wrapItemAndSub = <li>|</li>
+            ATagTitle.field = title
+        }
+        # include settings from NO into CUR
+        CUR < .NO
+        # currently selected menu item
+        CUR = 1
+        CUR {
+            # adds class="cur" to menu link tag
+            ATagParams = class="active"
+        }
+        ACT = 1
+        ACT < .CUR
+    }
+}
+
+
+lib.mobileMainMenu = HMENU
+lib.mobileMainMenu {
+    special = list
+    special.value = {$config.navigation.mainMenuList}
+    wrap = <div id="mobile-menu" class="mobile-menu-modal">|</div>
+    1 = TMENU
+    1 {
+        # wrap whole menu into <ul> list
+        wrap = <menu><ul>|</ul></menu>
+        # normal menu items
+        NO {
+            # for security concerne not to parse html from the field
+            stdWrap.htmlSpecialChars = 1
+            # wrap each menu item into <li>
+            wrapItemAndSub = <li>|</li>
+            ATagTitle.field = title
+        }
+        # include settings from NO into CUR
+        CUR < .NO
+        # currently selected menu item
+        CUR = 1
+        CUR {
+            # adds class="cur" to menu link tag
+            ATagParams = class="active"
+        }
+        ACT = 1
+        ACT < .CUR
+    }
+}

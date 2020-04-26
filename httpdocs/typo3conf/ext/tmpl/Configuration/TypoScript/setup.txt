@@ -1,4 +1,6 @@
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl/Configuration/TypoScript/Page/" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl/Configuration/TypoScript/Libs/" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl/Configuration/TypoScript/Navigation/" extensions="typoscript">
 
 plugin.tx_tmpl {
     view {
