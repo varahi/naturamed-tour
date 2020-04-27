@@ -1,0 +1,12 @@
+{
+    "tt_content": {
+        "elements": {
+            "banner_detox_programs": {
+                "label": "Banner Detox Programs",
+                "key": "banner_detox_programs",
+                "shortLabel": "",
+                "description": ""
+            }
+        }
+    }
+}
