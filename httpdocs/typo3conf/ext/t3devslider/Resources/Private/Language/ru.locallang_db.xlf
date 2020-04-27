@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="ru" datatype="plaintext" original="messages" date="2016-07-29T15:00:15Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="tx_t3devslider_domain_model_item" approved="yes">
+			<source>Item</source>
+			<target>Запись</target>
+		</trans-unit>
+		<trans-unit id="tx_t3devslider_domain_model_item.caption" approved="yes">
+			<source>Caption</source>
+			<target>Описание в формате HTML</target>
+		</trans-unit>
+		<trans-unit id="tx_t3devslider_domain_model_item.image" approved="yes">
+			<source>Image</source>
+			<target>Изображение</target>
+		</trans-unit>
+		<trans-unit id="tx_t3devslider_domain_model_item.link" approved="yes">
+			<source>Link</source>
+			<target>Ссылка</target>
+		</trans-unit>
+		<trans-unit id="tx_t3devslider_domain_model_item.title" approved="yes">
+			<source>Title</source>
+			<target>Заголовок</target>
+		</trans-unit>
+		<trans-unit id="tx_t3devslider_domain_model_slider.item" approved="yes">
+			<source>Item</source>
+			<target>Слайд</target>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>
