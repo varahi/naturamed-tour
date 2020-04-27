@@ -1,0 +1,48 @@
+lib.footerMenuContact = COA
+lib.footerMenuContact {
+    wrap = <div class="footer-menu-contact">|</div>
+
+    10 = IMAGE
+    10 {
+        file = EXT:tmpl/Resources/Public/images/logo-footer.png
+        altText = {$config.header.logoTitle}
+        titleText = {$config.header.logoTitle}
+        file.width = 218
+        file.height = 47
+        //params = class="logo"
+        stdWrap.typolink {
+            wrap = <div class="footer-menu-contact-logo">|</div>
+            parameter =  {$config.navigation.rootPid}
+            ATagBeforeWrap = 0
+        }
+    }
+
+    20 = TEXT
+    20 {
+        wrap = <div class="footer-menu-contact-order">|</div>
+        value = {$config.footer.orderModalTitle}
+        stdWrap.wrap = <a data-fancybox data-src="#order-modal"><span>|</span></a>
+    }
+
+    30 = COA
+    30 {
+        wrap = <div class="footer-menu-contact-phone-wrapper">|</div>
+        10 = TEXT
+        10 {
+            wrap = <div class="footer-menu-contact-phone-title">|</div>
+            value = {$config.footer.contactPhoneTitle}
+        }
+        20 = TEXT
+        20 {
+            wrap = <div class="footer-menu-contact-phone-tel">|</div>
+            value = {$config.footer.contactPhoneTel}
+        }
+        30 = TEXT
+        30 {
+            wrap = <div class="footer-menu-contact-phone-callback">|</div>
+            stdWrap.wrap = <a data-fancybox data-src="#callback-modal">|</a>
+            value = {$config.footer.contactPhoneCallback}
+        }
+    }
+
+}

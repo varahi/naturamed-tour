@@ -1,0 +1,5 @@
+lib.copyright = TEXT
+lib.copyright {
+    wrap = <div class="footer-menu-copyright">|</div>
+    value = {$config.footer.copyright}
+}

@@ -37,6 +37,15 @@ config {
         }
 
     }
+    footer {
+        copyright = &copy; 2020, Компания «НатураМед-Тур»
+        orderModalTitle = Запрос на расчет тура
+        contactPhoneTitle = Звонок бесплатный по России
+        contactPhoneTel = <a href="tel:88005550923">8 (800) 555-09-23</a>
+        contactPhoneCallback = Перезвонить Вам?
+    }
+
+
     page {
         siteTitle =
         copyright =
