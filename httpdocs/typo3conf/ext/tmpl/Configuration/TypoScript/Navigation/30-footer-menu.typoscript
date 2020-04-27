@@ -1,0 +1,108 @@
+lib.footerMenuAbout = COA
+lib.footerMenuAbout {
+    wrap = <div class="footer-menu-about">|</div>
+    10 = TEXT
+    10 {
+        wrap = <div class="footer-menu-about-title">|</div>
+        value = {$config.navigation.footer.menuAboutTitle}
+    }
+
+    20 = HMENU
+    20 {
+        special = directory
+        special.value = {$config.navigation.footer.menuAboutDirectory}
+        wrap = <div class="footer-menu-about-text">|</div>
+        1 = TMENU
+        1 {
+            # wrap whole menu into <ul> list
+            wrap = <ul>|</ul>
+            # normal menu items
+            NO {
+                # for security concerne not to parse html from the field
+                stdWrap.htmlSpecialChars = 1
+                # wrap each menu item into <li>
+                wrapItemAndSub = <li>|</li>
+                ATagTitle.field = title
+            }
+            # include settings from NO into CUR
+            CUR < .NO
+            # currently selected menu item
+            CUR = 1
+            CUR {
+                # adds class="cur" to menu link tag
+                ATagParams = class="active"
+            }
+            ACT = 1
+            ACT < .CUR
+        }
+    }
+}
+
+lib.footerMenuCountry = COA
+lib.footerMenuCountry {
+    wrap = <div class="footer-menu-country">|</div>
+    10 = TEXT
+    10 {
+        wrap = <div class="footer-menu-country-title">|</div>
+        value = {$config.navigation.footer.menuCountryTitle}
+    }
+
+    20 = HMENU
+    20 {
+        special = list
+        special.value = {$config.navigation.footer.menuCountryList}
+        wrap = <div class="footer-menu-country-text">|</div>
+        1 = TMENU
+        1 {
+            wrap = <ul>|</ul>
+            NO {
+                stdWrap.htmlSpecialChars = 1
+                wrapItemAndSub = <li>|</li>
+                ATagTitle.field = title
+            }
+            CUR < .NO
+            CUR = 1
+            CUR {
+                ATagParams = class="active"
+            }
+            ACT = 1
+            ACT < .CUR
+        }
+    }
+
+}
+
+
+lib.footerMenuPopularRegion = COA
+lib.footerMenuPopularRegion {
+    wrap = <div class="footer-menu-popular-region">|</div>
+    10 = TEXT
+    10 {
+        wrap = <div class="footer-menu-popular-region-title">|</div>
+        value = {$config.navigation.footer.menuPopularRegionTitle}
+    }
+
+    20 = HMENU
+    20 {
+        special = list
+        special.value = {$config.navigation.footer.menuPopularRegionList}
+        wrap = <div class="footer-menu-popular-region-text">|</div>
+        1 = TMENU
+        1 {
+            wrap = <ul>|</ul>
+            NO {
+                stdWrap.htmlSpecialChars = 1
+                wrapItemAndSub = <li>|</li>
+                ATagTitle.field = title
+            }
+            CUR < .NO
+            CUR = 1
+            CUR {
+                ATagParams = class="active"
+            }
+            ACT = 1
+            ACT < .CUR
+        }
+    }
+
+}

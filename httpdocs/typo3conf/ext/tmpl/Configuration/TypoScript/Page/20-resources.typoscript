@@ -2,7 +2,7 @@
 
 page {
     includeCSS {
-        10_fancybox = {$template_path}/Resources/Public/css/jquery.fancybox.min.css
+        10_fancybox = EXT:tmpl/Resources/Public/css/jquery.fancybox.min.css
         20_jquery_ui = EXT:tmpl/Resources/Public/css/jquery-ui.min.css
         30_jquery_ui_theme = EXT:tmpl/Resources/Public/css/jquery-ui.theme.min.css
         40_slick = EXT:tmpl/Resources/Public/css/slick.css

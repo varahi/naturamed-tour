@@ -1,7 +1,7 @@
 lib.headerMenu = HMENU
 lib.headerMenu {
     special = directory
-    special.value = {$config.navigation.headerMenuDirectory}
+    special.value = {$config.navigation.header.menuDirectory}
     wrap = <div class="header-menu">|</div>
     #entryLevel = 0
     1 = TMENU

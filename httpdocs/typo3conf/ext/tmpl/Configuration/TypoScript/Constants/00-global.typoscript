@@ -18,23 +18,30 @@ config {
             callback = <a data-fancybox data-src="#callback-modal">Перезвонить Вам?</a>
         }
     }
-    contact {
-
-    }
-    footer {
-
-    }
     navigation {
         rootPid = 1
-        headerMenuDirectory = 93
-        mainMenuList = 1,13,48
+        header {
+            menuDirectory = 93
+            mainMenuList = 1,13,48
+            //mainMenuDirectory = 2
+        }
+        footer {
+            menuAboutTitle = О Нас
+            menuAboutDirectory = 2
+
+            menuCountryTitle = Страны
+            menuCountryList = 25,29,27,28,30,26,31,32,33,34,35,38,40
+
+            menuPopularRegionTitle = Популярные регионы
+            menuPopularRegionList = 37,24
+        }
+
     }
     page {
         siteTitle =
         copyright =
         address =
     }
-
     meta {
         description =
         og_description =
