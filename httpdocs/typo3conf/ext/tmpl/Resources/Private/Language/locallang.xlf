@@ -8,6 +8,12 @@
             <trans-unit id="flux.content_area">
                 <source>Content Area</source>
             </trans-unit>
+            <trans-unit id="flux.slider_area">
+                <source>Slider Area</source>
+            </trans-unit>
+            <trans-unit id="flux.slider_banner_area">
+                <source>Slider Banner Area</source>
+            </trans-unit>
             <trans-unit id="flux.example">
                 <source>Example element</source>
             </trans-unit>

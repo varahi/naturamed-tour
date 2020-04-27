@@ -11,12 +11,23 @@
 		<flux:grid>
 			<!-- Edit this grid to change the "backend layout" structure -->
 			<flux:grid.row>
-				<flux:grid.column colPos="0" name="main" label="{f:translate(key: 'flux.content_area', extensionName: 'tmpl')}" />
+				<flux:grid.column colPos="0" colspan="4" name="main" label="{f:translate(key: 'flux.slider_area', extensionName: 'tmpl')}" />
+			</flux:grid.row>
+			<flux:grid.row>
+				<flux:grid.column colPos="1" colspan="4" name="main" label="{f:translate(key: 'flux.slider_banner_area', extensionName: 'tmpl')}" />
 			</flux:grid.row>
 		</flux:grid>
 	</f:section>
 
-	<f:section name="Main">
-		<v:content.render column="0" />
+	<f:section name="Slider">
+		<section class="slider">
+			<v:content.render column="0" />
+		</section>
+	</f:section>
+
+	<f:section name="SliderBanner">
+		<section class="slider-banner">
+			<v:content.render column="1" />
+		</section>
 	</f:section>
 </div>
