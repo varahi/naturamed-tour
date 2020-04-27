@@ -11,11 +11,11 @@
  ***************************************************************/
 
 $EM_CONF[$_EXTKEY] = array(
-	'title' => 'Cycle2 Slider',
-	'description' => 'Cycle2 Slider',
+	'title' => 'T3Dev Slider',
+	'description' => 'T3Dev Slider',
 	'category' => 'plugin',
 	'author' => 'Dmitry Vasiliev',
-	'author_email' => 'vaaraha@gmail.com',
+	'author_email' => 'dmitry@t3dev.ru',
 	'state' => 'alpha',
 	'internal' => '',
 	'uploadfolder' => '1',
@@ -24,7 +24,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'version' => '',
 	'constraints' => array(
 		'depends' => array(
-			'typo3' => '7.6.0-7.6.99',
+			'typo3' => '6.2.0-6.2.99',
 		),
 		'conflicts' => array(
 		),

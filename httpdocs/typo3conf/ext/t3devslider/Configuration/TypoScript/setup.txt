@@ -1,12 +1,12 @@
 
-plugin.tx_t3devslider_t3devslider {
+plugin.tx_t3devslider {
 	view {
-		templateRootPaths.0 = {$plugin.tx_t3devslider_t3devslider.view.templateRootPath}
-		partialRootPaths.0 = {$plugin.tx_t3devslider_t3devslider.view.partialRootPath}
-		layoutRootPaths.0 = {$plugin.tx_t3devslider_t3devslider.view.layoutRootPath}
+		templateRootPaths.0 = {$plugin.tx_t3devslider.view.templateRootPath}
+		partialRootPaths.0 = {$plugin.tx_t3devslider.view.partialRootPath}
+		layoutRootPaths.0 = {$plugin.tx_t3devslider.view.layoutRootPath}
 	}
 	persistence {
-		storagePid = {$plugin.tx_t3devslider_t3devslider.persistence.storagePid}
+		storagePid = {$plugin.tx_t3devslider.persistence.storagePid}
 	}
 }
 
@@ -44,6 +44,7 @@ plugin.tx_t3devslider._CSS_DEFAULT_STYLE (
 
 )
 
+/*
 page.includeCSS {
   css_100_tx_t3devslider = EXT:t3devslider/Resources/Public/Css/slider.css
 }
@@ -51,3 +52,4 @@ page.includeCSS {
 page.includeJS {
   js_100_tx_t3devslider = EXT:t3devslider/Resources/Public/Javascript/jquery.cycle2.min.js     
 }
+*/

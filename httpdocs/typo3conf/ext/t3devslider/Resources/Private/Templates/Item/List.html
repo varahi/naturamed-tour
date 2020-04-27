@@ -1,66 +1,47 @@
-
 <f:layout name="Default" />
 <f:section name="main">
-
-<div class="cycle-slideshow" 
- 		data-cycle-swipe=true
- 		data-cycle-swipe-fx=scrollHorz
-    data-cycle-fx=scrollFx
-    data-cycle-timeout=6000
-    data-cycle-pager=".cycle-pager"  
-    data-cycle-next=".cycle-next"
-    data-cycle-prev=".cycle-prev"   
-    data-cycle-slides="> .slide-item"
-    >
-  
-<div class="-cycle-control container" >
-		<div class="col-md-3 col-md-offset-1">
-		<div class="cycle-control" >
-    	<!-- prev/next links -->
-    	<div class="cycle-prev"></div>
-    	<div class="cycle-next"></div>
-    	<div class="cycle-pager"></div> 		
-    	</div>
-		</div>
-</div>    
-   
-<f:for each="{items}" as="item">
-
-  <div class="slide-item">   
-    <f:if condition="{item.link}">
-      <f:then>
-        <f:link.page pageUid="{item.link}">
-          <f:image src="{item.image.originalResource.originalFile.uid}" alt="{item.title}" width="1920c" height="460c" />
-            <f:if condition="{item.caption}">
-              <div class="slide-caption container">
-              	<f:format.raw>{item.caption}</f:format.raw>
-              </div>  
-            </f:if>
-            <f:if condition="{item.pic}">
-            	<div class="slide-item-additional-pic container">
-            		<f:image class="animated" src="{item.pic.originalResource.originalFile.uid}" alt="{item.title}" />
-            	</div>
-            </f:if>        
-        </f:link.page>
-      </f:then>
-      <f:else>
-        <f:image src="{item.image.originalResource.originalFile.uid}" alt="{item.title}" width="1920c" height="460c" />
-            <f:if condition="{item.caption}">
-              <div class="slide-caption container">
-	            	<f:format.raw>{item.caption}</f:format.raw>
-              </div>  
-            </f:if>
-            <f:if condition="{item.pic}">
-            	<div class="slide-item-additional-pic container">
-            		<f:image class="animated" src="{item.pic.originalResource.originalFile.uid}" alt="{item.title}" />
-            	</div>
-            </f:if>            
-      </f:else>
-    </f:if>    
-   </div> 
-
-</f:for>
-
-</div>
-
+    <div class="slider-title">
+        <div class="slider-title-1">Живи. Путешествуй.</div>
+        <div class="slider-title-2">Вдохновляй!</div>
+    </div>
+    <div class="slider-column">
+        <div class="slider-filter">
+            <div class="slider-filter-wrapper">
+            </div>
+        </div>
+        <div class="slider-content">
+            <div class="slider-content-background">
+                <div class="slider-content-wrapper">
+                    <f:for each="{items}" as="item">
+                        <div class="slider-item">
+                            <f:if condition="{item.link}">
+                                <f:then>
+                                    <f:link.page pageUid="{item.link}">
+                                        <div class="slider-item-img">
+                                            <f:image src="{item.image.originalResource.originalFile.uid}" alt="{item.title}" width="517c" height="321c" />
+                                        </div>
+                                        <f:if condition="{item.caption}">
+                                            <div class="slider-item-title">
+                                                <span><f:format.raw>{item.caption}</f:format.raw></span>
+                                            </div>
+                                        </f:if>
+                                    </f:link.page>
+                                </f:then>
+                                <f:else>
+                                    <div class="slider-item-img">
+                                        <f:image src="{item.image.originalResource.originalFile.uid}" alt="{item.title}" width="517c" height="321c" />
+                                    </div>
+                                    <f:if condition="{item.caption}">
+                                        <div class="slider-item-title">
+                                            <span><f:format.raw>{item.caption}</f:format.raw></span>
+                                        </div>
+                                    </f:if>
+                                </f:else>
+                            </f:if>
+                        </div>
+                    </f:for>
+                </div>
+            </div>
+        </div>
+    </div>
 </f:section>

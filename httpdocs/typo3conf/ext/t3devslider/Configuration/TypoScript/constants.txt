@@ -1,5 +1,5 @@
 
-plugin.tx_t3devslider_t3devslider {
+plugin.tx_t3devslider {
 	view {
 		# cat=plugin.tx_t3devslider_t3devslider/file; type=string; label=Path to template root (FE)
 		templateRootPath = EXT:t3devslider/Resources/Private/Templates/

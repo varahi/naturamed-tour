@@ -21,7 +21,7 @@ if (!defined('TYPO3_MODE')) {
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig ('
 
 mod.wizards.newContentElement.wizardItems.common.elements.t3devslider_t3devslider {
-    icon = sysext/core/Resources/Public/Icons/T3Icons/default/default-not-found.svg
+    icon = gfx/c_wiz/regular_text.gif
     title = Слайдер
     description = Слайдер на главной странице
     tt_content_defValues {

@@ -6,10 +6,10 @@ if (!defined('TYPO3_MODE')) {
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
 	'T3Dev.' . $_EXTKEY,
 	'T3devslider',
-	'Cycle2 Slider'
+	'T3Dev Slider'
 );
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript', 'Cycle2 Slider');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript', 'T3Dev Slider');
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_t3devslider_domain_model_item', 'EXT:t3devslider/Resources/Private/Language/locallang_csh_tx_t3devslider_domain_model_item.xlf');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_t3devslider_domain_model_item');

@@ -6,7 +6,7 @@
 		</header>
 		<body>
 		<trans-unit id="tt_content.tx_extbase_type.Tx_T3devslider_Slider">
-			<source>Cycle2 Slider Slider</source>
+			<source>T3Dev Slider Slider</source>
 		</trans-unit>
 		<trans-unit id="tx_t3devslider_domain_model_item">
 			<source>Item</source>
