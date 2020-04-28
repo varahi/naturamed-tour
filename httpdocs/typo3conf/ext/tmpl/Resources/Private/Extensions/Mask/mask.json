@@ -4,8 +4,70 @@
             "banner_detox_programs": {
                 "label": "Banner Detox Programs",
                 "key": "banner_detox_programs",
-                "shortLabel": "",
-                "description": ""
+                "shortLabel": "Banner Teaser",
+                "description": "Banner Detox Programs",
+                "columns": [
+                    "image",
+                    "tx_mask_html_code",
+                    "tx_mask_more_link"
+                ],
+                "labels": [
+                    "Image",
+                    "HTML Code",
+                    "More Link"
+                ]
+            }
+        },
+        "sql": {
+            "tx_mask_html_code": {
+                "tt_content": {
+                    "tx_mask_html_code": "text"
+                }
+            },
+            "tx_mask_more_link": {
+                "tt_content": {
+                    "tx_mask_more_link": "tinytext"
+                }
+            }
+        },
+        "tca": {
+            "tx_mask_html_code": {
+                "config": {
+                    "type": "text",
+                    "cols": "",
+                    "rows": "",
+                    "default": "",
+                    "eval": ""
+                },
+                "exclude": "1",
+                "key": "html_code"
+            },
+            "tx_mask_more_link": {
+                "config": {
+                    "type": "input",
+                    "wizards": {
+                        "_PADDING": "2",
+                        "link": {
+                            "type": "popup",
+                            "title": "Link",
+                            "icon": "link_popup.gif",
+                            "module": {
+                                "name": "wizard_element_browser",
+                                "urlParameters": {
+                                    "mode": "wizard"
+                                }
+                            },
+                            "JSopenParams": "height=300,width=500,status=0,menubar=0,scrollbars=1",
+                            "params": {
+                                "blindLinkOptions": ""
+                            }
+                        }
+                    },
+                    "eval": "",
+                    "default": ""
+                },
+                "exclude": "1",
+                "key": "more_link"
             }
         }
     }

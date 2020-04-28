@@ -16,6 +16,9 @@
 			<flux:grid.row>
 				<flux:grid.column colPos="1" colspan="4" name="main" label="{f:translate(key: 'flux.slider_banner_area', extensionName: 'tmpl')}" />
 			</flux:grid.row>
+			<flux:grid.row>
+				<flux:grid.column colPos="2" colspan="4" name="main" label="{f:translate(key: 'flux.banner_area', extensionName: 'tmpl')}" />
+			</flux:grid.row>
 		</flux:grid>
 	</f:section>
 
@@ -28,6 +31,12 @@
 	<f:section name="SliderBanner">
 		<section class="slider-banner">
 			<v:content.render column="1" />
+		</section>
+	</f:section>
+
+	<f:section name="Banner">
+		<section class="banner-detox-programs">
+			<v:content.render column="2" />
 		</section>
 	</f:section>
 </div>
