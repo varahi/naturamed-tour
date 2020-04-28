@@ -9,6 +9,7 @@ tt_content.gridelements_pi1.20.10.setup {
             0 < .default
             0 {
                 wrap = <div class="slider-banner-item-1">|</div>
+                stdWrap.wrap = <div class="slider-banner-list">|</div>
                 innerWrap =  |
             }
             1 < .default
