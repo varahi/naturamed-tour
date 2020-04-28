@@ -11,6 +11,9 @@
 		<trans-unit id="flux.content_area">
 			<source>Content Area</source>
 		</trans-unit>
+		<trans-unit id="flux.news_area">
+			<source>News Area</source>
+		</trans-unit>
 		<trans-unit id="flux.example">
 			<source>Example element</source>
 		</trans-unit>
