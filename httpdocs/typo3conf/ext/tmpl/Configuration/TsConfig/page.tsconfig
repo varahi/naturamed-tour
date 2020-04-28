@@ -1,0 +1,4 @@
+###
+# general Page TS Config
+###
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl/Configuration/TsConfig/Extensions/Gridelements/" extensions="tsconfig">

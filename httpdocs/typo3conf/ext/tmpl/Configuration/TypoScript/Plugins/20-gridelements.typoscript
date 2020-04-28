@@ -1,0 +1,27 @@
+tt_content.gridelements_pi1.20.10.setup {
+    # Slider Banner
+    Slider_Banner < lib.gridelements.defaultGridSetup
+    Slider_Banner {
+        wrap = <div class="slider-banner-wrapper">|</div>
+        innerWrap = |
+        columns {
+            # colPos ID
+            0 < .default
+            0 {
+                wrap = <div class="slider-banner-item-1">|</div>
+                innerWrap =  |
+            }
+            1 < .default
+            1 {
+                wrap = <div class="slider-banner-item-2">|</div>
+                innerWrap =  |
+            }
+            2 < .default
+            2 {
+                wrap = <div class="slider-banner-item-3">|</div>
+                innerWrap =  |
+            }
+        } # end columns
+    } # end grid 1
+
+}
