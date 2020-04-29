@@ -23,6 +23,9 @@
 				<flux:grid.column colPos="4" colspan="4" name="main" label="{f:translate(key: 'flux.advantages_area', extensionName: 'tmpl')}" />
 			</flux:grid.row>
 			<flux:grid.row>
+				<flux:grid.column colPos="5" colspan="4" name="main" label="{f:translate(key: 'flux.reviews_area', extensionName: 'tmpl')}" />
+			</flux:grid.row>
+			<flux:grid.row>
 				<flux:grid.column colPos="6" colspan="4" name="main" label="{f:translate(key: 'flux.news_area', extensionName: 'tmpl')}" />
 			</flux:grid.row>
 		</flux:grid>
@@ -49,6 +52,12 @@
 	<f:section name="Advantages">
 		<section class="our-advantages">
 			<v:content.render column="4" />
+		</section>
+	</f:section>
+
+	<f:section name="Reviews">
+		<section class="customer-reviews">
+			<v:content.render column="5" />
 		</section>
 	</f:section>
 

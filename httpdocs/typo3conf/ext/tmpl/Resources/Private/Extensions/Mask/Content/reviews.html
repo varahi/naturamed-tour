@@ -1,0 +1,46 @@
+<f:if condition="{data.header}">
+    <div class="customer-reviews-title">
+        <div class="customer-reviews-title-line"></div>
+        <div class="customer-reviews-title-text">{data.header}</div>
+    </div>
+</f:if>
+
+<div class="customer-reviews-background">
+    <div class="customer-reviews-wrapper">
+        <div class="customer-reviews-list">
+            <f:for each="{data.tx_mask_reviews_list}" as="data_item">
+                <div class="customer-reviews-item">
+                    <div class="customer-reviews-avatar">
+                        <f:if condition="{data_item.tx_mask_reviews_avatar}">
+                            <f:then>
+                                <f:for each="{data_item.tx_mask_reviews_avatar}" as="file">
+                                    <f:image src="{file.uid}" alt="{file.alternative}" title="{file.title}" treatIdAsReference="1" width="59c" height="80c" />
+                                </f:for>
+                            </f:then>
+                            <f:else>
+                                <f:image src="EXT:tmpl/Resources/Public/images/customer-reviews-avatar.png" alt="{data.header}" />
+                            </f:else>
+                        </f:if>
+                    </div>
+                    <div class="customer-reviews-rating star-{data_item.tx_mask_reviews_rating}">
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                        </ul>
+                    </div>
+                    <div class="customer-reviews-author">{data_item.tx_mask_reviews_author}</div>
+                    <div class="customer-reviews-location">{data_item.tx_mask_reviews_location}</div>
+                    <div class="customer-reviews-text">
+                        <f:format.raw>{data_item.tx_mask_reviews_text}</f:format.raw>
+                    </div>
+                </div>
+            </f:for>
+        </div>
+        <div class="customer-reviews-button">
+            <f:link.page pageUid="{data.header_link}"><f:translate key="mask.see_all_reviews" extensionName="tmpl" /></f:link.page>
+        </div>
+    </div>
+</div>

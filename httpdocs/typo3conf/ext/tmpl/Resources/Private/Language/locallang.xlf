@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2020-04-29T18:20:19Z">
+	<file source-language="en" datatype="plaintext" original="messages" date="2020-04-29T19:24:19Z">
 		<header>
 			<generator>LFEditor</generator>
 		</header>
@@ -35,6 +35,9 @@
 		<trans-unit id="flux.news_area">
 			<source>News Area</source>
 		</trans-unit>
+		<trans-unit id="flux.reviews_area">
+			<source>Reviews Area</source>
+		</trans-unit>
 		<trans-unit id="flux.slider_area">
 			<source>Slider Area</source>
 		</trans-unit>
@@ -55,6 +58,9 @@
 		</trans-unit>
 		<trans-unit id="mask.button_more">
 			<source>More</source>
+		</trans-unit>
+		<trans-unit id="mask.see_all_reviews">
+			<source>See all reviews</source>
 		</trans-unit>
 		<trans-unit id="news.see_all_news">
 			<source>See all news</source>
