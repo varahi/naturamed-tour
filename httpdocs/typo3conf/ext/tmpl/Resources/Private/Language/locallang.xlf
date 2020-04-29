@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2020-04-29T16:26:24Z">
+	<file source-language="en" datatype="plaintext" original="messages" date="2020-04-29T18:20:19Z">
 		<header>
 			<generator>LFEditor</generator>
 		</header>
 		<body>
+		<trans-unit id="flux.advantages_area">
+			<source>Advantages Area</source>
+		</trans-unit>
 		<trans-unit id="flux.banner_area">
 			<source>Banner Area</source>
 		</trans-unit>
@@ -43,6 +46,9 @@
 		</trans-unit>
 		<trans-unit id="flux.standard.description">
 			<source>Description can be entered in LLL file locallang.xlf of extension test</source>
+		</trans-unit>
+		<trans-unit id="mask.about_company">
+			<source>About Company</source>
 		</trans-unit>
 		<trans-unit id="mask.button_book_now">
 			<source>Book now</source>
