@@ -1,7 +1,4 @@
 {namespace n=GeorgRinger\News\ViewHelpers}
-{namespace v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"}
-{namespace f="http://typo3.org/ns/fluid/ViewHelpers"}
-
 <f:layout name="General" />
 <!--
 	=====================
@@ -9,185 +6,43 @@
 -->
 
 <f:section name="content">
+
 <f:switch expression="{settings.templateLayout}">
-
-<f:case value="10">
-<f:comment>Новости</f:comment>    
-<section id="news">        
-<div class="container">
-    <div class="px-0">
-      <div class="row pb-30">            
-    <f:if condition="{news}">
-		<f:then>
-			<!--div class="news-list-view"-->
-				<f:if condition="{settings.hidePagination}">
-					<f:then>
-						<f:for each="{news}" as="newsItem" iteration="iterator">
-							<f:render partial="List/Item" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
-						</f:for>
-					</f:then>
-					<f:else>
-						<n:widget.paginate objects="{news}" as="paginatedNews" configuration="{settings.list.paginate}" initial="{offset:settings.offset,limit:settings.limit}">
-							<f:for each="{paginatedNews}" as="newsItem" iteration="iterator">
-								<f:render partial="List/Item" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
-							</f:for>
-						</n:widget.paginate>
-					</f:else>
-				</f:if>
-			<!--/div-->
-		</f:then>
-		<f:else>
-			<div class="no-news-found">
-				<f:translate key="list_nonewsfound" />
-			</div>
-		</f:else>
-	</f:if>        
-        </div>
-    </div>
-</div>
-</section>          
-    </f:case>
-    
-    
-    <f:case value="15">
-<section id="newsmain">        
-<div class="container">
-    <div class="px-0">
-      <div class="row pb-30">            
-    <f:if condition="{news}">
-		<f:then>
-			<!--div class="news-list-view"-->
-				<f:if condition="{settings.hidePagination}">
-					<f:then>
-						<f:for each="{news}" as="newsItem" iteration="iterator">
-							<f:render partial="List/Item" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
-						</f:for>
-					</f:then>
-					<f:else>
-						<n:widget.paginate objects="{news}" as="paginatedNews" configuration="{settings.list.paginate}" initial="{offset:settings.offset,limit:settings.limit}">
-							<f:for each="{paginatedNews}" as="newsItem" iteration="iterator">
-								<f:render partial="List/Item" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
-							</f:for>
-						</n:widget.paginate>
-					</f:else>
-				</f:if>
-			<!--/div-->
-		</f:then>
-		<f:else>
-			<div class="no-news-found">
-				<f:translate key="list_nonewsfound" />
-			</div>
-		</f:else>
-	</f:if>        
-        </div>
-    </div>
-</div>
-</section>          
-    </f:case>
-    
-    
-<f:case value="20">
-<section id="akcii">
-          <div class="container">
-            <div class="wrap">
-              <div class="row">
-                <div class="col-12">
-                  <div class="col-wrap text-center">
-                    <div class="news-arrows"><a href="#"> <i class="im im-arrow1-left mr-20"></i></a><a href="#"> <i class="im im-arrow1-right"></i></a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">           
-    <f:if condition="{news}">
-		<f:then>
-			<!--div class="news-list-view"-->
-				<f:if condition="{settings.hidePagination}">
-					<f:then>
-						<f:for each="{news}" as="newsItem" iteration="iterator">
-							<f:render partial="List/Item" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
-						</f:for>
-					</f:then>
-					<f:else>
-						<n:widget.paginate objects="{news}" as="paginatedNews" configuration="{settings.list.paginate}" initial="{offset:settings.offset,limit:settings.limit}">
-							<f:for each="{paginatedNews}" as="newsItem" iteration="iterator">
-								<f:render partial="List/Item" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
-							</f:for>
-						</n:widget.paginate>
-					</f:else>
-				</f:if>
-			<!--/div-->
-		</f:then>
-		<f:else>
-			<div class="no-news-found">
-				<f:translate key="list_nonewsfound" />
-			</div>
-		</f:else>
-	</f:if>        
-               </div>
-            </div>
-          </div>
-</section>       
-</f:case>
-    <f:case value="60">
-	<!--TYPO3SEARCH_end-->
-	<f:if condition="{news}">
-		<f:then>
-			<!--div class="news-list-view"-->
-				<f:if condition="{settings.hidePagination}">
-					<f:then>
-						<f:for each="{news}" as="newsItem" iteration="iterator">
-							<f:render partial="List/Item" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
-						</f:for>
-					</f:then>
-					<f:else>
-						<n:widget.paginate objects="{news}" as="paginatedNews" configuration="{settings.list.paginate}" initial="{offset:settings.offset,limit:settings.limit}">
-							<f:for each="{paginatedNews}" as="newsItem" iteration="iterator">
-								<f:render partial="List/Item" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
-							</f:for>
-						</n:widget.paginate>
-					</f:else>
-				</f:if>
-			<!--/div-->
-		</f:then>
-		<f:else>
-			<div class="no-news-found">
-				<f:translate key="list_nonewsfound" />
-			</div>
-		</f:else>
-	</f:if>
-	<!--TYPO3SEARCH_begin-->
-    </f:case>
-    
-    <f:case default="TRUE">
-	<!--TYPO3SEARCH_end-->
-
-    
-	<f:if condition="{news}">
-		<f:then>
-			<!--div class="news-list-view"-->
-				<f:if condition="{settings.hidePagination}">
-					<f:then>
-						<f:for each="{news}" as="newsItem" iteration="iterator">
-							<f:render partial="List/Item" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
-						</f:for>
-					</f:then>
-					<f:else>
-						<n:widget.paginate objects="{news}" as="paginatedNews" configuration="{settings.list.paginate}" initial="{offset:settings.offset,limit:settings.limit}">
-							<f:for each="{paginatedNews}" as="newsItem" iteration="iterator">
-								<f:render partial="List/Item" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
-							</f:for>
-						</n:widget.paginate>
-					</f:else>
-				</f:if>
-			<!--/div-->
-		</f:then>
-		<f:else>
-			<div class="no-news-found">
-				<f:translate key="list_nonewsfound" />
-			</div>
-		</f:else>
-	</f:if>
-	<!--TYPO3SEARCH_begin-->
-    </f:case>
+	<!-- Main page news -->
+	<f:case value="15">
+		<div class="news-wrapper">
+			<!--TYPO3SEARCH_end-->
+			<f:if condition="{news}">
+				<f:then>
+					<div class="news-list">
+						<f:if condition="{settings.hidePagination}">
+							<f:then>
+								<f:for each="{news}" as="newsItem" iteration="iterator">
+									<f:render partial="List/LastItem" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
+								</f:for>
+							</f:then>
+							<f:else>
+								<n:widget.paginate objects="{news}" as="paginatedNews" configuration="{settings.list.paginate}" initial="{offset:settings.offset,limit:settings.limit}">
+									<f:for each="{paginatedNews}" as="newsItem" iteration="iterator">
+										<f:render partial="List/LastItem" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
+									</f:for>
+								</n:widget.paginate>
+							</f:else>
+						</f:if>
+					</div>
+					<div class="news-button">
+						<f:link.page pageUid="{settings.listPid}">{f:translate(key: 'news.see_all_news', extensionName: 'tmpl')}</f:link.page>
+					</div>
+				</f:then>
+				<f:else>
+					<div class="no-news-found">
+						<f:translate key="list_nonewsfound" />
+					</div>
+				</f:else>
+			</f:if>
+			<!--TYPO3SEARCH_begin-->
+		</div>
+	</f:case>
 </f:switch>
+
 </f:section>

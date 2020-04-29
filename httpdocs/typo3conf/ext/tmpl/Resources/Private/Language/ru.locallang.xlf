@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" target-language="ru" datatype="plaintext" original="messages" date="2020-04-28T19:01:28Z">
+	<file source-language="en" target-language="ru" datatype="plaintext" original="messages" date="2020-04-29T16:26:24Z">
 		<header>
 			<generator>LFEditor</generator>
 		</header>
@@ -12,6 +12,10 @@
 		<trans-unit id="mask.button_more" approved="yes">
 			<source>More</source>
 			<target>Подробнее</target>
+		</trans-unit>
+		<trans-unit id="news.see_all_news" approved="yes">
+			<source>See all news</source>
+			<target>Смотреть все новости</target>
 		</trans-unit>
 		</body>
 	</file>
