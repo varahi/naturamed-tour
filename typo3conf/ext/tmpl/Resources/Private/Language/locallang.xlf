@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2020-04-29T19:24:19Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="flux.advantages_area">
+			<source>Advantages Area</source>
+		</trans-unit>
+		<trans-unit id="flux.banner_area">
+			<source>Banner Area</source>
+		</trans-unit>
+		<trans-unit id="flux.content_area">
+			<source>Content Area</source>
+		</trans-unit>
+		<trans-unit id="flux.example">
+			<source>Example element</source>
+		</trans-unit>
+		<trans-unit id="flux.example.description">
+			<source>Small example element</source>
+		</trans-unit>
+		<trans-unit id="flux.example.fields.settings.helloWorld">
+			<source>Example input</source>
+		</trans-unit>
+		<trans-unit id="flux.homepage">
+			<source>Home page</source>
+		</trans-unit>
+		<trans-unit id="flux.innerpage">
+			<source>Inner page</source>
+		</trans-unit>
+		<trans-unit id="flux.left_column">
+			<source>Left Column</source>
+		</trans-unit>
+		<trans-unit id="flux.news_area">
+			<source>News Area</source>
+		</trans-unit>
+		<trans-unit id="flux.reviews_area">
+			<source>Reviews Area</source>
+		</trans-unit>
+		<trans-unit id="flux.slider_area">
+			<source>Slider Area</source>
+		</trans-unit>
+		<trans-unit id="flux.slider_banner_area">
+			<source>Slider Banner Area</source>
+		</trans-unit>
+		<trans-unit id="flux.standard">
+			<source>Example page</source>
+		</trans-unit>
+		<trans-unit id="flux.standard.description">
+			<source>Description can be entered in LLL file locallang.xlf of extension test</source>
+		</trans-unit>
+		<trans-unit id="mask.about_company">
+			<source>About Company</source>
+		</trans-unit>
+		<trans-unit id="mask.button_book_now">
+			<source>Book now</source>
+		</trans-unit>
+		<trans-unit id="mask.button_more">
+			<source>More</source>
+		</trans-unit>
+		<trans-unit id="mask.see_all_reviews">
+			<source>See all reviews</source>
+		</trans-unit>
+		<trans-unit id="news.see_all_news">
+			<source>See all news</source>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>

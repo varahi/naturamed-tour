@@ -1,0 +1,56 @@
+<footer>
+    <section class="footer-form">
+        <div class="footer-form-column-1">
+            <div class="footer-form-questions">
+                <form action="post">
+                    <fieldset>
+                        <div class="footer-form-height">
+                            <legend>Остались вопросы?</legend>
+                            <div class="footer-form-questions-text">
+                                <span><span>Звоните нам по телефону:</span></span>
+                                <span><a href="tel:88005550923">8 (800) 555-09-23</a></span>
+                                <span>или оставьте заявку в форме обратной связи</span>
+                                <span>и наш специалист свяжется с вами для консультации</span>
+                            </div>
+                        </div>
+                        <input class="footer-form-input" placeholder="Ваше имя" type="text">
+                        <input class="footer-form-input" data-inputmask="'mask': '+7 (999) 999-99-99'" placeholder="Ваш телефон" type="tel">
+                    </fieldset>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-form-column-2">
+            <div class="footer-form-mailing">
+                <form action="post">
+                    <fieldset>
+                        <div class="footer-form-height">
+                            <legend>
+                                <span>Да, я хочу первым узнавать</span>
+                                <span>о новостях и акциях компании</span>
+                            </legend>
+                            <ul class="footer-form-mailing-checkbox">
+                                <li><input type="radio" id="agent" name="agent-client"><label for="agent">Я представляю агентство</label></li>
+                                <li><input type="radio" id="client" name="agent-client"><label for="client">Я клиент</label></li>
+                            </ul>
+                        </div>
+                        <input class="footer-form-input" placeholder="Ваше имя" type="text">
+                        <input class="footer-form-input" placeholder="Ваш e-mail" type="email">
+                    </fieldset>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="footer-menu">
+        <div class="footer-menu-wrapper">
+            <div class="footer-menu-list">
+                <f:cObject typoscriptObjectPath="lib.footerMenuAbout" />
+                <f:cObject typoscriptObjectPath="lib.footerMenuCountry" />
+                <f:cObject typoscriptObjectPath="lib.footerMenuPopularRegion" />
+                <f:cObject typoscriptObjectPath="lib.footerMenuContact" />
+            </div>
+            <f:cObject typoscriptObjectPath="lib.copyright" />
+        </div>
+    </section>
+</footer>

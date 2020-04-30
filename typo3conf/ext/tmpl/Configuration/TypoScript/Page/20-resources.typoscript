@@ -1,0 +1,32 @@
+# manually inserted CSS files
+
+page {
+    includeCSS {
+        10_fancybox = EXT:tmpl/Resources/Public/css/jquery.fancybox.min.css
+        20_jquery_ui = EXT:tmpl/Resources/Public/css/jquery-ui.min.css
+        30_jquery_ui_theme = EXT:tmpl/Resources/Public/css/jquery-ui.theme.min.css
+        40_slick = EXT:tmpl/Resources/Public/css/slick.css
+        100_style = EXT:tmpl/Resources/Public/css/style.css
+    }
+
+    includeJSLibs {
+        //10_jquery = https://code.jquery.com/jquery-2.2.4.min.js
+    }
+
+    includeJSFooterlibs {
+        10_jquery = EXT:tmpl/Resources/Public/js/jquery-3.4.1.min.js
+        20_jquery_ui = EXT:tmpl/Resources/Public/js/jquery-ui.min.js
+        30_fancybox = EXT:tmpl/Resources/Public/js/jquery.fancybox.min.js
+        40_inputmask = EXT:tmpl/Resources/Public/js/jquery.inputmask.min.js
+        50_slick = EXT:tmpl/Resources/Public/js/slick.min.js
+        50_tabs = EXT:tmpl/Resources/Public/js/tabs.js
+        100_script = EXT:tmpl/Resources/Public/js/scripts.js
+    }
+}
+
+page {
+    headerData {
+        //998 = TEXT
+        //998.value =
+    }
+}

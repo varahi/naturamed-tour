@@ -1,0 +1,82 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+	 xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
+	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+
+	<f:layout name="Content"/>
+
+<f:section name="Configuration">
+	<flux:form id="mColumns" label="Колонки контента" options="{useTypoScript: 0, Fluidcontent: {sorting: 10}, group: 'Columns'}">
+        <flux:field.file
+    		label="Фоновое фото"
+            name="mImage"
+            showThumbnails="1"
+            allowed="jpg,jpeg,png,gif,JPEG,GIF,PNG,JPG"
+            required="0"
+            maxItems="1"
+            size="1"
+            />
+
+		<!--flux:field.select name="bgcolor" default="0" requestUpdate="0" label="Цвет фона блока"
+                    items="{
+                           0:{0:'Без фона',1:''},
+                           1:{0:'Серый фон',1:'bg-big-grey'},
+                           2:{0:'Синий фон, как в форме отзывов',1:'bg-big-blue'}
+                           }"
+         /-->
+        
+        <flux:field.custom name="Description">
+          <b>Суммарная ширина колонок должна быть равна 12!</b>
+        </flux:field.custom>
+		<flux:form.section name="columns" label="Добавьте колонки">
+				<flux:form.object name="column" label="Колонка">
+            		<flux:field.select name="class" items="1,2,3,4,5,6,7,8,9,10,11,12" default="4" requestUpdate="0" label="Ширина колонки" />
+				</flux:form.object>
+		</flux:form.section>
+		<flux:grid>
+			<flux:grid.row>
+				<f:for each="{columns}" as="sectionObject" iteration="iteration">
+					<v:variable.set name="width" value="{sectionObject.column.class}" />
+					<v:variable.set name="percent" value="{width  -> v:math.division(b: 12) -> v:math.product(b: 80) -> v:math.round(decimals: 2)}" />
+					<flux:grid.column style="width: {percent}%;" name="column{iteration.cycle}" label="Колонка {iteration.cycle}" />
+				</f:for>
+			</flux:grid.row>
+		</flux:grid>
+	</flux:form>
+</f:section>
+<f:section name="Preview">
+    <p>Колонки контента</p>
+	<flux:widget.grid />
+</f:section>
+
+<f:section name="Main">
+
+<v:variable.set name="cssname" value="{v:random.string(length: 8)}" />
+<v:asset.style name="myCss{v:random.string(length: 5)}" standalone="0" rewrite="1">
+    .columns-bg{cssname}{
+        background-image: url("{mImage}");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</v:asset.style>    
+    <!-- Main Content row -->
+    <div>
+      <div class="container">
+        <div class="wrap {bgcolor} columns-bg{cssname}">
+            <div class="aa">
+                <div class="row">
+                    <f:for each="{columns}" as="sectionObject" iteration="iteration">
+                    <div class="col-md-{sectionObject.column.class} col-12">
+                        <div class="content-inner">
+                            <flux:content.render area="column{iteration.cycle}" />
+                        </div>
+                    </div>
+                    </f:for>
+                </div>
+            </div>
+          </div>
+      </div>
+    </div>    
+</f:section>
+</div>

@@ -1,0 +1,434 @@
+{
+    "tt_content": {
+        "elements": {
+            "slider_banner": {
+                "label": "Slider Banner",
+                "key": "slider_banner",
+                "shortLabel": "",
+                "description": "Slider Banner for gridelement on main page",
+                "columns": [
+                    "image",
+                    "tx_mask_html_code",
+                    "header_link"
+                ],
+                "labels": [
+                    "Image",
+                    "HTML Code",
+                    "More Link"
+                ]
+            },
+            "banner_detox_programs": {
+                "label": "Banner Detox Programs",
+                "key": "banner_detox_programs",
+                "shortLabel": "Banner Teaser",
+                "description": "Banner Detox Programs",
+                "columns": [
+                    "image",
+                    "tx_mask_html_code",
+                    "header_link"
+                ],
+                "labels": [
+                    "Image",
+                    "HTML Code",
+                    "More Link"
+                ]
+            },
+            "advantages": {
+                "label": "Advantages",
+                "key": "advantages",
+                "shortLabel": "",
+                "description": "Advantages ",
+                "columns": {
+                    "0": "header",
+                    "1": "tx_mask_advantages_list",
+                    "4": "tx_mask_advantages_slogan",
+                    "7": "header_link"
+                },
+                "labels": {
+                    "0": "Advantages Title",
+                    "1": "Advantages List",
+                    "4": "Advantages Slogan",
+                    "7": "Advantages Button"
+                }
+            },
+            "reviews": {
+                "label": "\u041e\u0442\u0437\u044b\u0432\u044b",
+                "key": "reviews",
+                "shortLabel": "",
+                "description": "\u041e\u0442\u0437\u044b\u0432\u044b \u043d\u0430\u0448\u0438\u0445 \u043a\u043b\u0438\u0435\u043d\u0442\u043e\u0432",
+                "columns": {
+                    "0": "header",
+                    "1": "tx_mask_reviews_list",
+                    "7": "header_link"
+                },
+                "labels": {
+                    "0": "Rreviews Title",
+                    "1": "Reviews List",
+                    "7": "Reviews Button"
+                }
+            }
+        },
+        "sql": {
+            "tx_mask_html_code": {
+                "tt_content": {
+                    "tx_mask_html_code": "text"
+                }
+            },
+            "tx_mask_advantages_list": {
+                "tt_content": {
+                    "tx_mask_advantages_list": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_advantages_slogan": {
+                "tt_content": {
+                    "tx_mask_advantages_slogan": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_reviews_list": {
+                "tt_content": {
+                    "tx_mask_reviews_list": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            }
+        },
+        "tca": {
+            "tx_mask_html_code": {
+                "config": {
+                    "type": "text",
+                    "cols": "",
+                    "rows": "",
+                    "default": "",
+                    "eval": ""
+                },
+                "exclude": "1",
+                "key": "html_code"
+            },
+            "tx_mask_advantages_list": {
+                "config": {
+                    "type": "inline",
+                    "foreign_table": "--inlinetable--",
+                    "foreign_field": "parentid",
+                    "foreign_table_field": "parenttable",
+                    "foreign_sortby": "sorting",
+                    "appearance": {
+                        "collapseAll": "1",
+                        "levelLinksPosition": "top",
+                        "showSynchronizationLink": "1",
+                        "showPossibleLocalizationRecords": "1",
+                        "showAllLocalizationLink": "1",
+                        "useSortable": "1",
+                        "enabledControls": {
+                            "dragdrop": "1"
+                        }
+                    },
+                    "minitems": "",
+                    "maxitems": ""
+                },
+                "exclude": "1",
+                "key": "advantages_list"
+            },
+            "tx_mask_advantages_slogan": {
+                "config": {
+                    "type": "inline",
+                    "foreign_table": "--inlinetable--",
+                    "foreign_field": "parentid",
+                    "foreign_table_field": "parenttable",
+                    "foreign_sortby": "sorting",
+                    "appearance": {
+                        "collapseAll": "1",
+                        "levelLinksPosition": "top",
+                        "showSynchronizationLink": "1",
+                        "showPossibleLocalizationRecords": "1",
+                        "showAllLocalizationLink": "1",
+                        "useSortable": "1",
+                        "enabledControls": {
+                            "dragdrop": "1"
+                        }
+                    },
+                    "minitems": "",
+                    "maxitems": ""
+                },
+                "exclude": "1",
+                "key": "advantages_slogan"
+            },
+            "tx_mask_reviews_list": {
+                "config": {
+                    "type": "inline",
+                    "foreign_table": "--inlinetable--",
+                    "foreign_field": "parentid",
+                    "foreign_table_field": "parenttable",
+                    "foreign_sortby": "sorting",
+                    "appearance": {
+                        "collapseAll": "1",
+                        "levelLinksPosition": "top",
+                        "showSynchronizationLink": "1",
+                        "showPossibleLocalizationRecords": "1",
+                        "showAllLocalizationLink": "1",
+                        "useSortable": "1",
+                        "enabledControls": {
+                            "dragdrop": "1"
+                        }
+                    },
+                    "minitems": "",
+                    "maxitems": ""
+                },
+                "exclude": "1",
+                "key": "reviews_list"
+            }
+        }
+    },
+    "tx_mask_undefined": {
+        "sql": {
+            "tx_mask_item_number": {
+                "tx_mask_undefined": {
+                    "tx_mask_item_number": "tinytext"
+                }
+            },
+            "tx_mask_item_text": {
+                "tx_mask_undefined": {
+                    "tx_mask_item_text": "text"
+                }
+            }
+        },
+        "tca": {
+            "tx_mask_item_number": {
+                "config": {
+                    "type": "input",
+                    "eval": "",
+                    "size": "",
+                    "max": "",
+                    "default": ""
+                },
+                "exclude": "1",
+                "inlineParent": "tx_mask_undefined",
+                "label": "Item Number",
+                "key": "item_number"
+            },
+            "tx_mask_item_text": {
+                "config": {
+                    "type": "text",
+                    "cols": "",
+                    "rows": "",
+                    "default": "",
+                    "eval": ""
+                },
+                "exclude": "1",
+                "inlineParent": "tx_mask_undefined",
+                "label": "Item Text",
+                "key": "item_text"
+            }
+        }
+    },
+    "sys_file_reference": {
+        "sql": {
+            "tx_mask_image": {
+                "sys_file_reference": {
+                    "tx_mask_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_reviews_avatar": {
+                "sys_file_reference": {
+                    "tx_mask_reviews_avatar": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            }
+        }
+    },
+    "tx_mask_advantages_list": {
+        "sql": {
+            "tx_mask_item_number": {
+                "tx_mask_advantages_list": {
+                    "tx_mask_item_number": "tinytext"
+                }
+            },
+            "tx_mask_item_text": {
+                "tx_mask_advantages_list": {
+                    "tx_mask_item_text": "text"
+                }
+            }
+        },
+        "tca": {
+            "tx_mask_item_number": {
+                "config": {
+                    "type": "input",
+                    "eval": "",
+                    "size": "",
+                    "max": "",
+                    "default": ""
+                },
+                "exclude": "1",
+                "inlineParent": "tx_mask_advantages_list",
+                "label": "Item Number",
+                "key": "item_number"
+            },
+            "tx_mask_item_text": {
+                "config": {
+                    "type": "text",
+                    "cols": "",
+                    "rows": "",
+                    "default": "",
+                    "eval": ""
+                },
+                "exclude": "1",
+                "inlineParent": "tx_mask_advantages_list",
+                "label": "Item Text",
+                "key": "item_text"
+            }
+        }
+    },
+    "tx_mask_advantages_slogan": {
+        "sql": {
+            "tx_mask_slogan_title": {
+                "tx_mask_advantages_slogan": {
+                    "tx_mask_slogan_title": "text"
+                }
+            },
+            "tx_mask_image": {
+                "tx_mask_advantages_slogan": {
+                    "tx_mask_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            }
+        },
+        "tca": {
+            "tx_mask_slogan_title": {
+                "config": {
+                    "type": "text",
+                    "cols": "",
+                    "rows": "",
+                    "default": "",
+                    "eval": ""
+                },
+                "exclude": "1",
+                "inlineParent": "tx_mask_advantages_slogan",
+                "label": "Slogan Title",
+                "key": "slogan_title"
+            },
+            "tx_mask_image": {
+                "exclude": "1",
+                "options": "file",
+                "config": {
+                    "minitems": "",
+                    "maxitems": ""
+                },
+                "inlineParent": "tx_mask_advantages_slogan",
+                "label": "Image",
+                "key": "image"
+            }
+        }
+    },
+    "tx_mask_reviews_list": {
+        "sql": {
+            "tx_mask_reviews_author": {
+                "tx_mask_reviews_list": {
+                    "tx_mask_reviews_author": "tinytext"
+                }
+            },
+            "tx_mask_reviews_location": {
+                "tx_mask_reviews_list": {
+                    "tx_mask_reviews_location": "tinytext"
+                }
+            },
+            "tx_mask_reviews_text": {
+                "tx_mask_reviews_list": {
+                    "tx_mask_reviews_text": "text"
+                }
+            },
+            "tx_mask_reviews_rating": {
+                "tx_mask_reviews_list": {
+                    "tx_mask_reviews_rating": "tinytext"
+                }
+            },
+            "tx_mask_reviews_avatar": {
+                "tx_mask_reviews_list": {
+                    "tx_mask_reviews_avatar": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            }
+        },
+        "tca": {
+            "tx_mask_reviews_author": {
+                "config": {
+                    "type": "input",
+                    "eval": "",
+                    "size": "",
+                    "max": "",
+                    "default": ""
+                },
+                "exclude": "1",
+                "inlineParent": "tx_mask_reviews_list",
+                "label": "Author",
+                "key": "reviews_author"
+            },
+            "tx_mask_reviews_location": {
+                "config": {
+                    "type": "input",
+                    "eval": "",
+                    "size": "",
+                    "max": "",
+                    "default": ""
+                },
+                "exclude": "1",
+                "inlineParent": "tx_mask_reviews_list",
+                "label": "Location",
+                "key": "reviews_location"
+            },
+            "tx_mask_reviews_text": {
+                "config": {
+                    "type": "text",
+                    "cols": "",
+                    "rows": "",
+                    "default": "",
+                    "eval": ""
+                },
+                "exclude": "1",
+                "inlineParent": "tx_mask_reviews_list",
+                "label": "Reviews Text",
+                "key": "reviews_text"
+            },
+            "tx_mask_reviews_rating": {
+                "config": {
+                    "type": "select",
+                    "size": "1",
+                    "autoSizeMax": "",
+                    "maxitems": "5",
+                    "items": [
+                        [
+                            "star-1",
+                            "1"
+                        ],
+                        [
+                            "star-2",
+                            "2"
+                        ],
+                        [
+                            "star-3",
+                            "3"
+                        ],
+                        [
+                            "star-4",
+                            "4"
+                        ],
+                        [
+                            "star-5",
+                            "5"
+                        ]
+                    ],
+                    "foreign_table": "",
+                    "foreign_table_where": ""
+                },
+                "exclude": "1",
+                "inlineParent": "tx_mask_reviews_list",
+                "label": "Reviews Rating",
+                "key": "reviews_rating"
+            },
+            "tx_mask_reviews_avatar": {
+                "exclude": "1",
+                "options": "file",
+                "config": {
+                    "minitems": "",
+                    "maxitems": ""
+                },
+                "inlineParent": "tx_mask_reviews_list",
+                "label": "Reviews Avatar",
+                "key": "reviews_avatar"
+            }
+        }
+    }
+}

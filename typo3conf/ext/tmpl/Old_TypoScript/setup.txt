@@ -1,0 +1,15 @@
+<INCLUDE_TYPOSCRIPT: source="FILE: fileadmin/ts/config.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE: fileadmin/ts/ttcontent.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE: fileadmin/ts/metrix.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE: fileadmin/ts/templateelements.txt">
+#<INCLUDE_TYPOSCRIPT: source="FILE: fileadmin/ts/powermail.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE: fileadmin/ts/news.txt">
+
+#lib.parseFunc_RTE.nonTypoTagStdWrap.encapsLines.nonWrappedTag >
+#lib.parseFunc_RTE.nonTypoTagStdWrap.encapsLines.addAttributes.P.class >
+#lib.parseFunc_RTE.nonTypoTagStdWrap.encapsLines.encapsTagList = p,pre,h1,h2,h3,h4,h5,h6,hr,dt,li,td,tr
+
+#[globalString = GP:tx_powermail_pi1|field|sanator = 1]
+#lib.progname = TEXT
+#lib.progname.value = red[\n]blue[\n]pink
+#[global]
