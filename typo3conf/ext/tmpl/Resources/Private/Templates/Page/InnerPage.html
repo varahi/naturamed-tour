@@ -11,23 +11,12 @@
 		<flux:grid>
 			<!-- Edit this grid to change the "backend layout" structure -->
 			<flux:grid.row>
-				<flux:grid.column colPos="0" colspan="1" name="left" label="{f:translate(key: 'flux.left_column', extensionName: 'vostokzapadesign_site')}" />
-				<flux:grid.column colPos="1" colspan="3" name="main" label="{f:translate(key: 'flux.content_area', extensionName: 'vostokzapadesign_site')}" />
+				<flux:grid.column colPos="0" colspan="4" name="main" label="{f:translate(key: 'flux.content_area', extensionName: 'tmpl')}" />
 			</flux:grid.row>
 		</flux:grid>
 	</f:section>
 
-	<f:section name="Main">
-		<div class="row">
-  		<div class="right-column col-lg-8 push-lg-4">
-				<f:cObject typoscriptObjectPath="lib.calendarLink" />
-				<v:content.render column="1" />	
-				<f:cObject typoscriptObjectPath="lib.content.right" />		
-    	</div>
-    	<div class="left-column col-lg-4 pull-lg-8">	
-				<f:cObject typoscriptObjectPath="lib.navigation.submenu" />
-				<v:content.render column="0" />	 
-    	</div>
-    </div>
+	<f:section name="Content">
+		<v:content.render column="0" />
 	</f:section>
 </div>

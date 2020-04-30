@@ -5,6 +5,9 @@
 			<generator>LFEditor</generator>
 		</header>
 		<body>
+			<trans-unit id="page.hide_breadcrumb">
+				<source>Hide Breadcrumb</source>
+			</trans-unit>
 		<trans-unit id="flux.advantages_area">
 			<source>Advantages Area</source>
 		</trans-unit>
