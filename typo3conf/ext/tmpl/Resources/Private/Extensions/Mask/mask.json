@@ -85,6 +85,18 @@
                 "options": {
                     "1": "rte"
                 }
+            },
+            "advantage_list": {
+                "label": "Advantage List",
+                "key": "advantage_list",
+                "shortLabel": "",
+                "description": "Advantage List for page about",
+                "columns": [
+                    "tx_mask_advantage_list"
+                ],
+                "labels": [
+                    "Advantage List"
+                ]
             }
         },
         "sql": {
@@ -116,6 +128,11 @@
             "tx_mask_directions_list": {
                 "tt_content": {
                     "tx_mask_directions_list": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_advantage_list": {
+                "tt_content": {
+                    "tx_mask_advantage_list": "int(11) unsigned DEFAULT '0' NOT NULL"
                 }
             }
         },
@@ -237,6 +254,30 @@
                 },
                 "exclude": "1",
                 "key": "directions_list"
+            },
+            "tx_mask_advantage_list": {
+                "config": {
+                    "type": "inline",
+                    "foreign_table": "--inlinetable--",
+                    "foreign_field": "parentid",
+                    "foreign_table_field": "parenttable",
+                    "foreign_sortby": "sorting",
+                    "appearance": {
+                        "collapseAll": "1",
+                        "levelLinksPosition": "top",
+                        "showSynchronizationLink": "1",
+                        "showPossibleLocalizationRecords": "1",
+                        "showAllLocalizationLink": "1",
+                        "useSortable": "1",
+                        "enabledControls": {
+                            "dragdrop": "1"
+                        }
+                    },
+                    "minitems": "",
+                    "maxitems": ""
+                },
+                "exclude": "1",
+                "key": "advantage_list"
             }
         }
     },
@@ -297,6 +338,11 @@
             "tx_mask_directions_item_image": {
                 "sys_file_reference": {
                     "tx_mask_directions_item_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_advantage_list_icon": {
+                "sys_file_reference": {
+                    "tx_mask_advantage_list_icon": "int(11) unsigned DEFAULT '0' NOT NULL"
                 }
             }
         }
@@ -537,6 +583,82 @@
                 "inlineParent": "tx_mask_directions_list",
                 "label": "Directions Item Image",
                 "key": "directions_item_image"
+            }
+        }
+    },
+    "tx_mask_advantage_list": {
+        "sql": {
+            "tx_mask_advantage_list_title": {
+                "tx_mask_advantage_list": {
+                    "tx_mask_advantage_list_title": "tinytext"
+                }
+            },
+            "tx_mask_advantage_list_text": {
+                "tx_mask_advantage_list": {
+                    "tx_mask_advantage_list_text": "text"
+                }
+            },
+            "tx_mask_advantage_list_number": {
+                "tx_mask_advantage_list": {
+                    "tx_mask_advantage_list_number": "tinytext"
+                }
+            },
+            "tx_mask_advantage_list_icon": {
+                "tx_mask_advantage_list": {
+                    "tx_mask_advantage_list_icon": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            }
+        },
+        "tca": {
+            "tx_mask_advantage_list_title": {
+                "config": {
+                    "type": "input",
+                    "eval": "",
+                    "size": "",
+                    "max": "",
+                    "default": ""
+                },
+                "exclude": "1",
+                "inlineParent": "tx_mask_advantage_list",
+                "label": "Advantage Item Title",
+                "key": "advantage_list_title"
+            },
+            "tx_mask_advantage_list_text": {
+                "config": {
+                    "type": "text",
+                    "cols": "",
+                    "rows": "",
+                    "default": "",
+                    "eval": ""
+                },
+                "exclude": "1",
+                "inlineParent": "tx_mask_advantage_list",
+                "label": "Advantage List Text",
+                "key": "advantage_list_text"
+            },
+            "tx_mask_advantage_list_number": {
+                "config": {
+                    "type": "input",
+                    "eval": "",
+                    "size": "",
+                    "max": "",
+                    "default": ""
+                },
+                "exclude": "1",
+                "inlineParent": "tx_mask_advantage_list",
+                "label": "Advantage List Number",
+                "key": "advantage_list_number"
+            },
+            "tx_mask_advantage_list_icon": {
+                "exclude": "1",
+                "options": "file",
+                "config": {
+                    "minitems": "",
+                    "maxitems": ""
+                },
+                "inlineParent": "tx_mask_advantage_list",
+                "label": "Advantage List Icon",
+                "key": "advantage_list_icon"
             }
         }
     }

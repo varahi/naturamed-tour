@@ -1,0 +1,20 @@
+<f:if condition="{data.tx_mask_advantage_list}">
+    <div class="advantage-list">
+        <f:for each="{data.tx_mask_advantage_list}" as="data_item">
+            <div class="advantage-item">
+                <div class="advantage-number">
+                    <div class="advantage-number-text">{data_item.tx_mask_advantage_list_number}</div>
+                    <div class="advantage-number-icon">
+                        <f:for each="{data_item.tx_mask_advantage_list_icon}" as="file">
+                            <f:image src="{file.uid}" alt="{data_item.tx_mask_advantage_list_title}" treatIdAsReference="1" />
+                        </f:for>
+                    </div>
+                </div>
+                <div class="advantage-item-title">{data_item.tx_mask_advantage_list_title}</div>
+                <div class="advantage-item-text">
+                    <f:format.raw>{data_item.tx_mask_advantage_list_text}</f:format.raw>
+                </div>
+            </div>
+        </f:for>
+    </div>
+</f:if>
