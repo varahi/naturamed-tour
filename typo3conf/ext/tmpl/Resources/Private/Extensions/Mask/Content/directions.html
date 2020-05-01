@@ -1,0 +1,28 @@
+<div class="about-directions">
+    <div class="about-directions-wrapper">
+        <f:if condition="{data.tx_mask_directions_title}">
+            <div class="about-directions-title-1"><f:format.raw>{data.tx_mask_directions_title}</f:format.raw></div>
+        </f:if>
+        <f:if condition="{data.bodytext}">
+            <div class="about-directions-text">
+                <f:format.raw>{data.bodytext}</f:format.raw>
+            </div>
+        </f:if>
+    </div>
+</div>
+<f:if condition="{data.tx_mask_directions_list}">
+    <div class="about-directions-list">
+        <f:for each="{data.tx_mask_directions_list}" as="data_item">
+            <div class="about-directions-column">
+                <div class="about-directions-item">
+                    <div class="about-directions-item-img">
+                        <f:for each="{data_item.tx_mask_directions_item_image}" as="file">
+                            <f:image src="{file.uid}" alt="" treatIdAsReference="1" />
+                        </f:for>
+                    </div>
+                    <div class="about-directions-item-title">{data_item.tx_mask_directions_item_title}</div>
+                </div>
+            </div>
+        </f:for>
+    </div>
+</f:if>

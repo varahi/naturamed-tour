@@ -15,7 +15,7 @@ lib.breadcrumb {
             noBlur = 1
             NO = 1
             NO {
-                wrapItemAndSub = <li>&#124;|</li>
+                wrapItemAndSub = <li>|</li>
                 ATagTitle.field = subtitle // title
                 stdWrap.htmlSpecialChars = 1
             }
@@ -44,7 +44,7 @@ lib.breadcrumb {
                 noBlur = 1
                 NO = 1
                 NO {
-                    wrapItemAndSub = <li>&#124;|</li>
+                    wrapItemAndSub = <li>|</li>
                     ATagTitle.field = subtitle // title
                     stdWrap.htmlSpecialChars = 1
                 }

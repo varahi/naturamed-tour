@@ -66,6 +66,25 @@
                     "1": "Reviews List",
                     "7": "Reviews Button"
                 }
+            },
+            "directions": {
+                "label": "Directions",
+                "key": "directions",
+                "shortLabel": "",
+                "description": "Page about - section directions",
+                "columns": [
+                    "tx_mask_directions_title",
+                    "bodytext",
+                    "tx_mask_directions_list"
+                ],
+                "labels": [
+                    "Directions Title",
+                    "Directions Text",
+                    "Directions List"
+                ],
+                "options": {
+                    "1": "rte"
+                }
             }
         },
         "sql": {
@@ -87,6 +106,16 @@
             "tx_mask_reviews_list": {
                 "tt_content": {
                     "tx_mask_reviews_list": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_directions_title": {
+                "tt_content": {
+                    "tx_mask_directions_title": "text"
+                }
+            },
+            "tx_mask_directions_list": {
+                "tt_content": {
+                    "tx_mask_directions_list": "int(11) unsigned DEFAULT '0' NOT NULL"
                 }
             }
         },
@@ -173,6 +202,41 @@
                 },
                 "exclude": "1",
                 "key": "reviews_list"
+            },
+            "tx_mask_directions_title": {
+                "config": {
+                    "type": "text",
+                    "cols": "",
+                    "rows": "",
+                    "default": "",
+                    "eval": ""
+                },
+                "exclude": "1",
+                "key": "directions_title"
+            },
+            "tx_mask_directions_list": {
+                "config": {
+                    "type": "inline",
+                    "foreign_table": "--inlinetable--",
+                    "foreign_field": "parentid",
+                    "foreign_table_field": "parenttable",
+                    "foreign_sortby": "sorting",
+                    "appearance": {
+                        "collapseAll": "1",
+                        "levelLinksPosition": "top",
+                        "showSynchronizationLink": "1",
+                        "showPossibleLocalizationRecords": "1",
+                        "showAllLocalizationLink": "1",
+                        "useSortable": "1",
+                        "enabledControls": {
+                            "dragdrop": "1"
+                        }
+                    },
+                    "minitems": "",
+                    "maxitems": ""
+                },
+                "exclude": "1",
+                "key": "directions_list"
             }
         }
     },
@@ -228,6 +292,11 @@
             "tx_mask_reviews_avatar": {
                 "sys_file_reference": {
                     "tx_mask_reviews_avatar": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_directions_item_image": {
+                "sys_file_reference": {
+                    "tx_mask_directions_item_image": "int(11) unsigned DEFAULT '0' NOT NULL"
                 }
             }
         }
@@ -428,6 +497,46 @@
                 "inlineParent": "tx_mask_reviews_list",
                 "label": "Reviews Avatar",
                 "key": "reviews_avatar"
+            }
+        }
+    },
+    "tx_mask_directions_list": {
+        "sql": {
+            "tx_mask_directions_item_title": {
+                "tx_mask_directions_list": {
+                    "tx_mask_directions_item_title": "tinytext"
+                }
+            },
+            "tx_mask_directions_item_image": {
+                "tx_mask_directions_list": {
+                    "tx_mask_directions_item_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            }
+        },
+        "tca": {
+            "tx_mask_directions_item_title": {
+                "config": {
+                    "type": "input",
+                    "eval": "",
+                    "size": "",
+                    "max": "",
+                    "default": ""
+                },
+                "exclude": "1",
+                "inlineParent": "tx_mask_directions_list",
+                "label": "Directions Item Title",
+                "key": "directions_item_title"
+            },
+            "tx_mask_directions_item_image": {
+                "exclude": "1",
+                "options": "file",
+                "config": {
+                    "minitems": "",
+                    "maxitems": ""
+                },
+                "inlineParent": "tx_mask_directions_list",
+                "label": "Directions Item Image",
+                "key": "directions_item_image"
             }
         }
     }
