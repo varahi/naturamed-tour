@@ -1,7 +1,0 @@
-plugin.tx_tmpl.view {
-    templateRootPaths.0 = EXT:tmpl/Resources/Private/Templates/
-    partialRootPaths.0 = EXT:tmpl/Resources/Private/Partials/
-    layoutRootPaths.0 = EXT:tmpl/Resources/Private/Layouts/
-}
-
-//template_path = typo3conf/ext/tmpl

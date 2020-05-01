@@ -4,7 +4,7 @@
 lib.breadcrumb >
 lib.breadcrumb = COA
 lib.breadcrumb {
-    stdWrap.wrap = <ol class="breadcrumb">|</ol>
+    stdWrap.wrap = <ul>|</ul>
     10 = HMENU
     10.includeNotInMenu = 0
     10 {
@@ -15,15 +15,15 @@ lib.breadcrumb {
             noBlur = 1
             NO = 1
             NO {
-                wrapItemAndSub = <li>|</li>
+                wrapItemAndSub = <li>&#124;|</li>
                 ATagTitle.field = subtitle // title
                 stdWrap.htmlSpecialChars = 1
             }
 
             CUR <.NO
             CUR {
-                wrapItemAndSub = <li class="active">|</li>
-                doNotLinkIt = 1
+                wrapItemAndSub = <li>&#124;|</li>
+                doNotLinkIt = 0
             }
         }
     }
@@ -33,7 +33,7 @@ lib.breadcrumb {
     lib.breadcrumb >
     lib.breadcrumb = COA
     lib.breadcrumb {
-        stdWrap.wrap = <ol class="breadcrumb">|</ol>
+        stdWrap.wrap = <ul>|</ul>
         10 = HMENU
         10.includeNotInMenu = 0
         10 {
@@ -44,14 +44,14 @@ lib.breadcrumb {
                 noBlur = 1
                 NO = 1
                 NO {
-                    wrapItemAndSub = <li>|</li>
+                    wrapItemAndSub = <li>&#124;|</li>
                     ATagTitle.field = subtitle // title
                     stdWrap.htmlSpecialChars = 1
                 }
 
                 CUR <.NO
                 CUR {
-                    wrapItemAndSub = <li>|</li>
+                    wrapItemAndSub = <li>&#124;|</li>
                     doNotLinkIt = 0
                 }
             }
@@ -70,7 +70,7 @@ lib.breadcrumb {
                 field = title
                 htmlSpecialChars = 1
             }
-            wrap =  <li class="active">|</li>
+            wrap =  <li>&#124;|</li>
         }
     }
 

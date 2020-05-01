@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <ROOT type="array">
+        <type>array</type>
+        <el type="array">
+            <additional_class>
+                <TCEforms type="array">
+                    <label>LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:flexforms_general.section_class_title</label>
+                    <config>
+                        <type>input</type>
+                        <size>48</size>
+                        <eval>trim</eval>
+                    </config>
+                </TCEforms>
+            </additional_class>
+            <sectionClass type="array">
+                <TCEforms type="array">
+                    <label>LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:flexforms_general.section_class</label>
+                    <config type="array">
+                        <type>select</type>
+                        <items type="array">
+                            <numIndex index="0" type="array">
+                                <numIndex index="0">Class "about"</numIndex>
+                                <numIndex index="1">about</numIndex>
+                            </numIndex>
+                            <numIndex index="1" type="advantage">
+                                <numIndex index="0">Class "avantage"</numIndex>
+                                <numIndex index="1">advantage</numIndex>
+                            </numIndex>
+                            <numIndex index="2" type="array">
+                                <numIndex index="0">Class "cooperation"</numIndex>
+                                <numIndex index="1">cooperation</numIndex>
+                            </numIndex>
+                        </items>
+                    </config>
+                </TCEforms>
+            </sectionClass>
+        </el>
+    </ROOT>
+</T3DataStructure>

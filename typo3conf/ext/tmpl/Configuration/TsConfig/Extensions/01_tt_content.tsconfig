@@ -1,0 +1,5 @@
+TCEFORM.tt_content.header_layout {
+    addItems {
+        10 = LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:tt_content.h1_with_line
+    }
+}

@@ -5,6 +5,12 @@
 			<generator>LFEditor</generator>
 		</header>
 		<body>
+			<trans-unit id="flexforms_general.section_class">
+				<source>Section class</source>
+			</trans-unit>
+			<trans-unit id="flexforms_general.section_class_title">
+				<source>Additional class for section</source>
+			</trans-unit>
 			<trans-unit id="page.hide_breadcrumb">
 				<source>Hide Breadcrumb</source>
 			</trans-unit>
@@ -68,6 +74,23 @@
 		<trans-unit id="news.see_all_news">
 			<source>See all news</source>
 		</trans-unit>
+			<trans-unit id="gridelement.banner_container_title">
+				<source>Banner Container</source>
+			</trans-unit>
+			<trans-unit id="gridelement.banner_container_description">
+				<source>Container for Slider Banners</source>
+			</trans-unit>
+			<trans-unit id="gridelement.section_container_title">
+				<source>Section with some classes</source>
+			</trans-unit>
+			<trans-unit id="gridelement.section_container_description">
+				<source>Section with additional and select classes</source>
+			</trans-unit>
+
+			<trans-unit id="tt_content.h1_with_line">
+				<source>H1 with line</source>
+			</trans-unit>
+
 		</body>
 	</file>
 </xliff>

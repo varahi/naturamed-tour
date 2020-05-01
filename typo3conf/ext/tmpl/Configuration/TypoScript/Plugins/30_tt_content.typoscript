@@ -1,0 +1,4 @@
+lib.stdheader.10.10 < lib.stdheader.10.1
+lib.stdheader.10.10 {
+    dataWrap = <div class="article-h1"><div class="article-h1-line"></div><div class="article-h1-text"><h1>|</h1></div></div>
+}

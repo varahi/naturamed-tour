@@ -1,0 +1,33 @@
+# Page TSConfig:
+tx_gridelements.overruleRecords = 1
+tx_gridelements.setup {
+    # ID of Element
+    Slider_Banner {
+        title = LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:gridelement.banner_container_title
+        description = LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:gridelement.banner_container_description
+        icon = EXT:tmpl/Resources/Public/Icons/icon.gif
+        topLevelLayout = 1
+        config {
+            colCount = 3
+            rowCount = 1
+            rows {
+                1 {
+                    columns {
+                        1 {
+                            name = Left Column
+                            colPos = 0
+                        }
+                        2 {
+                            name = Center Column
+                            colPos = 1
+                        }
+                        3 {
+                            name = Right Column
+                            colPos = 2
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
