@@ -1,11 +1,11 @@
 <div class="about-directions">
     <div class="about-directions-wrapper">
         <f:if condition="{data.tx_mask_directions_title}">
-            <div class="about-directions-title-1"><f:format.raw>{data.tx_mask_directions_title}</f:format.raw></div>
+            <f:format.raw>{data.tx_mask_directions_title}</f:format.raw>
         </f:if>
         <f:if condition="{data.bodytext}">
             <div class="about-directions-text">
-                <f:format.raw>{data.bodytext}</f:format.raw>
+                <f:format.html>{data.bodytext}</f:format.html>
             </div>
         </f:if>
     </div>
