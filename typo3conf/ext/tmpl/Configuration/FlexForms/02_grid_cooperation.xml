@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <ROOT type="array">
+        <type>array</type>
+        <el type="array">
+            <sectionClass type="array">
+                <TCEforms type="array">
+                    <label>LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:flexforms_general.cooperation_class</label>
+                    <config type="array">
+                        <type>select</type>
+                        <items type="array">
+                            <numIndex index="0" type="array">
+                                <numIndex index="0">Class "cooperation-background"</numIndex>
+                                <numIndex index="1">cooperation-background</numIndex>
+                            </numIndex>
+                            <numIndex index="1" type="advantage">
+                                <numIndex index="0">Class "cooperation-wrapper"</numIndex>
+                                <numIndex index="1">cooperation-wrapper</numIndex>
+                            </numIndex>
+                        </items>
+                    </config>
+                </TCEforms>
+            </sectionClass>
+        </el>
+    </ROOT>
+</T3DataStructure>

@@ -36,4 +36,14 @@ tt_content.gridelements_pi1.20.10.setup {
         }
     }
 
+    # Gridelement cooperation with some class
+    Cooperation < lib.gridelements.defaultGridSetup
+    Cooperation {
+        cObject = FLUIDTEMPLATE
+        cObject {
+            partialRootPath = EXT:tmpl/Resources/Private/Extensions/Gridelements/Partials/
+            file = EXT:tmpl/Resources/Private/Extensions/Gridelements/Templates/Cooperation.html
+        }
+    }
+
 }

@@ -1,0 +1,12 @@
+<div class="{data.flexform_sectionClass}" xmlns:if="http://www.w3.org/1999/html">
+    <f:if condition="{data.flexform_sectionClass} == 'cooperation-background' ">
+        <f:then>
+            <div class="cooperation-header">
+                {data.tx_gridelements_view_columns.0->f:format.raw()}
+            </div>
+        </f:then>
+        <f:else>
+            {data.tx_gridelements_view_columns.0->f:format.raw()}
+        </f:else>
+    </f:if>
+</div>
