@@ -17,6 +17,8 @@ tx_gridelements.setup {
                         1 {
                             name = Content
                             colPos = 0
+                            #allowed = header,text,textpic,image,bullets,table,uploads,mailform,login,search,multimedia,media,menu,shortcut,list,div,html,Tx_T3devslider_Slider,fluidcontent_content,t3devslider_t3devslider,mask_slider_banner,mask_banner_detox_programs,mask_advantages,mask_reviews,mask_directions,mask_advantage_list,gridelements_pi1
+                            #allowedGridTypes = Slider_Banner, Section, Cooperation
                         }
                     }
                 }

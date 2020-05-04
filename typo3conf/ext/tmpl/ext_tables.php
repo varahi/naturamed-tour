@@ -18,8 +18,30 @@ $GLOBALS['TCA']['pages']['columns'] += array(
         )
     ),
 
+    'section_class' => array(
+        'exclude' => 1,
+        'label' => 'LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:page.section_class',
+        'config' => array(
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => array(
+                array('LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:page.select.no_class', ''),
+                array('LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:page.select.class_cooperation', 'cooperation'),
+                array('LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:page.select.class_advantage', 'advantage'),
+                array('LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:page.select.class_about', 'about'),
+                //array('Some class name', 'some_class_value'),
+            ),
+            'size' => 1,
+            'minitems' => 0,
+            'maxitems' => 1,
+        ),
+    ),
+
 );
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes (
     'pages', 'hide_breadcrumb', '1', 'after:title'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes (
+    'pages', 'section_class', '1', 'after:hide_breadcrumb'
 );

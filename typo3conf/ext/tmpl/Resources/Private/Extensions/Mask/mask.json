@@ -97,6 +97,21 @@
                 "labels": [
                     "Advantage List"
                 ]
+            },
+            "cooperation_stages_list": {
+                "label": "Cooperation Stages List",
+                "key": "cooperation_stages_list",
+                "shortLabel": "",
+                "description": "Cooperation Stages List",
+                "columns": [
+                    "tx_mask_cooperation_stages_list"
+                ],
+                "labels": [
+                    "Cooperation Stages List"
+                ],
+                "options": {
+                    "1": "rte"
+                }
             }
         },
         "sql": {
@@ -133,6 +148,11 @@
             "tx_mask_advantage_list": {
                 "tt_content": {
                     "tx_mask_advantage_list": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_cooperation_stages_list": {
+                "tt_content": {
+                    "tx_mask_cooperation_stages_list": "int(11) unsigned DEFAULT '0' NOT NULL"
                 }
             }
         },
@@ -278,6 +298,30 @@
                 },
                 "exclude": "1",
                 "key": "advantage_list"
+            },
+            "tx_mask_cooperation_stages_list": {
+                "config": {
+                    "type": "inline",
+                    "foreign_table": "--inlinetable--",
+                    "foreign_field": "parentid",
+                    "foreign_table_field": "parenttable",
+                    "foreign_sortby": "sorting",
+                    "appearance": {
+                        "collapseAll": "1",
+                        "levelLinksPosition": "top",
+                        "showSynchronizationLink": "1",
+                        "showPossibleLocalizationRecords": "1",
+                        "showAllLocalizationLink": "1",
+                        "useSortable": "1",
+                        "enabledControls": {
+                            "dragdrop": "1"
+                        }
+                    },
+                    "minitems": "",
+                    "maxitems": ""
+                },
+                "exclude": "1",
+                "key": "cooperation_stages_list"
             }
         }
     },
@@ -343,6 +387,11 @@
             "tx_mask_advantage_list_icon": {
                 "sys_file_reference": {
                     "tx_mask_advantage_list_icon": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_cooperation_stages_image": {
+                "sys_file_reference": {
+                    "tx_mask_cooperation_stages_image": "int(11) unsigned DEFAULT '0' NOT NULL"
                 }
             }
         }
@@ -659,6 +708,84 @@
                 "inlineParent": "tx_mask_advantage_list",
                 "label": "Advantage List Icon",
                 "key": "advantage_list_icon"
+            }
+        }
+    },
+    "tx_mask_cooperation_stages_list": {
+        "sql": {
+            "tx_mask_cooperation_stages_text": {
+                "tx_mask_cooperation_stages_list": {
+                    "tx_mask_cooperation_stages_text": "text"
+                }
+            },
+            "tx_mask_cooperation_stages_number": {
+                "tx_mask_cooperation_stages_list": {
+                    "tx_mask_cooperation_stages_number": "tinytext"
+                }
+            },
+            "tx_mask_cooperation_stages_image": {
+                "tx_mask_cooperation_stages_list": {
+                    "tx_mask_cooperation_stages_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_cooperation_stages_class": {
+                "tx_mask_cooperation_stages_list": {
+                    "tx_mask_cooperation_stages_class": "tinytext"
+                }
+            }
+        },
+        "tca": {
+            "tx_mask_cooperation_stages_text": {
+                "config": {
+                    "type": "text",
+                    "eval": "",
+                    "cols": "",
+                    "rows": "",
+                    "default": ""
+                },
+                "exclude": "1",
+                "defaultExtras": "richtext[]:rte_transform[mode=ts]",
+                "inlineParent": "tx_mask_cooperation_stages_list",
+                "label": "Item Text",
+                "rte": "1",
+                "key": "cooperation_stages_text"
+            },
+            "tx_mask_cooperation_stages_number": {
+                "config": {
+                    "type": "input",
+                    "eval": "",
+                    "size": "",
+                    "max": "",
+                    "default": ""
+                },
+                "exclude": "1",
+                "inlineParent": "tx_mask_cooperation_stages_list",
+                "label": "Item Number",
+                "key": "cooperation_stages_number"
+            },
+            "tx_mask_cooperation_stages_image": {
+                "exclude": "1",
+                "options": "file",
+                "config": {
+                    "minitems": "",
+                    "maxitems": ""
+                },
+                "inlineParent": "tx_mask_cooperation_stages_list",
+                "label": "Image",
+                "key": "cooperation_stages_image"
+            },
+            "tx_mask_cooperation_stages_class": {
+                "config": {
+                    "type": "input",
+                    "eval": "",
+                    "size": "",
+                    "max": "",
+                    "default": ""
+                },
+                "exclude": "1",
+                "inlineParent": "tx_mask_cooperation_stages_list",
+                "label": "Additional class",
+                "key": "cooperation_stages_class"
             }
         }
     }

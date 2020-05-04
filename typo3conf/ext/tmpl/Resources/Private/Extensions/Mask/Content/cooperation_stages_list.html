@@ -1,0 +1,23 @@
+<f:if condition="{data.tx_mask_cooperation_stages_list}">
+    <div class="cooperation-stages-list">
+        <f:for each="{data.tx_mask_cooperation_stages_list}" as="data_item">
+            <div class="cooperation-stages-item">
+                <div class="cooperation-stages-item-icon">
+                    <div class="cooperation-stages-item-number">{data_item.tx_mask_cooperation_stages_number}</div>
+                    <f:if condition="{data_item.tx_mask_cooperation_stages_image}">
+                        <div class="cooperation-stages-item-img">
+                            <f:for each="{data_item.tx_mask_cooperation_stages_image}" as="file">
+                                <f:image src="{file.uid}" alt="{file.alternative}" treatIdAsReference="1" />
+                            </f:for>
+                        </div>
+                    </f:if>
+                </div>
+                <div class="cooperation-stages-item-text">
+                    <f:format.html>{data_item.tx_mask_cooperation_stages_text}</f:format.html>
+                </div>
+            </div>
+            <div class="cooperation-stages-item-arrow {data_item.tx_mask_cooperation_stages_class}"></div>
+        </f:for>
+    </div>
+</f:if>
+
