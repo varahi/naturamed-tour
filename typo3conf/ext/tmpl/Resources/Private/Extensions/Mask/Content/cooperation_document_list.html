@@ -1,0 +1,32 @@
+<f:if condition="{data.tx_mask_cooperation_document_list}">
+    <div class="cooperation-document-list">
+        <f:for each="{data.tx_mask_cooperation_document_list}" as="data_item">
+            <div class="cooperation-document-item">
+                <f:if condition="{data_item.tx_mask_cooperation_document_image}">
+                    <div class="cooperation-document-item-img">
+                        <f:for each="{data_item.tx_mask_cooperation_document_image}" as="file">
+                            <f:image src="{file.uid}" alt="{data_item.tx_mask_cooperation_document_text}" treatIdAsReference="1" /><br />
+                        </f:for>
+                    </div>
+                </f:if>
+                <f:if condition="{data_item.tx_mask_cooperation_document_text}">
+                    <div class="cooperation-document-item-text">
+                        <div class="cooperation-document-item-text">
+                            <f:if condition="{data_item.tx_mask_cooperation_document_text}">
+                                <f:then>
+                                    <f:link.page pageUid="{data_item.tx_mask_cooperation_document_link}" target="_blank" additionalAttributes="{download: '1'}">
+                                        {data_item.tx_mask_cooperation_document_text}
+                                    </f:link.page>
+                                </f:then>
+                                <f:else>
+                                    {data_item.tx_mask_cooperation_document_text}
+                                </f:else>
+                            </f:if>
+                        </div>
+                    </div>
+                </f:if>
+            </div>
+        </f:for>
+    </div>
+</f:if>
+

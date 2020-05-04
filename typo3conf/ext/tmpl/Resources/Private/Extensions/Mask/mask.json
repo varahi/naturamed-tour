@@ -112,6 +112,18 @@
                 "options": {
                     "1": "rte"
                 }
+            },
+            "cooperation_document_list": {
+                "label": "Cooperation Document List",
+                "key": "cooperation_document_list",
+                "shortLabel": "",
+                "description": "Cooperation Document List",
+                "columns": [
+                    "tx_mask_cooperation_document_list"
+                ],
+                "labels": [
+                    "Cooperation Document List"
+                ]
             }
         },
         "sql": {
@@ -153,6 +165,11 @@
             "tx_mask_cooperation_stages_list": {
                 "tt_content": {
                     "tx_mask_cooperation_stages_list": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_cooperation_document_list": {
+                "tt_content": {
+                    "tx_mask_cooperation_document_list": "int(11) unsigned DEFAULT '0' NOT NULL"
                 }
             }
         },
@@ -322,6 +339,30 @@
                 },
                 "exclude": "1",
                 "key": "cooperation_stages_list"
+            },
+            "tx_mask_cooperation_document_list": {
+                "config": {
+                    "type": "inline",
+                    "foreign_table": "--inlinetable--",
+                    "foreign_field": "parentid",
+                    "foreign_table_field": "parenttable",
+                    "foreign_sortby": "sorting",
+                    "appearance": {
+                        "collapseAll": "1",
+                        "levelLinksPosition": "top",
+                        "showSynchronizationLink": "1",
+                        "showPossibleLocalizationRecords": "1",
+                        "showAllLocalizationLink": "1",
+                        "useSortable": "1",
+                        "enabledControls": {
+                            "dragdrop": "1"
+                        }
+                    },
+                    "minitems": "",
+                    "maxitems": ""
+                },
+                "exclude": "1",
+                "key": "cooperation_document_list"
             }
         }
     },
@@ -392,6 +433,11 @@
             "tx_mask_cooperation_stages_image": {
                 "sys_file_reference": {
                     "tx_mask_cooperation_stages_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_cooperation_document_image": {
+                "sys_file_reference": {
+                    "tx_mask_cooperation_document_image": "int(11) unsigned DEFAULT '0' NOT NULL"
                 }
             }
         }
@@ -786,6 +832,80 @@
                 "inlineParent": "tx_mask_cooperation_stages_list",
                 "label": "Additional class",
                 "key": "cooperation_stages_class"
+            }
+        }
+    },
+    "tx_mask_cooperation_document_list": {
+        "sql": {
+            "tx_mask_cooperation_document_text": {
+                "tx_mask_cooperation_document_list": {
+                    "tx_mask_cooperation_document_text": "tinytext"
+                }
+            },
+            "tx_mask_cooperation_document_image": {
+                "tx_mask_cooperation_document_list": {
+                    "tx_mask_cooperation_document_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_cooperation_document_link": {
+                "tx_mask_cooperation_document_list": {
+                    "tx_mask_cooperation_document_link": "tinytext"
+                }
+            }
+        },
+        "tca": {
+            "tx_mask_cooperation_document_text": {
+                "config": {
+                    "type": "input",
+                    "eval": "",
+                    "size": "",
+                    "max": "",
+                    "default": ""
+                },
+                "exclude": "1",
+                "inlineParent": "tx_mask_cooperation_document_list",
+                "label": "Title",
+                "key": "cooperation_document_text"
+            },
+            "tx_mask_cooperation_document_image": {
+                "exclude": "1",
+                "options": "file",
+                "config": {
+                    "minitems": "",
+                    "maxitems": ""
+                },
+                "inlineParent": "tx_mask_cooperation_document_list",
+                "label": "Image",
+                "key": "cooperation_document_image"
+            },
+            "tx_mask_cooperation_document_link": {
+                "config": {
+                    "type": "input",
+                    "wizards": {
+                        "_PADDING": "2",
+                        "link": {
+                            "type": "popup",
+                            "title": "Link",
+                            "icon": "link_popup.gif",
+                            "module": {
+                                "name": "wizard_element_browser",
+                                "urlParameters": {
+                                    "mode": "wizard"
+                                }
+                            },
+                            "JSopenParams": "height=300,width=500,status=0,menubar=0,scrollbars=1",
+                            "params": {
+                                "blindLinkOptions": ""
+                            }
+                        }
+                    },
+                    "eval": "required",
+                    "default": ""
+                },
+                "exclude": "1",
+                "inlineParent": "tx_mask_cooperation_document_list",
+                "label": "Link",
+                "key": "cooperation_document_link"
             }
         }
     }
