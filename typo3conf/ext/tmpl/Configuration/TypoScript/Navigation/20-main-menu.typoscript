@@ -24,8 +24,8 @@ lib.mainMenu {
             # adds class="cur" to menu link tag
             ATagParams = class="active"
         }
-        ACT = 1
-        ACT < .CUR
+        #ACT = 1
+        #ACT < .CUR
     }
 }
 
