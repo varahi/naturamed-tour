@@ -1,0 +1,94 @@
+<form method="post" class="row" action="/fileadmin/php/register.php" id="register-form">
+    <div class="col-12 col-md-6">
+        <div class="myinput pb-2">
+            <input required="required" data-parsley-required-message="Это поле должно быть заполнено!" data-parsley-trigger="change" placeholder="Полное юридическое наименование организации" class="form-control" id="txtagencylegalname" type="text" name="txtagencylegalname" value="">
+        </div>
+        <div class="myinput pb-2">
+            <select class="form-control" name="ddlcountry" value=""><option selected value="460">Россия</option><option value="375">Белоруссия</option><option value="5">Украина</option></select>
+        </div>
+        <div class="myinput pb-2">
+            <input required="required" data-parsley-required-message="Это поле должно быть заполнено!" data-parsley-trigger="change" placeholder="ИНН:" class="form-control" id="tbinn" type="text" name="tbinn" value="">
+        </div>
+        <div class="myinput pb-2">
+            <input required="required" data-parsley-required-message="Это поле должно быть заполнено!" data-parsley-trigger="change" placeholder="ОГРН/ОГРНИП:" class="form-control" id="txtogrn" type="text" name="txtogrn" value="">
+        </div>
+        <div class="myinput pb-2">
+            <input placeholder="КПП(обязательно всем, кроме ИП):" class="form-control" id="tbkpp" type="text" name="tbkpp" value="">
+        </div>
+        <div class="myinput pb-2">
+            <input required="required" data-parsley-required-message="Это поле должно быть заполнено!" data-parsley-trigger="change" placeholder="Юридический адрес:" class="form-control" id="legaladdresstextbox" type="text" name="legaladdresstextbox" value="">
+        </div>
+        <div class="myinput pb-2">
+            <input required="required" data-parsley-required-message="Это поле должно быть заполнено!" data-parsley-trigger="change" placeholder="Фактический адрес:" class="form-control" id="addresstextbox" type="text" name="addresstextbox" value="">
+        </div>
+        <div class="myinput pb-2">
+            <input required="required" data-parsley-required-message="Это поле должно быть заполнено!" data-parsley-trigger="change" placeholder="Расчетный счет:" class="form-control" id="tbbankaccount" type="text" name="tbbankaccount" value="">
+        </div>
+        <div class="myinput pb-2">
+            <input required="required" data-parsley-required-message="Это поле должно быть заполнено!" data-parsley-trigger="change" placeholder="Банк:" class="form-control" id="tbbank" type="text" name="tbbank" value="">
+        </div>
+        <div class="myinput pb-2">
+            <input required="required" data-parsley-required-message="Это поле должно быть заполнено!" data-parsley-trigger="change" placeholder="Электронный адрес:" class="form-control" id="txtemail" type="text" name="txtemail" value="">
+        </div>
+        <div class="myinput pb-2">
+            <input required="required" data-parsley-required-message="Это поле должно быть заполнено!" data-parsley-trigger="change" placeholder="Должность подписанта:" class="form-control" id="man_pos" type="text" name="man_pos" value="">
+        </div>
+        <div class="myinput pb-2">
+            <input placeholder="Действует на основании:" class="form-control" id="txtsignreason" type="text" name="txtsignreason" value="">
+        </div>
+        <div class="myinput pb-2">
+            <input required="required" data-parsley-required-message="Это поле должно быть заполнено!" data-parsley-trigger="change" placeholder="Предпочтительный логин:" class="form-control" id="tblogin" type="text" name="tblogin" value="">
+
+            <div><span id="loginfree" style="display: none"><span id="lbfree" style="color: green">логин свободен</span></span> <span id="loginoccupied" style="display: none"><span id="lboccupied" style="color: red">логин занят</span></span> <span id="vtxtlogin" style="color: red; display: none">введите логин</span> </div>
+        </div>
+        <div class="myinput pb-2">
+            <input class="btn btn-success powermail_field powermail_submit" type="submit" value="Зарегистрировать" name="btnok">
+        </div>
+
+    </div>
+    <div class="col-12 col-md-6">
+        <div class="myinput pb-2">
+            <input required="required" data-parsley-required-message="Это поле должно быть заполнено!" data-parsley-trigger="change" placeholder="Торговая марка/товарный знак/краткое название:" class="form-control" id="txtagencyname" type="text" name="txtagencyname" value="">
+        </div>
+        <div class="myinput pb-2">
+            <input required="required" data-parsley-required-message="Это поле должно быть заполнено!" data-parsley-trigger="change" placeholder="Город:" class="form-control" id="tbcity" type="text" name="tbcity" value="">
+        </div>
+        <div class="myinput pb-2">
+            <input required="required" data-parsley-required-message="Это поле должно быть заполнено!" data-parsley-trigger="change" placeholder="ОКПО:" class="form-control" id="tbokpo" type="text" name="tbokpo" value="">
+        </div>
+        <div class="myinput pb-2">
+            <input required="required" data-parsley-required-message="Это поле должно быть заполнено!" data-parsley-trigger="change" placeholder="ОКВЭД:" class="form-control" id="txtokvd" type="text" name="txtokvd" value="">
+        </div>
+        <div class="myinput pb-2">
+            <input required="required" data-parsley-required-message="Это поле должно быть заполнено!" data-parsley-trigger="change" placeholder="Индекс юридического адреса:" class="form-control" id="ziptextbox" type="text" name="ziptextbox" value="">
+        </div>
+        <div class="myinput pb-2">
+            <input required="required" data-parsley-required-message="Это поле должно быть заполнено!" data-parsley-trigger="change" placeholder="Индекс фактического адреса:" class="form-control" id="zip" type="text" name="zip" value="">
+        </div>
+        <div class="myinput pb-2">
+            <input required="required" data-parsley-required-message="Это поле должно быть заполнено!" data-parsley-trigger="change" placeholder="БИК:" class="form-control" id="tbbik" type="text" name="tbbik" value="">
+        </div>
+        <div class="myinput pb-2">
+            <input required="required" data-parsley-required-message="Это поле должно быть заполнено!" data-parsley-trigger="change" placeholder="Корр/счет:" class="form-control" id="tbcoraccount" type="text" name="tbcoraccount" value="">
+        </div>
+        <div class="myinput pb-2">
+            <input required="required" data-parsley-required-message="Это поле должно быть заполнено!" data-parsley-trigger="change" placeholder="Телефоны (факс) вместе с кодом города:" class="form-control" id="txtphones" type="text" name="txtphones" value="">
+        </div>
+        <div class="myinput pb-2">
+            <input placeholder="Адрес сайта:" class="form-control" id="txtsite" type="text" name="txtsite" value="">
+        </div>
+        <div class="myinput pb-2">
+            <input required="required" data-parsley-required-message="Это поле должно быть заполнено!" data-parsley-trigger="change" placeholder="Подписант:" class="form-control" id="gendir" type="text" name="gendir" value="">
+        </div>
+        <div class="myinput pb-2">
+            <input required="required" data-parsley-required-message="Это поле должно быть заполнено!" data-parsley-trigger="change" placeholder="Контактное лицо:" class="form-control" id="contact" type="text" name="contact" value="">
+        </div>
+        <div class="myinput pb-2">
+            <input required="required" data-parsley-required-message="Это поле должно быть заполнено!" data-parsley-trigger="change" placeholder="Предпочтительный пароль:" class="form-control" id="txtpassword" type="text" name="txtpassword" value="">
+        </div>
+
+
+
+        <input type="hidden" name="post" value="1"/>
+    </div>
+</form>

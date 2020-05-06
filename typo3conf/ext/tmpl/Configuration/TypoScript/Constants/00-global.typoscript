@@ -22,8 +22,8 @@ config {
         rootPid = 1
         header {
             menuDirectory = 93
-            mainMenuList = 1,13,48
-            //mainMenuDirectory = 2
+            //mainMenuList = 1,13,48
+            mainMenuDirectory = 2
         }
         footer {
             menuAboutTitle = О Нас

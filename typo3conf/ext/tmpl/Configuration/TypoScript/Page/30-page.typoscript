@@ -1,0 +1,25 @@
+page = PAGE
+page {
+
+    typeNum = 0
+
+    # adding some helpful classes to <body>
+    bodyTagCObject = COA
+    bodyTagCObject {
+
+        wrap = <body|>
+
+        # adding an ID
+        10 = TEXT
+        10 {
+            data = TSFE:id
+            noTrimWrap = | id="page-|"|
+        }
+
+        # ...and some helpful classes
+        20 =< lib.bodytag-classes
+        20.stdWrap.noTrimWrap = | class="|"|
+
+    }
+
+}

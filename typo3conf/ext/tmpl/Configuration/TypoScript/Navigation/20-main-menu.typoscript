@@ -1,7 +1,11 @@
 lib.mainMenu = HMENU
 lib.mainMenu {
-    special = list
-    special.value = {$config.navigation.header.mainMenuList}
+    #special = list
+    #special.value = {$config.navigation.header.mainMenuList}
+
+    special = directory
+    special.value = {$config.navigation.header.mainMenuDirectory}
+
     wrap = <div class="header-menu-main">|</div>
     #entryLevel = 0
     1 = TMENU
