@@ -1,0 +1,29 @@
+# Page TSConfig:
+tx_gridelements.overruleRecords = 1
+tx_gridelements.setup {
+    # ID of Element
+    Slider_Columns {
+        title = LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:gridelement.slider_columns_title
+        description = LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:gridelement.slider_columns_description
+        icon = EXT:tmpl/Resources/Public/Icons/icon.gif
+        topLevelLayout = 1
+        config {
+            colCount = 2
+            rowCount = 1
+            rows {
+                1 {
+                    columns {
+                        1 {
+                            name = Left Column
+                            colPos = 0
+                        }
+                        2 {
+                            name = Right Column
+                            colPos = 1
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -119,6 +119,13 @@
 				<source>Class "advantage"</source>
 			</trans-unit>
 
+			<trans-unit id="gridelement.slider_columns_title">
+				<source>Slider columns</source>
+			</trans-unit>
+			<trans-unit id="gridelement.slider_columns_description">
+				<source>Columns for slider, filter and slider</source>
+			</trans-unit>
+
 		</body>
 	</file>
 </xliff>

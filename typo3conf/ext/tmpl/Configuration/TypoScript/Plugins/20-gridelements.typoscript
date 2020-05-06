@@ -46,4 +46,25 @@ tt_content.gridelements_pi1.20.10.setup {
         }
     }
 
+    # Slider Columns
+    Slider_Columns < lib.gridelements.defaultGridSetup
+    Slider_Columns {
+        wrap = <div class="slider-column">|</div>
+        innerWrap = |
+        columns {
+            # colPos ID
+            0 < .default
+            0 {
+                wrap = <div class="slider-filter">|</div>
+                innerWrap =  <div class="slider-filter-wrapper">|</div>
+            }
+            1 < .default
+            1 {
+                wrap = <div class="slider-content">|</div>
+                innerWrap = <div class="slider-content-background">|</div>
+            }
+        } # end columns
+    } # end grid 4
+
+
 }
