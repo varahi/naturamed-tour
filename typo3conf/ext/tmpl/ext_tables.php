@@ -29,6 +29,7 @@ $GLOBALS['TCA']['pages']['columns'] += array(
                 array('LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:page.select.class_cooperation', 'cooperation'),
                 array('LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:page.select.class_advantage', 'advantage'),
                 array('LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:page.select.class_about', 'about'),
+                array('LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:page.select.class_rest_in_russia', 'sanatorii-rossii'),
                 //array('Some class name', 'some_class_value'),
             ),
             'size' => 1,

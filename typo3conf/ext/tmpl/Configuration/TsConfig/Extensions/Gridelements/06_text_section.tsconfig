@@ -1,0 +1,26 @@
+# Page TSConfig:
+tx_gridelements.overruleRecords = 1
+tx_gridelements.setup {
+    # ID of Element
+    Text_Section {
+        title = LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:gridelement.text_section_container_title
+        description = LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:gridelement.text_section_container_description
+        flexformDS = FILE:EXT:tmpl/Configuration/FlexForms/03_grid_text_section.xml
+        icon = EXT:tmpl/Resources/Public/Icons/icon.gif
+        topLevelLayout = 1
+        config {
+            colCount = 1
+            rowCount = 1
+            rows {
+                1 {
+                    columns {
+                        1 {
+                            name = Content
+                            colPos = 0
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

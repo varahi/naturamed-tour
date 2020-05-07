@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2020-04-29T19:24:19Z">
+	<file source-language="en" datatype="plaintext" original="messages" date="2020-05-07T17:35:05Z">
 		<header>
 			<generator>LFEditor</generator>
 		</header>
 		<body>
-			<trans-unit id="flexforms_general.section_class">
-				<source>Section class</source>
-			</trans-unit>
-			<trans-unit id="flexforms_general.section_class_title">
-				<source>Additional class for section</source>
-			</trans-unit>
-			<trans-unit id="flexforms_general.cooperation_class">
-				<source>Cooperation class</source>
-			</trans-unit>
-			<trans-unit id="page.hide_breadcrumb">
-				<source>Hide Breadcrumb</source>
-			</trans-unit>
+		<trans-unit id="flexforms_general.cooperation_class">
+			<source>Cooperation class</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.section_class">
+			<source>Section class</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.section_class_title">
+			<source>Additional class for section</source>
+		</trans-unit>
 		<trans-unit id="flux.advantages_area">
 			<source>Advantages Area</source>
 		</trans-unit>
@@ -62,6 +59,46 @@
 		<trans-unit id="flux.standard.description">
 			<source>Description can be entered in LLL file locallang.xlf of extension test</source>
 		</trans-unit>
+
+			<trans-unit id="gridelement.filter_background_title">
+				<source>Filter Background</source>
+			</trans-unit>
+			<trans-unit id="gridelement.filter_background_description">
+				<source>Filter Background Container</source>
+			</trans-unit>
+
+		<trans-unit id="gridelement.banner_container_description">
+			<source>Container for Slider Banners</source>
+		</trans-unit>
+		<trans-unit id="gridelement.banner_container_title">
+			<source>Banner Container</source>
+		</trans-unit>
+		<trans-unit id="gridelement.cooperation_container_description">
+			<source>Container for page cooperation with select classes</source>
+		</trans-unit>
+		<trans-unit id="gridelement.cooperation_container_title">
+			<source>Container for page cooperation</source>
+		</trans-unit>
+		<trans-unit id="gridelement.section_container_description">
+			<source>Section with additional and select classes</source>
+		</trans-unit>
+		<trans-unit id="gridelement.section_container_title">
+			<source>Section with some classes</source>
+		</trans-unit>
+
+			<trans-unit id="gridelement.text_section_container_description">
+				<source>Text container with select classes</source>
+			</trans-unit>
+			<trans-unit id="gridelement.text_section_container_title">
+				<source>Text container</source>
+			</trans-unit>
+
+		<trans-unit id="gridelement.slider_columns_description">
+			<source>Columns for slider, filter and slider</source>
+		</trans-unit>
+		<trans-unit id="gridelement.slider_columns_title">
+			<source>Slider columns</source>
+		</trans-unit>
 		<trans-unit id="mask.about_company">
 			<source>About Company</source>
 		</trans-unit>
@@ -77,55 +114,33 @@
 		<trans-unit id="news.see_all_news">
 			<source>See all news</source>
 		</trans-unit>
-			<trans-unit id="gridelement.banner_container_title">
-				<source>Banner Container</source>
-			</trans-unit>
-			<trans-unit id="gridelement.banner_container_description">
-				<source>Container for Slider Banners</source>
-			</trans-unit>
-			<trans-unit id="gridelement.section_container_title">
-				<source>Section with some classes</source>
-			</trans-unit>
-			<trans-unit id="gridelement.section_container_description">
-				<source>Section with additional and select classes</source>
-			</trans-unit>
-			<trans-unit id="gridelement.cooperation_container_title">
-				<source>Container for page cooperation</source>
-			</trans-unit>
-			<trans-unit id="gridelement.cooperation_container_description">
-				<source>Container for page cooperation with select classes</source>
-			</trans-unit>
-
-			<trans-unit id="tt_content.h1_with_line">
-				<source>H1 with line</source>
-			</trans-unit>
-			<trans-unit id="tt_content.h2_with_line">
-				<source>H2 with line</source>
-			</trans-unit>
-
-			<trans-unit id="page.section_class">
-				<source>Class for page section</source>
-			</trans-unit>
-			<trans-unit id="page.select.no_class">
-				<source>No class</source>
-			</trans-unit>
-			<trans-unit id="page.select.class_cooperation">
-				<source>Class "cooperation"</source>
-			</trans-unit>
-			<trans-unit id="page.select.class_about">
-				<source>Class "about"</source>
-			</trans-unit>
-			<trans-unit id="page.select.class_advantage">
-				<source>Class "advantage"</source>
-			</trans-unit>
-
-			<trans-unit id="gridelement.slider_columns_title">
-				<source>Slider columns</source>
-			</trans-unit>
-			<trans-unit id="gridelement.slider_columns_description">
-				<source>Columns for slider, filter and slider</source>
-			</trans-unit>
-
+		<trans-unit id="page.hide_breadcrumb">
+			<source>Hide Breadcrumb</source>
+		</trans-unit>
+		<trans-unit id="page.section_class">
+			<source>Class for page section</source>
+		</trans-unit>
+		<trans-unit id="page.select.class_about">
+			<source>Class &quot;about&quot;</source>
+		</trans-unit>
+		<trans-unit id="page.select.class_advantage">
+			<source>Class &quot;advantage&quot;</source>
+		</trans-unit>
+		<trans-unit id="page.select.class_cooperation">
+			<source>Class &quot;cooperation&quot;</source>
+		</trans-unit>
+		<trans-unit id="page.select.class_rest_in_russia">
+			<source>Class &quot;sanatorii-rossii&quot;</source>
+		</trans-unit>
+		<trans-unit id="page.select.no_class">
+			<source>No class</source>
+		</trans-unit>
+		<trans-unit id="tt_content.h1_with_line">
+			<source>H1 with line</source>
+		</trans-unit>
+		<trans-unit id="tt_content.h2_with_line">
+			<source>H2 with line</source>
+		</trans-unit>
 		</body>
 	</file>
 </xliff>

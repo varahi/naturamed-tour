@@ -1,0 +1,25 @@
+# Page TSConfig:
+tx_gridelements.overruleRecords = 1
+tx_gridelements.setup {
+    # ID of Element
+    Filter_Background {
+        title = LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:gridelement.filter_background_title
+        description = LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:gridelement.filter_background_description
+        icon = EXT:tmpl/Resources/Public/Icons/icon.gif
+        topLevelLayout = 1
+        config {
+            colCount = 1
+            rowCount = 1
+            rows {
+                1 {
+                    columns {
+                        1 {
+                            name = Content Area
+                            colPos = 0
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

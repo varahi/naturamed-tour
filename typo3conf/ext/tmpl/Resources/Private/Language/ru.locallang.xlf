@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" target-language="ru" datatype="plaintext" original="messages" date="2020-04-29T19:24:19Z">
+	<file source-language="en" target-language="ru" datatype="plaintext" original="messages" date="2020-05-07T17:35:05Z">
 		<header>
 			<generator>LFEditor</generator>
 		</header>
@@ -24,6 +24,22 @@
 		<trans-unit id="news.see_all_news" approved="yes">
 			<source>See all news</source>
 			<target>Смотреть все новости</target>
+		</trans-unit>
+		<trans-unit id="page.select.class_about" approved="yes">
+			<source>Class &quot;about&quot;</source>
+			<target>Класс &quot;about&quot;</target>
+		</trans-unit>
+		<trans-unit id="page.select.class_advantage" approved="yes">
+			<source>Class &quot;advantage&quot;</source>
+			<target>Класс &quot;advantage&quot;</target>
+		</trans-unit>
+		<trans-unit id="page.select.class_cooperation" approved="yes">
+			<source>Class &quot;cooperation&quot;</source>
+			<target>Класс &quot;cooperation&quot;</target>
+		</trans-unit>
+		<trans-unit id="page.select.class_rest_in_russia" approved="yes">
+			<source>Class &quot;sanatorii-rossii&quot;</source>
+			<target>Класс &quot;sanatorii-rossii&quot;</target>
 		</trans-unit>
 		</body>
 	</file>

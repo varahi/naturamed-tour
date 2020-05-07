@@ -24,7 +24,7 @@ tt_content.gridelements_pi1.20.10.setup {
                 innerWrap =  |
             }
         } # end columns
-    } # end grid 1
+    } # end grid
 
     # Gridelement section with some class
     Section < lib.gridelements.defaultGridSetup
@@ -64,7 +64,32 @@ tt_content.gridelements_pi1.20.10.setup {
                 innerWrap = <div class="slider-content-background">|</div>
             }
         } # end columns
-    } # end grid 4
+    } # end grid
+
+    # Filter Background
+    Filter_Background < lib.gridelements.defaultGridSetup
+    Filter_Background {
+        wrap = <div class="sanatorii-rossii-filter-background">|</div>
+        innerWrap = |
+        columns {
+            # colPos ID
+            0 < .default
+            0 {
+                wrap = <div class="sanatorii-rossii-filter">|</div>
+                innerWrap = |
+            }
+        } # end columns
+    } # end grid
+
+    # Gridelement section with some class
+    Text_Section < lib.gridelements.defaultGridSetup
+    Text_Section {
+        cObject = FLUIDTEMPLATE
+        cObject {
+            partialRootPath = EXT:tmpl/Resources/Private/Extensions/Gridelements/Partials/
+            file = EXT:tmpl/Resources/Private/Extensions/Gridelements/Templates/TextSection.html
+        }
+    }
 
 
 }

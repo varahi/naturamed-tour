@@ -1,0 +1,46 @@
+<f:if condition="{data.tx_mask_rest_profile_list}">
+    <div class="sanatorii-rossii-profile">
+        <div class="sanatorii-rossii-profile-list">
+            <f:for each="{data.tx_mask_rest_profile_list}" as="data_item">
+                <div class="sanatorii-rossii-profile-item">
+                    <f:if condition="{data_item.tx_mask_rest_profile_link}">
+                        <f:then>
+                            <f:link.page pageUid="{data_item.tx_mask_rest_profile_link}">
+                                <div class="sanatorii-rossii-profile-img">
+                                    <div class="sanatorii-rossii-profile-not-hover">
+                                        <f:for each="{data_item.tx_mask_rest_profile_image1}" as="file">
+                                            <f:image src="{file.uid}" alt="{data_item.tx_mask_rest_profile_title}" treatIdAsReference="1" />
+                                        </f:for>
+                                    </div>
+                                    <div class="sanatorii-rossii-profile-hover">
+                                        <f:for each="{data_item.tx_mask_rest_profile_image2}" as="file">
+                                            <f:image src="{file.uid}" alt="{data_item.tx_mask_rest_profile_title}" treatIdAsReference="1" />
+                                        </f:for>
+                                    </div>
+                                </div>
+                                <div class="sanatorii-rossii-profile-title">{data_item.tx_mask_rest_profile_title}</div>
+                            </f:link.page>
+                        </f:then>
+                        <f:else>
+                            <div class="sanatorii-rossii-profile-img">
+                                <div class="sanatorii-rossii-profile-not-hover">
+                                    <f:for each="{data_item.tx_mask_rest_profile_image1}" as="file">
+                                        <f:image src="{file.uid}" alt="{data_item.tx_mask_rest_profile_title}" treatIdAsReference="1" />
+                                    </f:for>
+                                </div>
+                                <div class="sanatorii-rossii-profile-hover">
+                                    <f:for each="{data_item.tx_mask_rest_profile_image2}" as="file">
+                                        <f:image src="{file.uid}" alt="{data_item.tx_mask_rest_profile_title}" treatIdAsReference="1" />
+                                    </f:for>
+                                </div>
+                            </div>
+                            <div class="sanatorii-rossii-profile-title">{data_item.tx_mask_rest_profile_title}</div>
+                        </f:else>
+                    </f:if>
+                </div>
+            </f:for>
+        </div>
+    </div>
+</f:if>
+
+

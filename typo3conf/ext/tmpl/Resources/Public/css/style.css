@@ -733,7 +733,7 @@ article .article-h2-line {
 }
 article .article-h2-text {
     font-family: 'PT Sans Bold';
-    font-size: 36px;
+    font-size: 33px;
     line-height: 41px;
     color: #3c3c3c;
     text-transform: uppercase;
@@ -749,6 +749,178 @@ article .article-h2-text {
     }
 }
 /* article h2 */
+/* article h3 */
+article .article-h3 {
+    text-align: center;
+    height: 41px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 41px;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    max-width: 1226px;
+    padding-left: 11px;
+    padding-right: 11px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+@media screen and (max-width: 860px) {
+    article .article-h3 {
+        height: 21px;
+        grid-template-rows: 21px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+}
+article .article-h3-line {
+    width: 100%;
+    height: 1px;
+    background: #3c3c3c;
+    grid-area: 1 / 1 / 1 / 1;
+}
+article .article-h3-text {
+    font-family: 'PT Sans Bold';
+    font-size: 30px;
+    line-height: 41px;
+    color: #3c3c3c;
+    text-transform: uppercase;
+    background: #fff;
+    grid-area: 1 / 1 / 1 / 1;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+@media screen and (max-width: 860px) {
+    article .article-h3-text {
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
+/* article h3 */
+/* article h4 */
+article .article-h4 {
+    text-align: center;
+    height: 41px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 41px;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    max-width: 1226px;
+    padding-left: 11px;
+    padding-right: 11px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+@media screen and (max-width: 860px) {
+    article .article-h4 {
+        height: 21px;
+        grid-template-rows: 21px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+}
+article .article-h4-line {
+    width: 100%;
+    height: 1px;
+    background: #3c3c3c;
+    grid-area: 1 / 1 / 1 / 1;
+}
+article .article-h4-text {
+    font-family: 'PT Sans Bold';
+    font-size: 24px;
+    line-height: 41px;
+    color: #3c3c3c;
+    text-transform: uppercase;
+    background: #fff;
+    grid-area: 1 / 1 / 1 / 1;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+@media screen and (max-width: 860px) {
+    article .article-h4-text {
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
+/* article h4 */
+/* article h5 h6 */
+article h5, article h6 {
+    font-family: 'PT Sans Bold';
+    font-size: 24px;
+    color: #3c3c3c;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+@media screen and (max-width: 860px) {
+    article h5, article h6 {
+        font-size: 14px;
+    }
+}
+/* article h5 h6 */
+/* article typography */
+article p {
+    font-family: 'PT Sans Regular';
+    font-size: 18px;
+    color: #3c3c3c;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+@media screen and (max-width: 760px) {
+    article p {
+        font-size: 14px;
+    }
+}
+article ul {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+article ul li {
+    font-family: 'PT Sans Regular';
+    font-size: 18px;
+    color: #3c3c3c;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    list-style: disc;
+}
+@media screen and (max-width: 760px) {
+    article ul li {
+        font-size: 14px;
+    }
+}
+article ol {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+article ol li {
+    font-family: 'PT Sans Regular';
+    font-size: 18px;
+    color: #3c3c3c;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    list-style: decimal;
+}
+@media screen and (max-width: 760px) {
+    article ol li {
+        font-size: 14px;
+    }
+}
+article strong, article b {
+    font-family: 'PT Sans Bold';
+}
+article strong i, article b i {
+    font-family: 'PT Sans Bold Italic';
+}
+/* article typography */
 /* slider */
 section.slider {
     height: auto;
@@ -1113,6 +1285,14 @@ section.slider-banner .slider-banner-slide {
 }
 section.slider-banner .slider-banner-img {
     height: 377px;
+}
+section.slider-banner .slider-banner-img:after {
+    display: block;
+    content: "";
+    height: 377px;
+    background: url("..../images/sanatorii-rossii-background.png") repeat;
+    position: relative;
+    margin-top: -377px;
 }
 @media screen and (max-width: 570px) {
     section.slider-banner .slider-banner-img {
@@ -3034,6 +3214,12 @@ section.cooperation .cooperation-registration-form-background ul {
         padding-right: 22px;
     }
 }
+section.cooperation .cooperation-registration-form-background ul li {
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    list-style: none;
+}
 section.cooperation .cooperation-registration-form-background ul li input {
     font-family: 'PT Sans Regular';
     color: #fff;
@@ -3132,6 +3318,544 @@ section.cooperation .cooperation-registration-form-background button:hover {
     background: #333;
 }
 /* cooperation */
+/* sanatorii-rossii */
+section.sanatorii-rossii .sanatorii-rossii-filter-background {
+    height: 442px;
+    background: url("../images/sanatorii-rossii-filter.jpg") center no-repeat;
+    background-size: cover;
+    padding-left: 11px;
+    padding-right: 11px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+@media screen and (max-width: 760px) {
+    section.sanatorii-rossii .sanatorii-rossii-filter-background {
+        height: 406px;
+    }
+}
+section.sanatorii-rossii .sanatorii-rossii-filter {
+    width: 100%;
+    height: 327px;
+    max-width: 745px;
+    background: #597eb4;
+    border-radius: 10px;
+}
+@media screen and (max-width: 760px) {
+    section.sanatorii-rossii .sanatorii-rossii-filter {
+        height: 300px;
+    }
+}
+section.sanatorii-rossii .sanatorii-rossii-tabs-button {
+    width: 100%;
+    max-width: 1226px;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 11px;
+    padding-right: 11px;
+    font-size: 0px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+section.sanatorii-rossii .sanatorii-rossii-tabs-button li {
+    display: inline-block;
+    padding: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-family: 'PT Sans Regular';
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    background: #b0b3b6;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 3px;
+}
+section.sanatorii-rossii .sanatorii-rossii-tabs-button li.active {
+    background: #587eb4;
+}
+/* sanatorii-rossii-slider-banner */
+section.sanatorii-rossii .sanatorii-rossii-slider-banner {
+    padding: 6px;
+    margin: 0 auto;
+    max-width: 1911px;
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0, 1fr));
+    grid-template-rows: 377px;
+    grid-column-gap: 6px;
+    grid-row-gap: 12px;
+    justify-content: center;
+}
+@media screen and (max-width: 1080px) {
+    section.sanatorii-rossii .sanatorii-rossii-slider-banner-wrapper {
+        grid-template-columns: minmax(0, 629px);
+    }
+}
+@media screen and (max-width: 570px) {
+    section.sanatorii-rossii .sanatorii-rossii-slider-banner-wrapper {
+        grid-template-columns: minmax(0, 297px);
+        grid-template-rows: repeat(3,178px);
+    }
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-wrapper button.slick-prev.slick-arrow {
+    width: 31px;
+    height: 31px;
+    background: url("../images/left-arrow-slide.png") center no-repeat, rgba(255,255,255,0.7);
+    font-size: 0px;
+    border-radius: 0px 10px 10px 0px;
+    margin-top: 173px;
+    position: absolute;
+    z-index: 1000;
+    cursor: pointer;
+}
+@media screen and (max-width: 570px) {
+    section.sanatorii-rossii .sanatorii-rossii-slider-banner-wrapper button.slick-prev.slick-arrow {
+        margin-top: 73.5px;
+    }
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-wrapper button.slick-next.slick-arrow {
+    width: 31px;
+    height: 31px;
+    background: url("../images/right-arrow-slide.png") center no-repeat, rgba(255,255,255,0.7);
+    font-size: 0px;
+    border-radius: 10px 0px 0px 10px;
+    z-index: 1000;
+    cursor: pointer;
+    position: absolute;
+    margin-top: -204px;
+    right: 0px;
+}
+@media screen and (max-width: 570px) {
+    section.sanatorii-rossii .sanatorii-rossii-slider-banner-wrapper button.slick-next.slick-arrow {
+        margin-top: -104.5px;
+    }
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-list {
+    height: 377px;
+}
+@media screen and (max-width: 570px) {
+    section.sanatorii-rossii .sanatorii-rossii-slider-banner-list {
+        height: 178px;
+    }
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-slide {
+    height: 377px;
+}
+@media screen and (max-width: 570px) {
+    section.sanatorii-rossii .sanatorii-rossii-slider-banner-slide {
+        height: 178px;
+    }
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-img {
+    height: 377px;
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-img:after {
+    display: block;
+    content: "";
+    height: 377px;
+    background: url("../images/sanatorii-rossii-background.png") repeat;
+    position: relative;
+    margin-top: -377px;
+}
+@media screen and (max-width: 570px) {
+    section.sanatorii-rossii .sanatorii-rossii-slider-banner-img {
+        height: 178px;
+    }
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-img img {
+    height: 377px;
+}
+@media screen and (max-width: 570px) {
+    section.sanatorii-rossii .sanatorii-rossii-slider-banner-img img {
+        height: 178px;
+    }
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-text {
+    margin-top: -377px;
+    position: relative;
+    height: 377px;
+    display: grid;
+    grid-template-columns: 340px;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 570px) {
+    section.sanatorii-rossii .sanatorii-rossii-slider-banner-text {
+        height: 178px;
+        margin-top: -178px;
+        grid-template-columns: 297px;
+    }
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-text-wrapper {
+    text-align: center;
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-title-1 {
+    font-family: 'PT Sans Regular';
+    font-size: 29px;
+    line-height: 37px;
+    color: #fff;
+}
+@media screen and (max-width: 570px) {
+    section.sanatorii-rossii .sanatorii-rossii-slider-banner-title-1 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-title-2 {
+    font-family: 'PT Sans Bold';
+    font-size: 42px;
+    line-height: 50px;
+    color: #fff;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 570px) {
+    section.sanatorii-rossii .sanatorii-rossii-slider-banner-title-2 {
+        font-size: 27px;
+        line-height: 31px;
+    }
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-title-3 {
+    font-family: 'PT Sans Bold';
+    font-size: 27px;
+    color: #fff;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+@media screen and (max-width: 570px) {
+    section.sanatorii-rossii .sanatorii-rossii-slider-banner-title-3 {
+        font-size: 18px;
+        line-height: 22px;
+        padding-top: 0px;
+        padding-bottom: 5px;
+    }
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-title-3 span {
+    font-family: 'PT Sans Regular';
+    font-size: 18px;
+}
+@media screen and (max-width: 570px) {
+    section.sanatorii-rossii .sanatorii-rossii-slider-banner-title-3 span {
+        font-size: 12px;
+    }
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-button a {
+    display: inline-block;
+    font-family: 'PT Sans Bold';
+    font-size: 14px;
+    line-height: 48px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #e89928;
+    border-radius: 5px;
+    width: 182px;
+    box-shadow: #666 0px 0px 5px;
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-button a:hover {
+    color: #fff;
+    background: #333;
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-list ul.slick-dots {
+    margin-top: -29px;
+    position: absolute;
+    font-size: 0px;
+    padding-right: 16px;
+    text-align: right;
+    width: 100%;
+}
+@media screen and (max-width: 570px) {
+    section.sanatorii-rossii .sanatorii-rossii-slider-banner-list ul.slick-dots {
+        display: none !important;
+    }
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-list ul.slick-dots li {
+    display: inline-block;
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-list ul.slick-dots li button {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: #fff;
+    border: 1px #fff solid;
+    border-radius: 100%;
+    cursor: pointer;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-list ul.slick-dots li.slick-active button {
+    background: #587eb4;
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-1-img {
+    height: 377px;
+    overflow: hidden;
+    position: relative;
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-1-img:after {
+    display: block;
+    content: "";
+    height: 377px;
+    background: url("../images/sanatorii-rossii-background.png") repeat;
+    position: relative;
+}
+@media screen and (max-width: 570px) {
+    section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-1-img {
+        width: 297px;
+        height: 178px;
+    }
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-1-img img {
+    width: 629px;
+    height: 377px;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: block;
+    max-width: none;
+}
+@media screen and (max-width: 570px) {
+    section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-1-img img {
+        height: 178px;
+    }
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-1-text {
+    height: 377px;
+    margin-top: -377px;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    text-align: center;
+}
+@media screen and (max-width: 570px) {
+    section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-1-text {
+        height: 178px;
+        margin-top: -178px;
+    }
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-1-title-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-1-title {
+    font-family: 'PT Sans Bold';
+    font-size: 42px;
+    line-height: 50px;
+    color: #fff;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 570px) {
+    section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-1-title {
+        font-size: 21px;
+        line-height: 28px;
+    }
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-1-title span {
+    font-family: 'PT Sans Regular';
+    font-size: 29px;
+    display: block;
+    text-transform: none;
+}
+@media screen and (max-width: 570px) {
+    section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-1-title span {
+        font-size: 21px;
+        line-height: 28px;
+    }
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-1-button {
+    padding-top: 30px;
+}
+@media screen and (max-width: 570px) {
+    section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-1-button {
+        padding-top: 10px;
+    }
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-1-button a {
+    display: inline-block;
+    font-family: 'PT Sans Bold';
+    font-size: 14px;
+    line-height: 48px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #e89928;
+    border-radius: 5px;
+    width: 182px;
+    box-shadow: #666 0px 0px 5px;
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-1-button a:hover {
+    color: #fff;
+    background: #333;
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-img {
+    height: 377px;
+    overflow: hidden;
+    position: relative;
+}
+@media screen and (max-width: 570px) {
+    section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-img {
+        height: 178px;
+    }
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-img img {
+    width: 629px;
+    height: 377px;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: block;
+    max-width: none;
+}
+@media screen and (max-width: 570px) {
+    section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-img img {
+        height: 178px;
+    }
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-text {
+    height: 377px;
+    margin-top: -377px;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+@media screen and (max-width: 570px) {
+    section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-text {
+        height: 178px;
+        margin-top: -178px;
+    }
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-title-wrapper {
+    width: 248px;
+    background: #fff;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+@media screen and (max-width: 570px) {
+    section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-title-wrapper {
+        width: 227px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-title {
+    padding-bottom: 20px;
+}
+@media screen and (max-width: 570px) {
+    section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-title {
+        padding-bottom: 10px;
+    }
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-title img {
+    display: inline-block;
+}
+@media screen and (max-width: 570px) {
+    section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-title img {
+        width: 115px;
+    }
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-button a {
+    display: inline-block;
+    font-family: 'PT Sans Bold';
+    font-size: 14px;
+    line-height: 48px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #e89928;
+    border-radius: 5px;
+    width: 197px;
+    box-shadow: #666 0px 0px 5px;
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-button a:hover {
+    color: #fff;
+    background: #333;
+}
+/* sanatorii-rossii-slider-banner */
+/* sanatorii-rossii-profile */
+section.sanatorii-rossii .sanatorii-rossii-profile {
+    width: 100%;
+    max-width: 1226px;
+    padding-left: 11px;
+    padding-right: 11px;
+    margin: 0 auto;
+}
+section.sanatorii-rossii .sanatorii-rossii-profile-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 35px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    align-items: center;
+}
+@media screen and (max-width: 860px) {
+    section.sanatorii-rossii .sanatorii-rossii-profile-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 570px) {
+    section.sanatorii-rossii .sanatorii-rossii-profile-list {
+        grid-template-columns: 1fr;
+        grid-row-gap: 11px;
+        padding-top: 11px;
+        padding-bottom: 11px;
+    }
+}
+section.sanatorii-rossii .sanatorii-rossii-profile-item a {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-column-gap: 10px;
+    align-items: center;
+    font-family: 'PT Sans Bold';
+    font-size: 16px;
+    color: #587eb4;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 570px) {
+    section.sanatorii-rossii .sanatorii-rossii-profile-item a {
+        font-size: 12px;
+    }
+}
+section.sanatorii-rossii .sanatorii-rossii-profile-item a:hover {
+    color: #e79928;
+    text-decoration: none;
+}
+section.sanatorii-rossii .sanatorii-rossii-profile-img {
+    justify-self: center;
+}
+section.sanatorii-rossii .sanatorii-rossii-profile-hover {
+    display: none;
+}
+section.sanatorii-rossii a:hover .sanatorii-rossii-profile-hover {
+    display: block;
+}
+section.sanatorii-rossii a:hover .sanatorii-rossii-profile-not-hover {
+    display: none;
+}
+/* sanatorii-rossii-profile */
+section.sanatorii-rossii .sanatorii-rossii-text {
+    width: 100%;
+    max-width: 1226px;
+    padding-left: 11px;
+    padding-right: 11px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+    padding-top: 60px;
+    text-align: center;
+}
+section.sanatorii-rossii .sanatorii-rossii-text ul li {
+    margin-left: 55px;
+    text-align: left;
+}
+/* sanatorii-rossii */
 /* main */
 /* footer */
 footer {

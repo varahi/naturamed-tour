@@ -124,6 +124,18 @@
                 "labels": [
                     "Cooperation Document List"
                 ]
+            },
+            "rest_profile_list": {
+                "label": "Sanatoriums of Russia",
+                "key": "rest_profile_list",
+                "shortLabel": "",
+                "description": "Sanatoriums of Russia list",
+                "columns": [
+                    "tx_mask_rest_profile_list"
+                ],
+                "labels": [
+                    "Rest Profile List"
+                ]
             }
         },
         "sql": {
@@ -170,6 +182,11 @@
             "tx_mask_cooperation_document_list": {
                 "tt_content": {
                     "tx_mask_cooperation_document_list": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_rest_profile_list": {
+                "tt_content": {
+                    "tx_mask_rest_profile_list": "int(11) unsigned DEFAULT '0' NOT NULL"
                 }
             }
         },
@@ -363,6 +380,30 @@
                 },
                 "exclude": "1",
                 "key": "cooperation_document_list"
+            },
+            "tx_mask_rest_profile_list": {
+                "config": {
+                    "type": "inline",
+                    "foreign_table": "--inlinetable--",
+                    "foreign_field": "parentid",
+                    "foreign_table_field": "parenttable",
+                    "foreign_sortby": "sorting",
+                    "appearance": {
+                        "collapseAll": "1",
+                        "levelLinksPosition": "top",
+                        "showSynchronizationLink": "1",
+                        "showPossibleLocalizationRecords": "1",
+                        "showAllLocalizationLink": "1",
+                        "useSortable": "1",
+                        "enabledControls": {
+                            "dragdrop": "1"
+                        }
+                    },
+                    "minitems": "",
+                    "maxitems": ""
+                },
+                "exclude": "1",
+                "key": "rest_profile_list"
             }
         }
     },
@@ -438,6 +479,16 @@
             "tx_mask_cooperation_document_image": {
                 "sys_file_reference": {
                     "tx_mask_cooperation_document_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_rest_profile_image1": {
+                "sys_file_reference": {
+                    "tx_mask_rest_profile_image1": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_rest_profile_image2": {
+                "sys_file_reference": {
+                    "tx_mask_rest_profile_image2": "int(11) unsigned DEFAULT '0' NOT NULL"
                 }
             }
         }
@@ -906,6 +957,96 @@
                 "inlineParent": "tx_mask_cooperation_document_list",
                 "label": "Link",
                 "key": "cooperation_document_link"
+            }
+        }
+    },
+    "tx_mask_rest_profile_list": {
+        "sql": {
+            "tx_mask_rest_profile_title": {
+                "tx_mask_rest_profile_list": {
+                    "tx_mask_rest_profile_title": "tinytext"
+                }
+            },
+            "tx_mask_rest_profile_link": {
+                "tx_mask_rest_profile_list": {
+                    "tx_mask_rest_profile_link": "tinytext"
+                }
+            },
+            "tx_mask_rest_profile_image1": {
+                "tx_mask_rest_profile_list": {
+                    "tx_mask_rest_profile_image1": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_rest_profile_image2": {
+                "tx_mask_rest_profile_list": {
+                    "tx_mask_rest_profile_image2": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            }
+        },
+        "tca": {
+            "tx_mask_rest_profile_title": {
+                "config": {
+                    "type": "input",
+                    "eval": "",
+                    "size": "",
+                    "max": "",
+                    "default": ""
+                },
+                "exclude": "1",
+                "inlineParent": "tx_mask_rest_profile_list",
+                "label": "Title",
+                "key": "rest_profile_title"
+            },
+            "tx_mask_rest_profile_link": {
+                "config": {
+                    "type": "input",
+                    "wizards": {
+                        "_PADDING": "2",
+                        "link": {
+                            "type": "popup",
+                            "title": "Link",
+                            "icon": "link_popup.gif",
+                            "module": {
+                                "name": "wizard_element_browser",
+                                "urlParameters": {
+                                    "mode": "wizard"
+                                }
+                            },
+                            "JSopenParams": "height=300,width=500,status=0,menubar=0,scrollbars=1",
+                            "params": {
+                                "blindLinkOptions": ""
+                            }
+                        }
+                    },
+                    "eval": "trim",
+                    "default": ""
+                },
+                "exclude": "1",
+                "inlineParent": "tx_mask_rest_profile_list",
+                "label": "Link",
+                "key": "rest_profile_link"
+            },
+            "tx_mask_rest_profile_image1": {
+                "exclude": "1",
+                "options": "file",
+                "config": {
+                    "minitems": "",
+                    "maxitems": ""
+                },
+                "inlineParent": "tx_mask_rest_profile_list",
+                "label": "Image ",
+                "key": "rest_profile_image1"
+            },
+            "tx_mask_rest_profile_image2": {
+                "exclude": "1",
+                "options": "file",
+                "config": {
+                    "minitems": "",
+                    "maxitems": ""
+                },
+                "inlineParent": "tx_mask_rest_profile_list",
+                "label": "Image Hover",
+                "key": "rest_profile_image2"
             }
         }
     }
