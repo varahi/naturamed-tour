@@ -14,7 +14,7 @@ $(function () {
         variableWidth: true,
         centerMode: true,
     });
-    $('.slider-banner-list').slick({
+    $('.slider-banner-list, .sanatorii-rossii-slider-banner-list').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
@@ -81,5 +81,5 @@ $(function () {
             },
         ]
     });
-    $(".popular-destinations-tabs").lightTabs();
+    $(".popular-destinations-tabs, .sanatorii-rossii-tabs").lightTabs();
 });
