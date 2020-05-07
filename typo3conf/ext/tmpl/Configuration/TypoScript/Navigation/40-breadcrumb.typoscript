@@ -22,8 +22,8 @@ lib.breadcrumb {
 
             CUR <.NO
             CUR {
-                wrapItemAndSub = <li>&#124;|</li>
-                doNotLinkIt = 0
+                wrapItemAndSub = <li>&#124;<span>|</span></li>
+                doNotLinkIt = 1
             }
         }
     }
@@ -51,8 +51,8 @@ lib.breadcrumb {
 
                 CUR <.NO
                 CUR {
-                    wrapItemAndSub = <li>&#124;|</li>
-                    doNotLinkIt = 0
+                    wrapItemAndSub = <li>&#124;<span>|</span></li>
+                    doNotLinkIt = 1
                 }
             }
         }
