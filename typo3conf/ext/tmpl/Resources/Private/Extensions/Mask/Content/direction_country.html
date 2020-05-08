@@ -1,0 +1,19 @@
+<f:if condition="{data.tx_mask_direction_country_list}">
+    <div class="popular-direction-country">
+        <ul>
+            <f:for each="{data.tx_mask_direction_country_list}" as="data_item">
+                <li>
+                    <f:link.page pageUid="{data_item.tx_mask_direction_country_link}">
+                        <div class="popular-direction-country-flag">
+                            <f:for each="{data_item.tx_mask_direction_country_flag}" as="file">
+                                <f:image src="{file.uid}" alt="{data_item.tx_mask_direction_country_name}" treatIdAsReference="1" width="23c" height="13c" />
+                            </f:for>
+                        </div>
+                        <div class="popular-direction-country-name">{data_item.tx_mask_direction_country_name}</div>
+                    </f:link.page>
+                </li>
+            </f:for>
+        </ul>
+    </div>
+</f:if>
+

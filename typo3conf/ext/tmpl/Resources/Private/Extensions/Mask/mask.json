@@ -136,6 +136,33 @@
                 "labels": [
                     "Rest Profile List"
                 ]
+            },
+            "direction_item": {
+                "label": "Direction Item List",
+                "key": "direction_item",
+                "shortLabel": "",
+                "description": "Direction Item List for block popular direction",
+                "columns": [
+                    "tx_mask_direction_list"
+                ],
+                "labels": [
+                    "Direction Item List"
+                ],
+                "options": {
+                    "4": "rte"
+                }
+            },
+            "direction_country": {
+                "label": "Direction Country List",
+                "key": "direction_country",
+                "shortLabel": "",
+                "description": "Direction Country List",
+                "columns": [
+                    "tx_mask_direction_country_list"
+                ],
+                "labels": [
+                    "Country List"
+                ]
             }
         },
         "sql": {
@@ -187,6 +214,16 @@
             "tx_mask_rest_profile_list": {
                 "tt_content": {
                     "tx_mask_rest_profile_list": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_direction_list": {
+                "tt_content": {
+                    "tx_mask_direction_list": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_direction_country_list": {
+                "tt_content": {
+                    "tx_mask_direction_country_list": "int(11) unsigned DEFAULT '0' NOT NULL"
                 }
             }
         },
@@ -404,6 +441,54 @@
                 },
                 "exclude": "1",
                 "key": "rest_profile_list"
+            },
+            "tx_mask_direction_list": {
+                "config": {
+                    "type": "inline",
+                    "foreign_table": "--inlinetable--",
+                    "foreign_field": "parentid",
+                    "foreign_table_field": "parenttable",
+                    "foreign_sortby": "sorting",
+                    "appearance": {
+                        "collapseAll": "1",
+                        "levelLinksPosition": "top",
+                        "showSynchronizationLink": "1",
+                        "showPossibleLocalizationRecords": "1",
+                        "showAllLocalizationLink": "1",
+                        "useSortable": "1",
+                        "enabledControls": {
+                            "dragdrop": "1"
+                        }
+                    },
+                    "minitems": "",
+                    "maxitems": ""
+                },
+                "exclude": "1",
+                "key": "direction_list"
+            },
+            "tx_mask_direction_country_list": {
+                "config": {
+                    "type": "inline",
+                    "foreign_table": "--inlinetable--",
+                    "foreign_field": "parentid",
+                    "foreign_table_field": "parenttable",
+                    "foreign_sortby": "sorting",
+                    "appearance": {
+                        "collapseAll": "1",
+                        "levelLinksPosition": "top",
+                        "showSynchronizationLink": "1",
+                        "showPossibleLocalizationRecords": "1",
+                        "showAllLocalizationLink": "1",
+                        "useSortable": "1",
+                        "enabledControls": {
+                            "dragdrop": "1"
+                        }
+                    },
+                    "minitems": "",
+                    "maxitems": ""
+                },
+                "exclude": "1",
+                "key": "direction_country_list"
             }
         }
     },
@@ -489,6 +574,16 @@
             "tx_mask_rest_profile_image2": {
                 "sys_file_reference": {
                     "tx_mask_rest_profile_image2": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_direction_banner": {
+                "sys_file_reference": {
+                    "tx_mask_direction_banner": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_direction_country_flag": {
+                "sys_file_reference": {
+                    "tx_mask_direction_country_flag": "int(11) unsigned DEFAULT '0' NOT NULL"
                 }
             }
         }
@@ -1047,6 +1142,174 @@
                 "inlineParent": "tx_mask_rest_profile_list",
                 "label": "Image Hover",
                 "key": "rest_profile_image2"
+            }
+        }
+    },
+    "tx_mask_direction_list": {
+        "sql": {
+            "tx_mask_direction_title": {
+                "tx_mask_direction_list": {
+                    "tx_mask_direction_title": "tinytext"
+                }
+            },
+            "tx_mask_direction_banner": {
+                "tx_mask_direction_list": {
+                    "tx_mask_direction_banner": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_direction_link": {
+                "tx_mask_direction_list": {
+                    "tx_mask_direction_link": "tinytext"
+                }
+            },
+            "tx_mask_direction_text": {
+                "tx_mask_direction_list": {
+                    "tx_mask_direction_text": "text"
+                }
+            }
+        },
+        "tca": {
+            "tx_mask_direction_title": {
+                "config": {
+                    "type": "input",
+                    "eval": "",
+                    "size": "",
+                    "max": "",
+                    "default": ""
+                },
+                "exclude": "1",
+                "inlineParent": "tx_mask_direction_list",
+                "label": "Title",
+                "key": "direction_title"
+            },
+            "tx_mask_direction_banner": {
+                "exclude": "1",
+                "options": "file",
+                "config": {
+                    "minitems": "",
+                    "maxitems": ""
+                },
+                "inlineParent": "tx_mask_direction_list",
+                "label": "Banner",
+                "key": "direction_banner"
+            },
+            "tx_mask_direction_link": {
+                "config": {
+                    "type": "input",
+                    "wizards": {
+                        "_PADDING": "2",
+                        "link": {
+                            "type": "popup",
+                            "title": "Link",
+                            "icon": "link_popup.gif",
+                            "module": {
+                                "name": "wizard_element_browser",
+                                "urlParameters": {
+                                    "mode": "wizard"
+                                }
+                            },
+                            "JSopenParams": "height=300,width=500,status=0,menubar=0,scrollbars=1",
+                            "params": {
+                                "blindLinkOptions": ""
+                            }
+                        }
+                    },
+                    "eval": "",
+                    "default": ""
+                },
+                "exclude": "1",
+                "inlineParent": "tx_mask_direction_list",
+                "label": "Link",
+                "key": "direction_link"
+            },
+            "tx_mask_direction_text": {
+                "config": {
+                    "type": "text",
+                    "eval": "",
+                    "cols": "",
+                    "rows": "",
+                    "default": ""
+                },
+                "exclude": "1",
+                "defaultExtras": "richtext[]:rte_transform[mode=ts]",
+                "inlineParent": "tx_mask_direction_list",
+                "label": "Item Text",
+                "rte": "1",
+                "key": "direction_text"
+            }
+        }
+    },
+    "tx_mask_direction_country_list": {
+        "sql": {
+            "tx_mask_direction_country_name": {
+                "tx_mask_direction_country_list": {
+                    "tx_mask_direction_country_name": "tinytext"
+                }
+            },
+            "tx_mask_direction_country_link": {
+                "tx_mask_direction_country_list": {
+                    "tx_mask_direction_country_link": "tinytext"
+                }
+            },
+            "tx_mask_direction_country_flag": {
+                "tx_mask_direction_country_list": {
+                    "tx_mask_direction_country_flag": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            }
+        },
+        "tca": {
+            "tx_mask_direction_country_name": {
+                "config": {
+                    "type": "input",
+                    "eval": "",
+                    "size": "",
+                    "max": "",
+                    "default": ""
+                },
+                "exclude": "1",
+                "inlineParent": "tx_mask_direction_country_list",
+                "label": "Title",
+                "key": "direction_country_name"
+            },
+            "tx_mask_direction_country_link": {
+                "config": {
+                    "type": "input",
+                    "wizards": {
+                        "_PADDING": "2",
+                        "link": {
+                            "type": "popup",
+                            "title": "Link",
+                            "icon": "link_popup.gif",
+                            "module": {
+                                "name": "wizard_element_browser",
+                                "urlParameters": {
+                                    "mode": "wizard"
+                                }
+                            },
+                            "JSopenParams": "height=300,width=500,status=0,menubar=0,scrollbars=1",
+                            "params": {
+                                "blindLinkOptions": ""
+                            }
+                        }
+                    },
+                    "eval": "",
+                    "default": ""
+                },
+                "exclude": "1",
+                "inlineParent": "tx_mask_direction_country_list",
+                "label": "Link",
+                "key": "direction_country_link"
+            },
+            "tx_mask_direction_country_flag": {
+                "exclude": "1",
+                "options": "file",
+                "config": {
+                    "minitems": "",
+                    "maxitems": ""
+                },
+                "inlineParent": "tx_mask_direction_country_list",
+                "label": "Flag image",
+                "key": "direction_country_flag"
             }
         }
     }

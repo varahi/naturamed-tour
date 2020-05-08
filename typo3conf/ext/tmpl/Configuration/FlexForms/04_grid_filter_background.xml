@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <ROOT type="array">
+        <type>array</type>
+        <el type="array">
+            <outside_class type="array">
+                <TCEforms type="array">
+                    <label>LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:flexforms_general.outside_class</label>
+                    <config type="array">
+                        <type>select</type>
+                        <items type="array">
+                            <numIndex index="0" type="array">
+                                <numIndex index="0">Class "sanatorii-rossii-filter-background"</numIndex>
+                                <numIndex index="1">sanatorii-rossii-filter-background</numIndex>
+                            </numIndex>
+                            <numIndex index="1" type="array">
+                                <numIndex index="0">Class "filter-background"</numIndex>
+                                <numIndex index="1">filter-background</numIndex>
+                            </numIndex>
+                        </items>
+                    </config>
+                </TCEforms>
+            </outside_class>
+
+            <inside_class type="array">
+                <TCEforms type="array">
+                    <label>LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:flexforms_general.inside_class</label>
+                    <config type="array">
+                        <type>select</type>
+                        <items type="array">
+                            <numIndex index="0" type="array">
+                                <numIndex index="0">Class "sanatorii-rossii-filter"</numIndex>
+                                <numIndex index="1">sanatorii-rossii-filter</numIndex>
+                            </numIndex>
+                            <numIndex index="1" type="array">
+                                <numIndex index="0">Class "filter-wrapper"</numIndex>
+                                <numIndex index="1">filter-wrapper</numIndex>
+                            </numIndex>
+                        </items>
+                    </config>
+                </TCEforms>
+            </inside_class>
+        </el>
+    </ROOT>
+</T3DataStructure>

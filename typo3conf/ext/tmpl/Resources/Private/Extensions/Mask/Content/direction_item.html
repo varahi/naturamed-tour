@@ -1,0 +1,68 @@
+<f:if condition="{data.tx_mask_direction_list}">
+    <div class="popular-direction-wrapper">
+        <div class="popular-direction-list">
+            <f:for each="{data.tx_mask_direction_list}" as="data_item">
+
+                <div class="popular-direction-item">
+                    <div class="popular-direction-banner">
+                        <f:if condition="{data_item.tx_mask_direction_link}">
+                            <f:then>
+                                <f:link.page pageUid="{data_item.tx_mask_direction_link}">
+                                    <f:if condition="{data_item.tx_mask_direction_banner}">
+                                        <div class="popular-direction-img">
+                                            <f:for each="{data_item.tx_mask_direction_banner}" as="file">
+                                                <f:image src="{file.uid}" alt="{data_item.tx_mask_direction_title}" treatIdAsReference="1" width="398c" height="162c" />
+                                            </f:for>
+                                        </div>
+                                    </f:if>
+                                    <f:if condition="{data_item.tx_mask_direction_title}">
+                                        <div class="popular-direction-link"><span>{data_item.tx_mask_direction_title}</span></div>
+                                    </f:if>
+                                </f:link.page>
+                            </f:then>
+                            <f:else>
+                                <f:if condition="{data_item.tx_mask_direction_banner}">
+                                    <div class="popular-direction-img">
+                                        <f:for each="{data_item.tx_mask_direction_banner}" as="file">
+                                            <f:image src="{file.uid}" alt="{data_item.tx_mask_direction_title}" treatIdAsReference="1" width="398c" height="162c" />
+                                        </f:for>
+                                    </div>
+                                </f:if>
+                                <f:if condition="{data_item.tx_mask_direction_title}">
+                                    <div class="popular-direction-link"><span>{data_item.tx_mask_direction_title}</span></div>
+                                </f:if>
+                            </f:else>
+                        </f:if>
+                    </div>
+                    <f:if condition="{data_item.tx_mask_direction_text}">
+                        <div class="popular-direction-text">
+                            <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data_item.tx_mask_direction_text}</f:format.html>
+                        </div>
+                    </f:if>
+                </div>
+
+
+            </f:for>
+        </div>
+    </div>
+</f:if>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

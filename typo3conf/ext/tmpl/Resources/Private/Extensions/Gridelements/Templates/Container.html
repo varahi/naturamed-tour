@@ -1,0 +1,14 @@
+<f:if condition="{data.hasContainer} == 1">
+    <f:then>
+        <div class="{data.flexform_outside_class}">
+            <div class="{data.flexform_inside_class}">
+                {data.tx_gridelements_view_columns.0->f:format.raw()}
+            </div>
+        </div>
+    </f:then>
+    <f:else>
+        <div class="{data.flexform_outside_class}">
+            {data.tx_gridelements_view_columns.0->f:format.raw()}
+        </div>
+    </f:else>
+</f:if>
