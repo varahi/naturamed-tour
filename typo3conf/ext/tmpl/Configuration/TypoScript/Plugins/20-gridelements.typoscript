@@ -96,5 +96,15 @@ tt_content.gridelements_pi1.20.10.setup {
         }
     }
 
+    # Gridelement section with some class
+    Tabs_Container < lib.gridelements.defaultGridSetup
+    Tabs_Container {
+        cObject = FLUIDTEMPLATE
+        cObject {
+            partialRootPath = EXT:tmpl/Resources/Private/Extensions/Gridelements/Partials/
+            file = EXT:tmpl/Resources/Private/Extensions/Gridelements/Templates/TabContainer.html
+        }
+    }
+
 
 }

@@ -1,0 +1,25 @@
+<f:if condition="{data.tx_mask_banner2_image1}">
+    <div class="sanatorii-rossii-slider-banner-banner-2-img">
+        <f:for each="{data.tx_mask_banner2_image1}" as="file">
+            <f:image src="{file.uid}" alt="{file.alternative}" treatIdAsReference="1" width="629c" height="377c" />
+        </f:for>
+    </div>
+</f:if>
+
+<f:if condition="{data.tx_mask_banner2_image2}">
+    <div class="sanatorii-rossii-slider-banner-banner-2-text">
+        <div class="sanatorii-rossii-slider-banner-banner-2-title-wrapper">
+            <div class="sanatorii-rossii-slider-banner-banner-2-title">
+                <f:for each="{data.tx_mask_banner2_image2}" as="file">
+                    <f:image src="{file.uid}" alt="{file.alternative}" treatIdAsReference="1" width="195c" height="110c" />
+                </f:for>
+            </div>
+            <f:if condition="{data.tx_mask_banner2_link}">
+                <div class="sanatorii-rossii-slider-banner-banner-2-button">
+                    <f:link.page pageUid="{data.tx_mask_banner2_link}">{f:translate(key: 'mask.book_now', extensionName: 'tmpl')}</f:link.page>
+                </div>
+            </f:if>
+        </div>
+    </div>
+</f:if>
+

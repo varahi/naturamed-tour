@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2020-05-08T17:37:37Z">
+	<file source-language="en" datatype="plaintext" original="messages" date="2020-05-09T18:57:44Z">
 		<header>
 			<generator>LFEditor</generator>
 		</header>
@@ -23,14 +23,6 @@
 		<trans-unit id="flexforms_general.section_class_title">
 			<source>Additional class for section</source>
 		</trans-unit>
-
-			<trans-unit id="gridelement.element_container_title">
-				<source>Element container</source>
-			</trans-unit>
-			<trans-unit id="gridelement.element_container_description">
-				<source>Element container with defined classes</source>
-			</trans-unit>
-
 		<trans-unit id="flux.advantages_area">
 			<source>Advantages Area</source>
 		</trans-unit>
@@ -88,6 +80,12 @@
 		<trans-unit id="gridelement.cooperation_container_title">
 			<source>Container for page cooperation</source>
 		</trans-unit>
+		<trans-unit id="gridelement.element_container_description">
+			<source>Element container with defined classes</source>
+		</trans-unit>
+		<trans-unit id="gridelement.element_container_title">
+			<source>Element container</source>
+		</trans-unit>
 		<trans-unit id="gridelement.filter_background_description">
 			<source>Filter Background Container</source>
 		</trans-unit>
@@ -106,6 +104,12 @@
 		<trans-unit id="gridelement.slider_columns_title">
 			<source>Slider columns</source>
 		</trans-unit>
+		<trans-unit id="gridelement.tab_container_description">
+			<source>Tab container element</source>
+		</trans-unit>
+		<trans-unit id="gridelement.tab_container_title">
+			<source>Tab container</source>
+		</trans-unit>
 		<trans-unit id="gridelement.text_section_container_description">
 			<source>Text container with select classes</source>
 		</trans-unit>
@@ -114,6 +118,9 @@
 		</trans-unit>
 		<trans-unit id="mask.about_company">
 			<source>About Company</source>
+		</trans-unit>
+		<trans-unit id="mask.book_now">
+			<source>Book now</source>
 		</trans-unit>
 		<trans-unit id="mask.button_book_now">
 			<source>Book now</source>

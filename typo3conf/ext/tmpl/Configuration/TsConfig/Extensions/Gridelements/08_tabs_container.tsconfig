@@ -1,0 +1,43 @@
+# Page TSConfig:
+tx_gridelements.overruleRecords = 1
+tx_gridelements.setup {
+    # ID of Element
+    Tabs_Container {
+        title = LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:gridelement.tab_container_title
+        description = LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:gridelement.tab_container_description
+        #flexformDS = FILE:EXT:tmpl/Configuration/FlexForms/05_grid_container.xml
+        icon = EXT:tmpl/Resources/Public/Icons/icon.gif
+        topLevelLayout = 1
+        config {
+            colCount = 3
+            rowCount = 2
+            rows {
+                1 {
+                    columns {
+                        1 {
+                            name = Tab links
+                            colspan = 100
+                            colPos = 0
+                        }
+                    }
+                }
+                2 {
+                    columns {
+                        1 {
+                            name = Banner 1
+                            colPos = 1
+                        }
+                        2 {
+                            name = Banner 2
+                            colPos = 2
+                        }
+                        3 {
+                            name = Slider
+                            colPos = 3
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

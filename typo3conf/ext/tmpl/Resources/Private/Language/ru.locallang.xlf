@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" target-language="ru" datatype="plaintext" original="messages" date="2020-05-08T17:37:37Z">
+	<file source-language="en" target-language="ru" datatype="plaintext" original="messages" date="2020-05-09T18:57:44Z">
 		<header>
 			<generator>LFEditor</generator>
 		</header>
@@ -20,6 +20,10 @@
 		<trans-unit id="mask.about_company" approved="yes">
 			<source>About Company</source>
 			<target>О компании Naturamed Tour</target>
+		</trans-unit>
+		<trans-unit id="mask.book_now" approved="yes">
+			<source>Book now</source>
+			<target>Забронировать</target>
 		</trans-unit>
 		<trans-unit id="mask.button_book_now" approved="yes">
 			<source>Book now</source>

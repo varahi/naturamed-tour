@@ -163,6 +163,40 @@
                 "labels": [
                     "Country List"
                 ]
+            },
+            "banner_1": {
+                "label": "Banner 1",
+                "key": "banner_1",
+                "shortLabel": "",
+                "description": "Banner 1 for tab container",
+                "labels": [
+                    "Title",
+                    "Link",
+                    "Image"
+                ],
+                "columns": [
+                    "tx_mask_banner1_title",
+                    "tx_mask_banner1_link",
+                    "tx_mask_banner1_image"
+                ]
+            },
+            "banner_2": {
+                "label": "Banner 2",
+                "key": "banner_2",
+                "shortLabel": "",
+                "description": "Banner 2 for tab container",
+                "labels": [
+                    "Title",
+                    "Link",
+                    "Image 1",
+                    "Image 2"
+                ],
+                "columns": [
+                    "tx_mask_banner2_title",
+                    "tx_mask_banner2_link",
+                    "tx_mask_banner2_image1",
+                    "tx_mask_banner2_image2"
+                ]
             }
         },
         "sql": {
@@ -224,6 +258,41 @@
             "tx_mask_direction_country_list": {
                 "tt_content": {
                     "tx_mask_direction_country_list": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_banner1_title": {
+                "tt_content": {
+                    "tx_mask_banner1_title": "tinytext"
+                }
+            },
+            "tx_mask_banner1_link": {
+                "tt_content": {
+                    "tx_mask_banner1_link": "tinytext"
+                }
+            },
+            "tx_mask_banner1_image": {
+                "tt_content": {
+                    "tx_mask_banner1_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_banner2_title": {
+                "tt_content": {
+                    "tx_mask_banner2_title": "tinytext"
+                }
+            },
+            "tx_mask_banner2_link": {
+                "tt_content": {
+                    "tx_mask_banner2_link": "tinytext"
+                }
+            },
+            "tx_mask_banner2_image1": {
+                "tt_content": {
+                    "tx_mask_banner2_image1": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_banner2_image2": {
+                "tt_content": {
+                    "tx_mask_banner2_image2": "int(11) unsigned DEFAULT '0' NOT NULL"
                 }
             }
         },
@@ -489,6 +558,109 @@
                 },
                 "exclude": "1",
                 "key": "direction_country_list"
+            },
+            "tx_mask_banner1_title": {
+                "config": {
+                    "type": "input",
+                    "eval": "",
+                    "size": "",
+                    "max": "",
+                    "default": ""
+                },
+                "exclude": "1",
+                "key": "banner1_title"
+            },
+            "tx_mask_banner1_link": {
+                "config": {
+                    "type": "input",
+                    "wizards": {
+                        "_PADDING": "2",
+                        "link": {
+                            "type": "popup",
+                            "title": "Link",
+                            "icon": "link_popup.gif",
+                            "module": {
+                                "name": "wizard_element_browser",
+                                "urlParameters": {
+                                    "mode": "wizard"
+                                }
+                            },
+                            "JSopenParams": "height=300,width=500,status=0,menubar=0,scrollbars=1",
+                            "params": {
+                                "blindLinkOptions": ""
+                            }
+                        }
+                    },
+                    "eval": "",
+                    "default": ""
+                },
+                "exclude": "1",
+                "key": "banner1_link"
+            },
+            "tx_mask_banner1_image": {
+                "exclude": "1",
+                "options": "file",
+                "config": {
+                    "minitems": "",
+                    "maxitems": ""
+                },
+                "key": "banner1_image"
+            },
+            "tx_mask_banner2_title": {
+                "config": {
+                    "type": "input",
+                    "eval": "",
+                    "size": "",
+                    "max": "",
+                    "default": ""
+                },
+                "exclude": "1",
+                "key": "banner2_title"
+            },
+            "tx_mask_banner2_link": {
+                "config": {
+                    "type": "input",
+                    "wizards": {
+                        "_PADDING": "2",
+                        "link": {
+                            "type": "popup",
+                            "title": "Link",
+                            "icon": "link_popup.gif",
+                            "module": {
+                                "name": "wizard_element_browser",
+                                "urlParameters": {
+                                    "mode": "wizard"
+                                }
+                            },
+                            "JSopenParams": "height=300,width=500,status=0,menubar=0,scrollbars=1",
+                            "params": {
+                                "blindLinkOptions": ""
+                            }
+                        }
+                    },
+                    "eval": "",
+                    "default": ""
+                },
+                "exclude": "1",
+                "key": "banner2_link"
+            },
+            "tx_mask_banner2_image1": {
+                "exclude": "1",
+                "options": "file",
+                "config": {
+                    "minitems": "",
+                    "maxitems": ""
+                },
+                "key": "banner2_image1"
+            },
+            "tx_mask_banner2_image2": {
+                "exclude": "1",
+                "options": "file",
+                "config": {
+                    "minitems": "",
+                    "maxitems": ""
+                },
+                "key": "banner2_image2"
             }
         }
     },
@@ -584,6 +756,21 @@
             "tx_mask_direction_country_flag": {
                 "sys_file_reference": {
                     "tx_mask_direction_country_flag": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_banner1_image": {
+                "sys_file_reference": {
+                    "tx_mask_banner1_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_banner2_image1": {
+                "sys_file_reference": {
+                    "tx_mask_banner2_image1": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_banner2_image2": {
+                "sys_file_reference": {
+                    "tx_mask_banner2_image2": "int(11) unsigned DEFAULT '0' NOT NULL"
                 }
             }
         }
