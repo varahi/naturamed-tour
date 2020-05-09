@@ -24,6 +24,7 @@ config {
             menuDirectory = 93
             //mainMenuList = 1,13,48
             mainMenuDirectory = 2
+            mobileMenuList = 1,101,102,11,10,9,95,96,12,14
         }
         footer {
             menuAboutTitle = О Нас

@@ -10,7 +10,7 @@ page {
     }
 
     includeJSLibs {
-        //10_jquery = https://code.jquery.com/jquery-2.2.4.min.js
+        //10_jquery = EXT:tmpl/Resources/Public/js/jquery-3.4.1.min.js
     }
 
     includeJSFooterlibs {
@@ -20,6 +20,7 @@ page {
         40_inputmask = EXT:tmpl/Resources/Public/js/jquery.inputmask.min.js
         50_slick = EXT:tmpl/Resources/Public/js/slick.min.js
         50_tabs = EXT:tmpl/Resources/Public/js/tabs.js
+        //60_custom = EXT:tmpl/Resources/Public/js/custom.js
         100_script = EXT:tmpl/Resources/Public/js/scripts.js
     }
 }

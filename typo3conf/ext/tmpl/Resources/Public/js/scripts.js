@@ -81,5 +81,5 @@ $(function () {
             },
         ]
     });
-    $(".popular-destinations-tabs, .sanatorii-rossii-tabs").lightTabs();
+    $(".popular-destinations-tabs").lightTabs();
 });

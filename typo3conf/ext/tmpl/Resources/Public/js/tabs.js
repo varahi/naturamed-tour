@@ -1,4 +1,4 @@
-(function($){				
+(function($){
 	jQuery.fn.lightTabs = function(options){
 
 		var createTabs = function(){
@@ -15,12 +15,12 @@
 								
 			showPage(0);				
 			
-			$(tabs).children("ul").children("li").each(function(index, element){
+			$(tabs).children("ul.tabs").children("li").each(function(index, element){
 				$(element).attr("data-page", i);
 				i++;                        
 			});
 			
-			$(tabs).children("ul").children("li").click(function(){
+			$(tabs).children("ul.tabs").children("li").click(function(){
 				if ($(this).parents().eq(1).data('container') != undefined) {
 					showPage(parseInt($(this).attr("data-page")), $(this).parents().eq(1).data('container'));
 				}

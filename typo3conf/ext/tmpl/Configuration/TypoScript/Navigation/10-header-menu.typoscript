@@ -29,3 +29,24 @@ lib.headerMenu {
     }
 }
 
+lib.mobileMenu = HMENU
+lib.mobileMenu {
+    special = list
+    special.value = {$config.navigation.header.mobileMenuList}
+    wrap = <div id="mobile-menu" class="mobile-menu-modal">|</div>
+    #entryLevel = 0
+    1 = TMENU
+    1 {
+        # wrap whole menu into <ul> list
+        wrap = <menu><ul>|</ul></menu>
+        # normal menu items
+        NO {
+            # for security concerne not to parse html from the field
+            stdWrap.htmlSpecialChars = 1
+            # wrap each menu item into <li>
+            wrapItemAndSub = <li>|</li>
+            ATagTitle.field = title
+        }
+    }
+}
+

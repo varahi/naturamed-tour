@@ -41,6 +41,7 @@
     font-display: swap;
 }
 @font-face {
+    /*
     font-family: 'PT Sans Bold Italic';
     src: url('fonts/PTSans-BoldItalic.eot');
     src: url('fonts/PTSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
@@ -49,6 +50,8 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+
+     */
 }
 /* fonts */
 /* reset */
