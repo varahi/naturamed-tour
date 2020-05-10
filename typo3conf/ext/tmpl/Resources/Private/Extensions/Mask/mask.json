@@ -1,22 +1,6 @@
 {
     "tt_content": {
         "elements": {
-            "slider_banner": {
-                "label": "Slider Banner",
-                "key": "slider_banner",
-                "shortLabel": "",
-                "description": "Slider Banner for gridelement on main page",
-                "columns": [
-                    "image",
-                    "tx_mask_html_code",
-                    "header_link"
-                ],
-                "labels": [
-                    "Image",
-                    "HTML Code",
-                    "More Link"
-                ]
-            },
             "banner_detox_programs": {
                 "label": "Banner Detox Programs",
                 "key": "banner_detox_programs",
@@ -197,6 +181,26 @@
                     "tx_mask_banner2_image1",
                     "tx_mask_banner2_image2"
                 ]
+            },
+            "slider_banner": {
+                "label": "Slider Banner",
+                "key": "slider_banner",
+                "shortLabel": "",
+                "description": "Slider Banner for gridelement on main page",
+                "columns": [
+                    "image",
+                    "tx_mask_html_code",
+                    "header_link",
+                    "tx_mask_main_page",
+                    "tx_mask_rest_in_russia_page"
+                ],
+                "labels": [
+                    "Image",
+                    "HTML Code",
+                    "More Link",
+                    "Show slider on main page",
+                    "Show slider on Rest in Russia page"
+                ]
             }
         },
         "sql": {
@@ -293,6 +297,16 @@
             "tx_mask_banner2_image2": {
                 "tt_content": {
                     "tx_mask_banner2_image2": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_main_page": {
+                "tt_content": {
+                    "tx_mask_main_page": "int(11) DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_rest_in_russia_page": {
+                "tt_content": {
+                    "tx_mask_rest_in_russia_page": "int(11) DEFAULT '0' NOT NULL"
                 }
             }
         },
@@ -661,6 +675,32 @@
                     "maxitems": ""
                 },
                 "key": "banner2_image2"
+            },
+            "tx_mask_main_page": {
+                "config": {
+                    "type": "check",
+                    "cols": "",
+                    "items": [
+                        [
+                            ""
+                        ]
+                    ]
+                },
+                "exclude": "1",
+                "key": "main_page"
+            },
+            "tx_mask_rest_in_russia_page": {
+                "config": {
+                    "type": "check",
+                    "cols": "",
+                    "items": [
+                        [
+                            ""
+                        ]
+                    ]
+                },
+                "exclude": "1",
+                "key": "rest_in_russia_page"
             }
         }
     },
