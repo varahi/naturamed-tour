@@ -25,7 +25,7 @@ $GLOBALS['TCA']['pages']['columns'] += array(
             'type' => 'select',
             'renderType' => 'selectSingle',
             'items' => array(
-                array('LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:page.select.no_class', ''),
+                array('LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:page.select.standard_class', 'typography'),
                 array('LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:page.select.class_cooperation', 'cooperation'),
                 array('LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:page.select.class_advantage', 'advantage'),
                 array('LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:page.select.class_about', 'about'),

@@ -158,6 +158,9 @@
 		<trans-unit id="page.select.no_class">
 			<source>No class</source>
 		</trans-unit>
+			<trans-unit id="page.select.standard_class">
+				<source>Standard class (typography)</source>
+			</trans-unit>
 		<trans-unit id="tt_content.h1_with_line">
 			<source>H1 with line</source>
 		</trans-unit>

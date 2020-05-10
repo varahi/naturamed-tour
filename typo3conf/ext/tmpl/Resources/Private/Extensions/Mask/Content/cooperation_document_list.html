@@ -14,7 +14,7 @@
                         <div class="cooperation-document-item-text">
                             <f:if condition="{data_item.tx_mask_cooperation_document_text}">
                                 <f:then>
-                                    <f:link.page pageUid="{data_item.tx_mask_cooperation_document_link}" target="_blank" additionalAttributes="{download: '1'}">
+                                    <f:link.page pageUid="{data_item.tx_mask_cooperation_document_link}" target="_blank" additionalAttributes="{download: '{data_item.tx_mask_cooperation_document_text}'}">
                                         {data_item.tx_mask_cooperation_document_text}
                                     </f:link.page>
                                 </f:then>
