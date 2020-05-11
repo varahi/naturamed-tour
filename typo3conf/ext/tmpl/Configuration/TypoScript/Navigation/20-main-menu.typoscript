@@ -1,11 +1,9 @@
 lib.mainMenu = HMENU
 lib.mainMenu {
-    #special = list
-    #special.value = {$config.navigation.header.mainMenuList}
-
-    special = directory
-    special.value = {$config.navigation.header.mainMenuDirectory}
-
+    special = list
+    special.value = {$config.navigation.header.mainMenuList}
+    #special = directory
+    #special.value = {$config.navigation.header.mainMenuDirectory}
     wrap = <div class="header-menu-main">|</div>
     #entryLevel = 0
     1 = TMENU
@@ -37,7 +35,7 @@ lib.mainMenu {
 lib.mobileMainMenu = HMENU
 lib.mobileMainMenu {
     special = list
-    special.value = {$config.navigation.header.mainMenuList}
+    special.value = {$config.navigation.header.mobileMenuList}
     wrap = <div id="mobile-menu" class="mobile-menu-modal">|</div>
     1 = TMENU
     1 {
