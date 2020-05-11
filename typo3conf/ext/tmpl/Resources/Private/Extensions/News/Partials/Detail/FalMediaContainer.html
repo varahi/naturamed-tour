@@ -1,0 +1,42 @@
+<f:if condition="{media}">
+    <!-- fal media files -->
+    <f:switch expression="{settings.templateLayout}">
+        <f:case value="20">
+            <f:comment>Акции</f:comment>
+            <div class="d-block float-none float-md-left col-12 col-md-6 pb-30 pr-md-30">
+                <f:for each="{media}" as="mediaElement">
+                    <div class="outer">
+                        <f:if condition="{mediaElement.originalResource.type} == 2">
+                            <f:render partial="Detail/FalMediaImage" arguments="{mediaElement: mediaElement, settings:settings}"/>
+                        </f:if>
+                        <f:if condition="{mediaElement.originalResource.type} == 4">
+                            <f:render partial="Detail/FalMediaVideo" arguments="{mediaElement: mediaElement, settings:settings}"/>
+                        </f:if>
+                        <f:if condition="{mediaElement.originalResource.type} == 5">
+                            <f:render partial="Detail/FalMediaImage" arguments="{mediaElement: mediaElement, settings:settings}"/>
+                        </f:if>
+                    </div>
+                </f:for>
+            </div>
+        </f:case>
+        <f:case default="TRUE">
+            <div class="news-img-wrap">
+                <f:for each="{media}" as="mediaElement">
+                    <div class="outer">
+                        <f:if condition="{mediaElement.originalResource.type} == 2">
+                            <f:render partial="Detail/FalMediaImage" arguments="{mediaElement: mediaElement, settings:settings}"/>
+                        </f:if>
+                        <f:if condition="{mediaElement.originalResource.type} == 4">
+                            <f:render partial="Detail/FalMediaVideo" arguments="{mediaElement: mediaElement, settings:settings}"/>
+                        </f:if>
+                        <f:if condition="{mediaElement.originalResource.type} == 5">
+                            <f:render partial="Detail/FalMediaImage" arguments="{mediaElement: mediaElement, settings:settings}"/>
+                        </f:if>
+                    </div>
+                </f:for>
+            </div>
+        </f:case>
+    </f:switch>
+</f:if>
+
+

@@ -70,7 +70,7 @@ lib.breadcrumb {
                 field = title
                 htmlSpecialChars = 1
             }
-            wrap =  <li>&#124;|</li>
+            wrap = <li>&#124;<span>|</span></li>
         }
     }
 

@@ -1,0 +1,377 @@
+{namespace n=GeorgRinger\News\ViewHelpers}
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+
+<f:layout name="Detail.html" />
+
+<!--
+	=====================
+		News/Detail.html
+-->
+
+<f:section name="content">
+    <f:switch expression="{settings.templateLayout}">
+        <f:case value="60">
+            <f:if condition="{newsItem}">
+                <f:then>
+
+                    <n:format.nothing>
+                        <f:if condition="{newsItem.alternativeTitle}">
+                            <f:then>
+                                <n:titleTag>
+                                    <n:format.htmlentitiesDecode>{newsItem.alternativeTitle}</n:format.htmlentitiesDecode>
+                                </n:titleTag>
+                            </f:then>
+                            <f:else>
+                                <n:titleTag>
+                                    <n:format.htmlentitiesDecode>{newsItem.title}</n:format.htmlentitiesDecode>
+                                </n:titleTag>
+                            </f:else>
+                        </f:if>
+                        <f:render partial="Detail/Opengraph" arguments="{newsItem: newsItem, settings:settings}" />
+                    </n:format.nothing>
+                    <div class="header">
+                        <h3 itemprop="headline">{newsItem.title}</h3>
+                    </div>
+                    <section id="sanatorii-detail">
+                        <div class="container">
+                            <div class="wrap">
+                                <div class="row mb-20">
+                                    <div class="col-12 col-md-6 mb-20">
+                                        <div class="wrap">
+                                            <div id="sanatorii-slider" class="swiper-slider">
+                                                <f:render partial="Detail/FalMediaContainerSwiperSlider" arguments="{media: newsItem.falMedia, settings:settings}" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-20">
+                                        <div class="wrap">
+                                            <div class="wrap-text">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="profile">
+                                                        <div class="profile-title"> <b>Профиль санатория</b></div>
+                                                        <div class="profiles">
+                                                            <f:for each="{newsItem.categories}" as="category" iteration="catiterator">
+                                                                <f:if condition="{category.parentcategory.uid} == 5">
+                                                                    <f:then>
+                                                                        <div class="profile-elem">{category.title}</div>
+                                                                    </f:then>
+                                                                </f:if>
+                                                            </f:for>
+                                                            <p></p>
+                                                            <div class="text-left color-orange">
+                                                                <f:switch expression="{newsItem.txPbnewsjobsStars}">
+                                                                    <f:case value="1"><i class="im im-star"></i></f:case>
+                                                                    <f:case value="2"><i class="im im-star"></i> <i class="im im-star"></i></f:case>
+                                                                    <f:case value="3"><i class="im im-star"></i> <i class="im im-star"></i> <i class="im im-star"></i></f:case>
+                                                                    <f:case value="4"><i class="im im-star"></i> <i class="im im-star"></i> <i class="im im-star"></i> <i class="im im-star"></i></f:case>
+                                                                    <f:case value="5"><i class="im im-star"></i> <i class="im im-star"></i> <i class="im im-star"></i> <i class="im im-star"></i> <i class="im im-star"></i></f:case>
+                                                                </f:switch>
+                                                            </div>
+                                                            <div class="text-left pt-10">
+                                                                <strong>
+                                                                    {newsItem.txPbnewsjobsCommentsnum}
+                                                                </strong>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price text-center">
+                                                        <p><span>от </span><span class="rub">{newsItem.txPbnewsjobsPrice}</span></p>
+                                                        <p><a href="#" data-toggle="modal" data-target="#modalForm1" class="btn btn-success">Забронировать</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wrap pb-20 mb-20 hr-bottom-10">
+                                <div class="row">
+                                    <div class="col-12">
+
+                                        <ul id="myTab" role="tablist" class="nav nav-tabs mb-30">
+                                            <f:if condition="{newsItem.bodytext}">
+                                                <li class="nav-item first-item">
+                                                    <a id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true" class="nav-link active"><h2>Описание</h2></a>
+                                                </li>
+                                            </f:if>
+                                            <f:if condition="{newsItem.txPbnewsjobsTreatment}">
+                                                <li class="nav-item">
+                                                    <a id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false" class="nav-link"><h2>Программы лечения</h2></a>
+                                                </li>
+                                            </f:if>
+                                            <f:if condition="{newsItem.txPbnewsjobsHabitation}">
+                                                <li class="nav-item">
+                                                    <a id="tab3-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false" class="nav-link"><h2>Проживание</h2></a>
+                                                </li>
+                                            </f:if>
+                                            <f:if condition="{newsItem.txPbnewsjobsFood}">
+                                                <li class="nav-item">
+                                                    <a id="tab4-tab" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false" class="nav-link"><h2>Питание</h2></a>
+                                                </li>
+                                            </f:if>
+                                            <f:if condition="{newsItem.txPbnewsjobsInfra}">
+                                                <li class="nav-item">
+                                                    <a id="tab5-tab" data-toggle="tab" href="#tab5" role="tab" aria-controls="tab5" aria-selected="false" class="nav-link"><h2>Инфраструктура</h2></a>
+                                                </li>
+                                            </f:if>
+                                            <f:if condition="{newsItem.txPbnewsjobsProezd}">
+                                                <li class="nav-item">
+                                                    <a id="tab6-tab" data-toggle="tab" href="#tab6" role="tab" aria-controls="tab6" aria-selected="false" class="nav-link"><h2>Проезд</h2></a>
+                                                </li>
+                                            </f:if>
+                                            <f:if condition="{newsItem.txPbnewsjobsComments}">
+                                                <li class="nav-item">
+                                                    <a id="tab7-tab" data-toggle="tab" href="#tab7" role="tab" aria-controls="tab7" aria-selected="false" class="nav-link"><h2>Цены</h2></a>
+                                                </li>
+                                            </f:if>
+                                            <!--f:if condition="{newsItem.txPbnewsjobsPriceny}">
+                                            <li class="nav-item">
+                                                <a id="tab8-tab" data-toggle="tab" href="#tab8" role="tab" aria-controls="tab8" aria-selected="false" class="nav-link"><h2>Новый год 2020</h2></a>
+                                            </li>
+                                            </f:if-->
+                                        </ul>
+                                        <div id="myTabContent" class="tab-content">
+                                            <div id="tab1" role="tabpanel" aria-labelledby="tab1-tab" class="tab-pane fade show active">
+                                                <f:format.html>{newsItem.bodytext}</f:format.html>
+                                            </div>
+                                            <div id="tab2" role="tabpanel" aria-labelledby="tab2-tab" class="tab-pane fade"><f:format.html>{newsItem.txPbnewsjobsTreatment}</f:format.html></div>
+                                            <div id="tab3" role="tabpanel" aria-labelledby="tab3-tab" class="tab-pane fade"><f:format.html>{newsItem.txPbnewsjobsHabitation}</f:format.html></div>
+                                            <div id="tab4" role="tabpanel" aria-labelledby="tab4-tab" class="tab-pane fade"><f:format.html>{newsItem.txPbnewsjobsFood}</f:format.html></div>
+                                            <div id="tab5" role="tabpanel" aria-labelledby="tab5-tab" class="tab-pane fade"><f:format.html>{newsItem.txPbnewsjobsInfra}</f:format.html></div>
+                                            <div id="tab6" role="tabpanel" aria-labelledby="tab6-tab" class="tab-pane fade"><f:format.html>{newsItem.txPbnewsjobsProezd}</f:format.html></div>
+                                            <div id="tab7" role="tabpanel" aria-labelledby="tab6-tab" class="tab-pane fade"><f:format.html>{newsItem.txPbnewsjobsComments}</f:format.html></div>
+                                            <!--div id="tab8" role="tabpanel" aria-labelledby="tab6-tab" class="tab-pane fade"><f:format.html>{newsItem.txPbnewsjobsPriceny}</f:format.html></div-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--f:render partial="Detail/MediaContainer" arguments="{media: newsItem.media, settings:settings}" /-->
+
+                    <!-- main text -->
+                    <!--div class="news-text-wrap" itemprop="articleBody">
+                        <f:format.html>{newsItem.bodytext}</f:format.html>
+                    </div-->
+
+
+                </f:then>
+                <f:else>
+
+                </f:else>
+            </f:if>
+
+
+
+        </f:case>
+        <f:case default="TRUE">
+            <f:if condition="{newsItem}">
+                <f:then>
+                    <n:format.nothing>
+                        <f:if condition="{newsItem.alternativeTitle}">
+                            <f:then>
+                                <n:titleTag>
+                                    <n:format.htmlentitiesDecode>{newsItem.alternativeTitle}</n:format.htmlentitiesDecode>
+                                </n:titleTag>
+                            </f:then>
+                            <f:else>
+                                <n:titleTag>
+                                    <n:format.htmlentitiesDecode>{newsItem.title}</n:format.htmlentitiesDecode>
+                                </n:titleTag>
+                            </f:else>
+                        </f:if>
+                        <f:render partial="Detail/Opengraph" arguments="{newsItem: newsItem, settings:settings}" />
+                    </n:format.nothing>
+                    <div class="header">
+                        <h3 itemprop="headline">{newsItem.title}</h3>
+                    </div>
+                    <div class="footer">
+                        <p>
+                            <!-- date -->
+                            <span class="news-list-date">
+						<time datetime="{f:format.date(date:newsItem.datetime, format:'Y-m-d')}">
+							<f:format.date format="{f:translate(key:'dateFormat')}">{newsItem.datetime}</f:format.date>
+							<meta itemprop="datePublished" content="{f:format.date(date:newsItem.datetime, format:'Y-m-d')}" />
+						</time>
+					</span>
+
+                            <f:if condition="{newsItem.categories}">
+                                <!--f:render partial="Category/Items" arguments="{categories:newsItem.categories, settings:settings}" /-->
+                            </f:if>
+
+                            <f:if condition="{newsItem.tags}">
+                                <!-- Tags -->
+                                <span class="news-list-tags" itemprop="keywords">
+						<f:for each="{newsItem.tags}" as="tag">
+							{tag.title}
+						</f:for>
+						</span>
+                            </f:if>
+
+                            <f:if condition="{newsItem.author}">
+                                <!-- author -->
+                                <span class="news-list-author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
+							<f:translate key="author_simple" /> <span itemprop="name">{newsItem.author}</span>
+						</span>
+                            </f:if>
+                        </p>
+                    </div>
+
+                    <f:if condition="{newsItem.teaser}">
+                        <!-- teaser -->
+                        <div class="teaser-text" itemprop="description">
+                            <f:format.html>{newsItem.teaser}</f:format.html>
+                        </div>
+                    </f:if>
+
+                    <f:if condition="{newsItem.contentElements}">
+                        <!-- content elements -->
+                        <f:cObject typoscriptObjectPath="lib.tx_news.contentElementRendering">{newsItem.contentElementIdList}</f:cObject>
+                    </f:if>
+
+                    <f:render partial="Detail/FalMediaContainer" arguments="{media: newsItem.falMedia, settings:settings}" />
+                    <f:render partial="Detail/MediaContainer" arguments="{media: newsItem.media, settings:settings}" />
+
+                    <!-- main text -->
+                    <div class="news-text-wrap" itemprop="articleBody">
+                        <f:format.html>{newsItem.bodytext}</f:format.html>
+                    </div>
+
+                    <f:if condition="{settings.backPid}">
+                        <!-- Link Back -->
+                        <div class="news-backlink-wrap">
+                            <f:link.page pageUid="{settings.backPid}">
+                                <f:translate key="back-link" />
+                            </f:link.page>
+                        </div>
+                    </f:if>
+
+                    <f:if condition="{settings.detail.showSocialShareButtons}">
+                        <div class="facebook">
+                            <div class="like">
+                                <n:social.facebook.like />
+                            </div>
+                            <div class="share">
+                                <n:social.facebook.share />
+                            </div>
+                            <div class="twitter">
+                                <n:social.twitter>Twitter</n:social.twitter>
+                            </div>
+                        </div>
+                    </f:if>
+
+                    <f:if condition="{settings.detail.disqusShortname}">
+                        <n:social.disqus newsItem="{newsItem}"
+                                         shortName="{settings.detail.disqusShortname}"
+                                         link="{n:link(newsItem:newsItem, settings:settings, uriOnly:1, configuration:'{forceAbsoluteUrl:1}')}" />
+                    </f:if>
+
+                    <!-- related things -->
+                    <div class="news-related-wrap">
+
+                        <f:if condition="{newsItem.allRelatedSorted}">
+                            <!-- Related news records -->
+                            <div class="news-related news-related-news">
+                                <h4>
+                                    <f:translate key="related-news" />
+                                </h4>
+                                <ul>
+                                    <f:for each="{newsItem.allRelatedSorted}" as="related">
+                                        <li>
+                                            <span class="news-related-news-date"><f:format.date format="{f:translate(key:'dateFormat')}">{related.datetime}</f:format.date></span>
+                                            <n:link newsItem="{related}" settings="{settings}" title="{related.title}">
+                                                {related.title}
+                                            </n:link>
+                                        </li>
+
+                                    </f:for>
+                                </ul>
+                            </div>
+                        </f:if>
+
+                        <f:if condition="{newsItem.relatedFiles}">
+                            <!-- Related files -->
+                            <div class="news-related news-related-files">
+                                <h4>
+                                    <f:translate key="related-files" />
+                                </h4>
+                                <ul>
+                                    <f:for each="{newsItem.relatedFiles}" as="relatedFile">
+                                        <li>
+									<span class="news-related-files-link">
+										<n:format.fileDownload file="uploads/tx_news/{relatedFile.file}" configuration="{settings.relatedFiles.download}">
+											<f:if condition="{relatedFile.title}">
+												<f:then>
+													{relatedFile.title}
+												</f:then>
+												<f:else>
+													{relatedFile.file}
+												</f:else>
+											</f:if>
+										</n:format.fileDownload>
+									</span>
+                                            <span class="news-related-files-size">
+										<n:format.fileSize file="uploads/tx_news/{relatedFile.file}" format="{settings.relatedFiles.fileSizeLabels}" />
+									</span>
+                                        </li>
+                                    </f:for>
+                                </ul>
+                            </div>
+                        </f:if>
+
+                        <f:if condition="{newsItem.falRelatedFiles}">
+                            <!-- FAL related files -->
+                            <div class="news-related news-related-files">
+                                <h4>
+                                    <f:translate key="related-files" />
+                                </h4>
+                                <ul>
+                                    <f:for each="{newsItem.falRelatedFiles}" as="relatedFile">
+                                        <li>
+									<span class="news-related-files-link">
+										<n:format.fileDownload file="{relatedFile.originalResource.publicUrl}" configuration="{settings.relatedFiles.download}">
+											<f:if condition="{relatedFile.originalResource.title}">
+												<f:comment><!-- Todo: Remove format.raw() if using title/name outside cObject context--></f:comment>
+												<f:then>
+													{relatedFile.originalResource.title -> f:format.raw()}
+												</f:then>
+												<f:else>
+													{relatedFile.originalResource.name -> f:format.raw()}
+												</f:else>
+											</f:if>
+										</n:format.fileDownload>
+									</span>
+                                            <span class="news-related-files-size">
+										{relatedFile.originalResource.size -> f:format.bytes()}
+									</span>
+                                        </li>
+                                    </f:for>
+                                </ul>
+                            </div>
+                        </f:if>
+
+                        <f:if condition="{newsItem.relatedLinks}">
+                            <!-- Related links -->
+                            <div class="news-related news-related-links">
+                                <h4>
+                                    <f:translate key="related-links" />
+                                </h4>
+                                <ul>
+                                    <f:for each="{newsItem.relatedLinks}" as="relatedLink">
+                                        <li>
+                                            <f:link.page pageUid="{relatedLink.uri}" title="{relatedLink.title}" target="{n:targetLink(link:relatedLink.uri)}">{f:if(condition: relatedLink.title, then: relatedLink.title, else: relatedLink.uri)}</f:link.page>
+                                            <f:if condition="{relatedLink.description}"><span>{relatedLink.description}</span></f:if>
+                                        </li>
+                                    </f:for>
+                                </ul>
+                            </div>
+                        </f:if>
+                    </div>
+                </f:then>
+                <f:else>
+
+                </f:else>
+            </f:if>
+        </f:case></f:switch>
+</f:section>
