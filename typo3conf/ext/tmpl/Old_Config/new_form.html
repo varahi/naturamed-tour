@@ -1,0 +1,118 @@
+<div class="cooperation-registration-form">
+    <form action="/fileadmin/php/register.php" id="register-form">
+        <fieldset>
+            <div class="cooperation-registration-title">
+                <div class="cooperation-registration-title-line"></div>
+                <div class="cooperation-registration-title-text"><legend><h3>Регистрационные данные для договора:</h3></legend></div>
+            </div>
+            <div class="cooperation-registration-form-background">
+                <ul>
+                    <li>
+                        <input placeholder="Полное юридическое наименование организации" type="text" name="txtagencylegalname"
+                               required="required" data-parsley-required-message="Это поле должно быть заполнено!" data-parsley-trigger="change" >
+                    </li>
+                    <li>
+                        <label for="country">
+                            <select id="country" name="ddlcountry">
+                                <option>Россия</option>
+                                <option>Белоруссия</option>
+                                <option>Украина</option>
+                            </select>
+                        </label>
+                    </li>
+                    <li>
+                        <input placeholder="ИНН:" type="text" name="tbinn" required="required" data-parsley-required-message="Это поле должно быть заполнено!">
+                    </li>
+                    <li>
+                        <input placeholder="ОГРН/ОГРНИП" type="text" name="txtogrn" required="required" data-parsley-required-message="Это поле должно быть заполнено!">
+                    </li>
+                    <li>
+                        <input placeholder="КПП (обязательно всем, кроме ИП)" type="text" name="tbkpp"
+                               required="required" data-parsley-required-message="Это поле должно быть заполнено!">
+                    </li>
+                    <li>
+                        <input placeholder="Юридический адрес" type="text" name="legaladdresstextbox"
+                               required="required" data-parsley-required-message="Это поле должно быть заполнено!">
+                    </li>
+                    <li>
+                        <input placeholder="Фактический адрес" type="text" name="addresstextboxs"
+                               required="required" data-parsley-required-message="Это поле должно быть заполнено!">
+                    </li>
+                    <li>
+                        <input placeholder="Расчетный счет" type="text" name="tbbankaccount"
+                               required="required" data-parsley-required-message="Это поле должно быть заполнено!">
+                    </li>
+                    <li>
+                        <input placeholder="Банк" type="text" name="tbbank" required="required" data-parsley-required-message="Это поле должно быть заполнено!">
+                    </li>
+                    <li>
+                        <input placeholder="Электронный адрес" type="email" name="txtemail"
+                               required="required" data-parsley-required-message="Это поле должно быть заполнено!">
+                    </li>
+                    <li>
+                        <input placeholder="Должность подписанта" type="text" name="man_pos"
+                               required="required" data-parsley-required-message="Это поле должно быть заполнено!">
+                    </li>
+                    <li>
+                        <input placeholder="Действует на основании" type="text" name="txtsignreason">
+                    </li>
+                    <li>
+                        <input placeholder="Предпочтительный логин" type="text" name="tblogin"
+                               required="required" data-parsley-required-message="Это поле должно быть заполнено!">
+                    </li>
+                    <li>
+                        <input placeholder="Торговая марка/товарный знак/краткое название" type="text" name="txtagencyname"
+                               required="required" data-parsley-required-message="Это поле должно быть заполнено!">
+                    </li>
+                    <li>
+                        <input placeholder="Город" type="text" name="tbcity"
+                               required="required" data-parsley-required-message="Это поле должно быть заполнено!">
+                    </li>
+                    <li>
+                        <input placeholder="ОКПО" type="text" name="tbokpo"
+                               required="required" data-parsley-required-message="Это поле должно быть заполнено!">
+                    </li>
+                    <li>
+                        <input placeholder="ОКВЭД" type="text" name="txtokvd"
+                               required="required" data-parsley-required-message="Это поле должно быть заполнено!">
+                    </li>
+                    <li>
+                        <input placeholder="Индекс юридического адреса" type="text" name="ziptextbox"
+                               required="required" data-parsley-required-message="Это поле должно быть заполнено!">
+                    </li>
+                    <li>
+                        <input placeholder="Индекс фактического адреса" type="text" name="zip"
+                               required="required" data-parsley-required-message="Это поле должно быть заполнено!">
+                    </li>
+                    <li>
+                        <input placeholder="БИК" type="text" name="tbbik"
+                               required="required" data-parsley-required-message="Это поле должно быть заполнено!">
+                    </li>
+                    <li>
+                        <input placeholder="Корр/счет" type="text" name="tbcoraccount"
+                               required="required" data-parsley-required-message="Это поле должно быть заполнено!">
+                    </li>
+                    <li>
+                        <input placeholder="Телефоны (факс) вместе с кодом города" type="tel" name="txtphones"
+                               required="required" data-parsley-required-message="Это поле должно быть заполнено!">
+                    </li>
+                    <li>
+                        <input placeholder="Адрес сайта" type="text" name="txtsite">
+                    </li>
+                    <li>
+                        <input placeholder="Подписант" type="text" name="gendir">
+                    </li>
+                    <li>
+                        <input placeholder="Контактное лицо" type="text" name="contact"
+                               required="required" data-parsley-required-message="Это поле должно быть заполнено!">
+                    </li>
+                    <li>
+                        <input placeholder="Предпочтительный пароль" type="text" name="txtpassword"
+                               required="required" data-parsley-required-message="Это поле должно быть заполнено!">
+                    </li>
+                </ul>
+                <button type="submit">Зарегистрировать</button>
+            </div>
+        </fieldset>
+    </form>
+</div>
