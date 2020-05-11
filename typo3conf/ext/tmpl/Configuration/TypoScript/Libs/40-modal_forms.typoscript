@@ -1,0 +1,8 @@
+lib.orderModal
+lib.orderModal = RECORDS
+lib.orderModal {
+    wrap = <div id="order-modal" class="order-modal">|</div>
+    source = 438
+    dontCheckPid = 1
+    tables = tt_content
+}
