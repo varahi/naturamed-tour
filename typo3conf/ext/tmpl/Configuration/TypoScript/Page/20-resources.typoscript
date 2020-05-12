@@ -7,6 +7,7 @@ page {
         30_jquery_ui_theme = EXT:tmpl/Resources/Public/css/jquery-ui.theme.min.css
         40_slick = EXT:tmpl/Resources/Public/css/slick.css
         100_style = EXT:tmpl/Resources/Public/css/style.css
+        110_style = EXT:tmpl/Resources/Public/css/old-style.css
     }
 
     includeJSLibs {

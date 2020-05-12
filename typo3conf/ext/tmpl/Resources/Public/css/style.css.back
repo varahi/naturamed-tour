@@ -50,16 +50,6 @@
     font-style: normal;
     font-display: swap;
 }
-@font-face {
-    font-family: 'PT Sans Italic';
-    src: url('fonts/PTSans-Italic.eot');
-    src: url('fonts/PTSans-Italic.eot?#iefix') format('embedded-opentype'),
-    url('fonts/PTSans-Italic.woff') format('woff'),
-    url('fonts/PTSans-Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 /* fonts */
 /* reset */
 *,
@@ -942,28 +932,7 @@ article strong, article b {
 article strong i, article b i {
     font-family: 'PT Sans Bold Italic';
 }
-article i {
-    font-family: 'PT Sans Italic';
-}
-article a {
-    color: #e89928;
-    text-decoration: underline;
-}
-article a:hover {
-    text-decoration: none;
-}
 /* article typography */
-/* typography */
-section.typography {
-    width: 100%;
-    max-width: 1226px;
-    padding-left: 11px;
-    padding-right: 11px;
-    margin: 0 auto;
-    padding-bottom: 30px;
-    font-family: 'PT Sans Regular';
-}
-/* typography */
 /* slider */
 section.slider {
     height: auto;
@@ -2234,7 +2203,6 @@ section.customer-reviews .customer-reviews-avatar img {
 }
 section.customer-reviews .customer-reviews-rating ul {
     font-size: 0px;
-    padding: 0px;
 }
 section.customer-reviews .customer-reviews-rating ul li {
     display: inline-block;
@@ -2243,8 +2211,6 @@ section.customer-reviews .customer-reviews-rating ul li {
     margin-left: 2px;
     margin-right: 2px;
     background: url("../images/star-off.png") center no-repeat;
-    padding: 0px;
-    font-size: 0px;
 }
 section.customer-reviews .customer-reviews-rating.star-1 ul li:nth-child(1) {
     background: url("../images/star.png") center no-repeat;
@@ -2299,7 +2265,6 @@ section.customer-reviews .customer-reviews-text {
 section.customer-reviews .customer-reviews-list ul.slick-dots {
     font-size: 0px;
     text-align: center;
-    padding: 0px;
 }
 section.customer-reviews .customer-reviews-list ul.slick-dots li {
     display: inline-block;
@@ -2307,8 +2272,6 @@ section.customer-reviews .customer-reviews-list ul.slick-dots li {
     height: 13px;
     margin-left: 3px;
     margin-right: 3px;
-    padding: 0px;
-    font-size: 0px;
 }
 section.customer-reviews .customer-reviews-list ul.slick-dots li button {
     width: 13px;
@@ -4151,102 +4114,6 @@ section.otdyh-za-rubezhom .popular-direction-country ul li a {
 }
 section.otdyh-za-rubezhom .popular-direction-country ul li a:hover {
     text-decoration: underline;
-}
-section.otdyh-za-rubezhom .our-advantages {
-    margin-top: 0px;
-}
-section.otdyh-za-rubezhom .otdyh-za-rubezhom-text-background {
-    background: url("../images/otdyh-za-rubezhom-text-background.jpg") center no-repeat;
-    background-size: cover;
-}
-section.otdyh-za-rubezhom .otdyh-za-rubezhom-text {
-    width: 100%;
-    max-width: 1226px;
-    margin: 0 auto;
-    padding-left: 11px;
-    padding-right: 11px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-@media screen and (max-width: 660px) {
-    section.otdyh-za-rubezhom .otdyh-za-rubezhom-text {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-}
-section.otdyh-za-rubezhom .otdyh-za-rubezhom-text p {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    color: #fff;
-    text-align: center;
-}
-@media screen and (max-width: 660px) {
-    section.otdyh-za-rubezhom .otdyh-za-rubezhom-text p {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-}
-section.otdyh-za-rubezhom .otdyh-za-rubezhom-text p.text-1 {
-    font-family: 'PT Sans Bold';
-    font-size: 24px;
-    line-height: 28px;
-}
-@media screen and (max-width: 660px) {
-    section.otdyh-za-rubezhom .otdyh-za-rubezhom-text p.text-1 {
-        font-size: 18px;
-        line-height: 22px;
-    }
-}
-section.otdyh-za-rubezhom .otdyh-za-rubezhom-text p.text-1 span {
-    display: block;
-}
-@media screen and (max-width: 660px) {
-    section.otdyh-za-rubezhom .otdyh-za-rubezhom-text p.text-1 span {
-        display: inline;
-    }
-}
-section.otdyh-za-rubezhom .otdyh-za-rubezhom-text p.text-2 {
-    font-family: 'PT Sans Bold';
-    font-size: 18px;
-    line-height: 22px;
-}
-@media screen and (max-width: 660px) {
-    section.otdyh-za-rubezhom .otdyh-za-rubezhom-text p.text-2 {
-        font-size: 14px;
-        line-height: 18px;
-    }
-}
-section.otdyh-za-rubezhom .otdyh-za-rubezhom-text p.text-3 {
-    font-family: 'PT Sans Italic';
-    font-size: 18px;
-    line-height: 22px;
-}
-@media screen and (max-width: 660px) {
-    section.otdyh-za-rubezhom .otdyh-za-rubezhom-text p.text-3 {
-        font-size: 14px;
-        line-height: 18px;
-    }
-}
-section.otdyh-za-rubezhom .otdyh-za-rubezhom-text-2 {
-    width: 100%;
-    max-width: 1226px;
-    margin: 0 auto;
-    padding-left: 11px;
-    padding-right: 11px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-@media screen and (max-width: 860px) {
-    section.otdyh-za-rubezhom .otdyh-za-rubezhom-text-2 {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-}
-section.otdyh-za-rubezhom .otdyh-za-rubezhom-text-2 h5 {
-    text-align: center;
-}
-section.otdyh-za-rubezhom .otdyh-za-rubezhom-text-2 p {
-    text-align: center;
 }
 /* otdyh-za-rubezhom */
 /* main */
