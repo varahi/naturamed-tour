@@ -1,12 +1,38 @@
+# Standard h1 header has TCEFORM.tt_content.header_layout = 1
+lib.stdheader.10.1 < lib.stdheader.10.1
+lib.stdheader.10.1 {
+    dataWrap = <div class="article-h1"><div class="article-h1-line"></div><div class="article-h1-text"><h1>|</h1></div></div>
+}
+
+# Standard h2 header has TCEFORM.tt_content.header_layout = 2
+lib.stdheader.10.2 < lib.stdheader.10.1
+lib.stdheader.10.2 {
+    dataWrap = <div class="article-h2"><div class="article-h2-line"></div><div class="article-h2-text"><h2>|</h2></div></div>
+}
+
+# Standard h3 header has TCEFORM.tt_content.header_layout = 3
+lib.stdheader.10.3 < lib.stdheader.10.1
+lib.stdheader.10.3 {
+    dataWrap = <div class="article-h3"><div class="article-h3-line"></div><div class="article-h3-text"><h3>|</h3></div></div>
+}
+
+# Standard h4 header has TCEFORM.tt_content.header_layout = 4
+lib.stdheader.10.4 < lib.stdheader.10.1
+lib.stdheader.10.4 {
+    dataWrap = <div class="article-h4"><div class="article-h4-line"></div><div class="article-h4-text"><h4>|</h4></div></div>
+}
+
+# Custom header h1 with line
 lib.stdheader.10.10 < lib.stdheader.10.1
 lib.stdheader.10.10 {
     dataWrap = <div class="article-h1"><div class="article-h1-line"></div><div class="article-h1-text"><h1>|</h1></div></div>
 }
+
+# Custom header h2 with line
 lib.stdheader.10.20 < lib.stdheader.10.1
 lib.stdheader.10.20 {
     dataWrap = <div class="article-h2"><div class="article-h2-line"></div><div class="article-h2-text"><h2>|</h2></div></div>
 }
-
 
 tt_content.stdWrap.innerWrap.cObject.default.10.cObject.default.value
 tt_content.stdWrap.innerWrap >

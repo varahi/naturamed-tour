@@ -21,15 +21,19 @@
 </f:comment>
 
 
-<f:cObject typoscriptObjectPath="lib.orderModal" />
+<f:comment>
+    <div id="callback-modal" class="callback-modal">
+        <form action="post">
+            <fieldset>
+                <legend>Заказать обратный звонок</legend>
+                <input placeholder="Ваше имя" type="text">
+                <input data-inputmask="'mask': '+7 (999) 999-99-99'" placeholder="Ваш номер телефона" type="tel">
+            </fieldset>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+</f:comment>
 
-<div id="callback-modal" class="callback-modal">
-    <form action="post">
-        <fieldset>
-            <legend>Заказать обратный звонок</legend>
-            <input placeholder="Ваше имя" type="text">
-            <input data-inputmask="'mask': '+7 (999) 999-99-99'" placeholder="Ваш номер телефона" type="tel">
-        </fieldset>
-        <button type="submit">Отправить</button>
-    </form>
-</div>
+
+<f:cObject typoscriptObjectPath="lib.orderModal" />
+<f:cObject typoscriptObjectPath="lib.callbackModal" />
