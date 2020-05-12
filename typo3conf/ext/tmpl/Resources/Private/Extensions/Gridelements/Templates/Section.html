@@ -1,5 +1,14 @@
-<section class="{data.flexform_sectionClass}">
-    <article>
-        {data.tx_gridelements_view_columns.0->f:format.raw()}
-    </article>
-</section>
+<f:if condition="{data.hasContainer} == 1">
+    <f:then>
+        <section class="{data.flexform_sectionClass}">
+            <article>
+                {data.tx_gridelements_view_columns.0->f:format.raw()}
+            </article>
+        </section>
+    </f:then>
+    <f:else>
+        <section class="{data.flexform_sectionClass}">
+            {data.tx_gridelements_view_columns.0->f:format.raw()}
+        </section>
+    </f:else>
+</f:if>

@@ -6,6 +6,15 @@
     <ROOT type="array">
         <type>array</type>
         <el type="array">
+            <!-- Include sub categories -->
+            <settings.hasContainer>
+                <TCEforms>
+                    <label>LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:flexforms_general.has_article_container</label>
+                    <config>
+                        <type>check</type>
+                    </config>
+                </TCEforms>
+            </settings.hasContainer>
             <additional_class>
                 <TCEforms type="array">
                     <label>LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:flexforms_general.section_class_title</label>
@@ -33,6 +42,10 @@
                             <numIndex index="2" type="array">
                                 <numIndex index="0">Class "cooperation"</numIndex>
                                 <numIndex index="1">cooperation</numIndex>
+                            </numIndex>
+                            <numIndex index="3" type="array">
+                                <numIndex index="0">Class "customer-reviews"</numIndex>
+                                <numIndex index="1">customer-reviews</numIndex>
                             </numIndex>
                         </items>
                     </config>

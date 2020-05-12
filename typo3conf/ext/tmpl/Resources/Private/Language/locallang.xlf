@@ -11,6 +11,9 @@
 		<trans-unit id="flexforms_general.has_inside_container">
 			<source>Element has inside container</source>
 		</trans-unit>
+		<trans-unit id="flexforms_general.has_article_container">
+			<source>Element has article container</source>
+		</trans-unit>
 		<trans-unit id="flexforms_general.inside_class">
 			<source>Inside class</source>
 		</trans-unit>
