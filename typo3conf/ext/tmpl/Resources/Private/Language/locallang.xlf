@@ -170,6 +170,9 @@
 		<trans-unit id="tt_content.h2_with_line">
 			<source>H2 with line</source>
 		</trans-unit>
+			<trans-unit id="tt_content.layout_h6">
+				<source>Layout h6</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

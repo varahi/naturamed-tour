@@ -1,5 +1,6 @@
 TCEFORM.tt_content.header_layout {
     addItems {
+        6 = LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:tt_content.layout_h6
         10 = LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:tt_content.h1_with_line
         20 = LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:tt_content.h2_with_line
     }

@@ -22,6 +22,12 @@ lib.stdheader.10.4 {
     dataWrap = <div class="article-h4"><div class="article-h4-line"></div><div class="article-h4-text"><h4>|</h4></div></div>
 }
 
+# Custom h6 header has TCEFORM.tt_content.header_layout = 6
+lib.stdheader.10.6 < lib.stdheader.10.1
+lib.stdheader.10.6 {
+    dataWrap = <h6>|</h6>
+}
+
 # Custom header h1 with line
 lib.stdheader.10.10 < lib.stdheader.10.1
 lib.stdheader.10.10 {
