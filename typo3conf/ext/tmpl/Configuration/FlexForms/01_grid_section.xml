@@ -47,6 +47,14 @@
                                 <numIndex index="0">Class "customer-reviews"</numIndex>
                                 <numIndex index="1">customer-reviews</numIndex>
                             </numIndex>
+                            <numIndex index="4" type="array">
+                                <numIndex index="0">Class "news"</numIndex>
+                                <numIndex index="1">news</numIndex>
+                            </numIndex>
+                            <numIndex index="5" type="array">
+                                <numIndex index="0">Class "our-advantages"</numIndex>
+                                <numIndex index="1">our-advantages</numIndex>
+                            </numIndex>
                         </items>
                     </config>
                 </TCEforms>
