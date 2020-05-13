@@ -1,0 +1,21 @@
+
+<f:if condition="{media}">
+	<!-- fal media files -->
+      <div class="swiper-container gallery-top">
+        <div class="swiper-wrapper">
+            <f:for each="{media}" as="mediaElement">
+              <div class="swiper-slide"><f:render partial="Detail/FalMediaImageSwiperSlider" arguments="{mediaElement: mediaElement, settings:settings}"/></div>
+            </f:for>
+        </div>
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+      </div>
+      <div class="swiper-container gallery-thumbs">
+        <div class="swiper-wrapper">
+            <f:for each="{media}" as="mediaElement">
+              <div class="swiper-slide"><f:render partial="Detail/FalMediaImageSwiperSlider" arguments="{mediaElement: mediaElement, settings:settings}"/></div>
+            </f:for>
+        </div>
+      </div>
+</f:if>    
+

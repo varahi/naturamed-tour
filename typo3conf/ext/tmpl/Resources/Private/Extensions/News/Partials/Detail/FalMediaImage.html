@@ -1,0 +1,64 @@
+{namespace n=GeorgRinger\News\ViewHelpers}
+<f:switch expression="{settings.templateLayout}">
+	<f:case value="20">
+		<f:comment>Акции</f:comment>
+<div class="mediaelement mediaelement-image">
+	<f:if condition="{mediaElement.link}">
+		<f:then>
+			<f:link.page pageUid="{mediaElement.link}" target="{n:targetLink(link:mediaElement.link)}">
+				<f:image src="{mediaElement.uid}" treatIdAsReference="1" title="{mediaElement.title}" alt="{mediaElement.alternative}" />
+			</f:link.page>
+		</f:then>
+		<f:else>
+			<f:if condition="{settings.detail.media.image.lightbox.enabled}">
+				<f:then>
+					<a href="{f:uri.image(src:'{mediaElement.uid}', treatIdAsReference:1, width:'{settings.detail.media.image.lightbox.width}', height:'{settings.detail.media.image.lightbox.height}')}" title="{mediaElement.title}" class="{settings.detail.media.image.lightbox.class}" rel="{settings.detail.media.image.lightbox.rel}">
+						<f:image src="{mediaElement.uid}" treatIdAsReference="1" title="{mediaElement.title}" alt="{mediaElement.alternative}"  />
+					</a>
+				</f:then>
+				<f:else>
+					<f:image src="{mediaElement.uid}" treatIdAsReference="1" title="{mediaElement.title}" alt="{mediaElement.alternative}" width="" height="" class="img-fluid" />
+				</f:else>
+			</f:if>
+		</f:else>
+	</f:if>
+</div>		
+	</f:case>
+	<f:case default="TRUE">
+<div class="mediaelement mediaelement-image">
+	<f:if condition="{mediaElement.link}">
+		<f:then>
+			<f:link.page pageUid="{mediaElement.link}" target="{n:targetLink(link:mediaElement.link)}">
+				<f:image src="{mediaElement.uid}" treatIdAsReference="1" title="{mediaElement.title}" alt="{mediaElement.alternative}" maxWidth="{settings.detail.media.image.maxWidth}" maxHeight="{settings.detail.media.image.maxHeight}" />
+			</f:link.page>
+		</f:then>
+		<f:else>
+			<f:if condition="{settings.detail.media.image.lightbox.enabled}">
+				<f:then>
+					<a href="{f:uri.image(src:'{mediaElement.uid}', treatIdAsReference:1, width:'{settings.detail.media.image.lightbox.width}', height:'{settings.detail.media.image.lightbox.height}')}" title="{mediaElement.title}" class="{settings.detail.media.image.lightbox.class}" rel="{settings.detail.media.image.lightbox.rel}">
+						<f:image src="{mediaElement.uid}" treatIdAsReference="1" title="{mediaElement.title}" alt="{mediaElement.alternative}" maxWidth="{settings.detail.media.image.maxWidth}" maxHeight="{settings.detail.media.image.maxHeight}" />
+					</a>
+				</f:then>
+				<f:else>
+					<f:image src="{mediaElement.uid}" treatIdAsReference="1" title="{mediaElement.title}" alt="{mediaElement.alternative}" maxWidth="{settings.detail.media.image.maxWidth}" maxHeight="{settings.detail.media.image.maxHeight}" />
+				</f:else>
+			</f:if>
+		</f:else>
+	</f:if>
+</div>
+<f:if condition="{mediaElement.description}">
+<!--f:switch expression="{settings.templateLayout}">
+    <f:case value="50"-->
+	<p class="news-img-caption text-center">
+		{mediaElement.description}
+	</p>
+    <!--/f:case>
+    <f:case default="TRUE">    
+	<p class="news-img-caption">
+		{mediaElement.description}
+	</p>
+    </f:case>
+</f:switch-->
+</f:if>
+	</f:case>
+</f:switch>
