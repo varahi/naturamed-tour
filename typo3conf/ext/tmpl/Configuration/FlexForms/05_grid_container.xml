@@ -31,6 +31,14 @@
                                 <numIndex index="0">Class "popular-direction"</numIndex>
                                 <numIndex index="1">popular-direction</numIndex>
                             </numIndex>
+                            <numIndex index="2" type="array">
+                                <numIndex index="0">Class "otdyh-za-rubezhom-text-background"</numIndex>
+                                <numIndex index="1">otdyh-za-rubezhom-text-background</numIndex>
+                            </numIndex>
+                            <numIndex index="3" type="array">
+                                <numIndex index="0">Class "otdyh-za-rubezhom-text-2"</numIndex>
+                                <numIndex index="1">otdyh-za-rubezhom-text-2</numIndex>
+                            </numIndex>
                         </items>
                     </config>
                 </TCEforms>
@@ -45,6 +53,10 @@
                             <numIndex index="0" type="array">
                                 <numIndex index="0">Class "last-minute-tours-wrapper"</numIndex>
                                 <numIndex index="1">last-minute-tours-wrapper</numIndex>
+                            </numIndex>
+                            <numIndex index="1" type="array">
+                                <numIndex index="0">Class "otdyh-za-rubezhom-text"</numIndex>
+                                <numIndex index="1">otdyh-za-rubezhom-text</numIndex>
                             </numIndex>
                         </items>
                     </config>
