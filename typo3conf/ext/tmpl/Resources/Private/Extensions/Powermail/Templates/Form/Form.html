@@ -20,15 +20,16 @@ Render Powermail Form
 						addQueryString="{settings.misc.addQueryString}"
 						class="powermail_form powermail_form_{form.uid} {form.css} {vh:Misc.MorestepClass(activate:settings.main.moresteps)}">
 
-					<h3>{form.title}</h3>
 					<f:render partial="Misc/FormError" arguments="{_all}" />
 
 					<f:for each="{form.pages}" as="page">
 						<fieldset class="powermail_fieldset powermail_fieldset_{page.uid} {page.css}">
 							<legend class="powermail_legend">{page.title}</legend>
-							<f:for each="{page.fields}" as="field">
-								<f:render partial="Form/{vh:String.Upper(string:field.type)}" arguments="{field:field}" />
-							</f:for>
+							<div class="order-modal-column order-modal-column_{form.uid} {form.css} ">
+								<f:for each="{page.fields}" as="field">
+									<f:render partial="Form/{vh:String.Upper(string:field.type)}" arguments="{field:field}" />
+								</f:for>
+							</div>
 						</fieldset>
 					</f:for>
 
