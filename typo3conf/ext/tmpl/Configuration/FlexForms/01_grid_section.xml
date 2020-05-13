@@ -7,14 +7,14 @@
         <type>array</type>
         <el type="array">
             <!-- Include sub categories -->
-            <settings.hasContainer>
+            <hasContainer>
                 <TCEforms>
                     <label>LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:flexforms_general.has_article_container</label>
                     <config>
                         <type>check</type>
                     </config>
                 </TCEforms>
-            </settings.hasContainer>
+            </hasContainer>
             <additional_class>
                 <TCEforms type="array">
                     <label>LLL:EXT:tmpl/Resources/Private/Language/locallang.xlf:flexforms_general.section_class_title</label>
