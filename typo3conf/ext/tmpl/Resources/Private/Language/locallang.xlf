@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2020-05-09T18:57:44Z">
+	<file source-language="en" datatype="plaintext" original="messages" date="2020-05-14T15:50:07Z">
 		<header>
 			<generator>LFEditor</generator>
 		</header>
@@ -8,11 +8,11 @@
 		<trans-unit id="flexforms_general.cooperation_class">
 			<source>Cooperation class</source>
 		</trans-unit>
-		<trans-unit id="flexforms_general.has_inside_container">
-			<source>Element has inside container</source>
-		</trans-unit>
 		<trans-unit id="flexforms_general.has_article_container">
 			<source>Element has article container</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.has_inside_container">
+			<source>Element has inside container</source>
 		</trans-unit>
 		<trans-unit id="flexforms_general.inside_class">
 			<source>Inside class</source>
@@ -161,18 +161,21 @@
 		<trans-unit id="page.select.no_class">
 			<source>No class</source>
 		</trans-unit>
-			<trans-unit id="page.select.standard_class">
-				<source>Standard class (typography)</source>
-			</trans-unit>
+		<trans-unit id="page.select.standard_class">
+			<source>Standard class (typography)</source>
+		</trans-unit>
+		<trans-unit id="powermail.button_submit">
+			<source>Submit</source>
+		</trans-unit>
 		<trans-unit id="tt_content.h1_with_line">
 			<source>H1 with line</source>
 		</trans-unit>
 		<trans-unit id="tt_content.h2_with_line">
 			<source>H2 with line</source>
 		</trans-unit>
-			<trans-unit id="tt_content.layout_h6">
-				<source>Layout h6</source>
-			</trans-unit>
+		<trans-unit id="tt_content.layout_h6">
+			<source>Layout h6</source>
+		</trans-unit>
 		</body>
 	</file>
 </xliff>

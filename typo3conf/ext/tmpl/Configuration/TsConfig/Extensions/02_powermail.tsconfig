@@ -1,0 +1,15 @@
+#Custom classes for powermail form.pages
+
+TCEFORM {
+    tx_powermail_domain_model_forms {
+        css {
+            removeItems = layout1, layout2, layout3
+            addItems {
+                #nolabel = nolabel
+                order-modal-column = modal-columns
+            }
+        }
+    }
+    tx_powermail_domain_model_pages < .tx_powermail_domain_model_forms
+    tx_powermail_domain_model_fields < .tx_powermail_domain_model_forms
+}
