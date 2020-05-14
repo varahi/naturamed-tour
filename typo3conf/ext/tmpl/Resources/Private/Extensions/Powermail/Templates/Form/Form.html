@@ -22,16 +22,17 @@ Render Powermail Form
 
 					<f:render partial="Misc/FormError" arguments="{_all}" />
 
-					<f:for each="{form.pages}" as="page">
-						<fieldset class="powermail_fieldset powermail_fieldset_{page.uid} {page.css}">
-							<legend class="powermail_legend">{page.title}</legend>
-							<div class="order-modal-column order-modal-column_{form.uid} {form.css} ">
+					<fieldset class="powermail_fieldset powermail_fieldset_{page.uid}">
+					<legend class="powermail_legend">{form.title}</legend>
+						<f:for each="{form.pages}" as="page">
+							<div class="{page.css} ">
 								<f:for each="{page.fields}" as="field">
 									<f:render partial="Form/{vh:String.Upper(string:field.type)}" arguments="{field:field}" />
 								</f:for>
 							</div>
-						</fieldset>
-					</f:for>
+						</f:for>
+					</fieldset>
+					<button type="submit">{f:translate(key: 'powermail.button_submit', extensionName: 'tmpl')}</button>
 
 					<f:form.hidden name="mail[form]" value="{form.uid}" class="powermail_form_uid" />
 					<f:render partial="Misc/HoneyPod" arguments="{form:form}" />

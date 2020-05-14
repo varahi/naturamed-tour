@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" target-language="ru" datatype="plaintext" original="messages" date="2020-05-09T18:57:44Z">
+	<file source-language="en" target-language="ru" datatype="plaintext" original="messages" date="2020-05-14T15:50:07Z">
 		<header>
 			<generator>LFEditor</generator>
 		</header>
@@ -56,6 +56,10 @@
 		<trans-unit id="page.select.class_rest_in_russia" approved="yes">
 			<source>Class &quot;sanatorii-rossii&quot;</source>
 			<target>Класс &quot;sanatorii-rossii&quot;</target>
+		</trans-unit>
+		<trans-unit id="powermail.button_submit" approved="yes">
+			<source>Submit</source>
+			<target>Отправить</target>
 		</trans-unit>
 		</body>
 	</file>
