@@ -8,6 +8,7 @@ page {
         40_slick = EXT:tmpl/Resources/Public/css/slick.css
         100_style = EXT:tmpl/Resources/Public/css/style.css
         110_style = EXT:tmpl/Resources/Public/css/old-style.css
+        200_style = EXT:tmpl/Resources/Public/css/custom.css
     }
 
     includeJSLibs {

@@ -17,3 +17,13 @@ lib.callbackModal {
     dontCheckPid = 1
     tables = tt_content
 }
+
+// Pid 104
+lib.formQuestions
+lib.formQuestions = RECORDS
+lib.formQuestions {
+    wrap = <div class="footer-form-questions">|</div>
+    source = 588
+    dontCheckPid = 1
+    tables = tt_content
+}
