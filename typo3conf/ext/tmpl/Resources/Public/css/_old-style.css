@@ -398,8 +398,7 @@ section.typography .col-1, section.typography .col-2, section.typography .col-3,
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-left: 10px;
-  padding-right: 10px; }
+  padding: 10px; }
 section.typography .col {
   -ms-flex-preferred-size: 0;
   flex-basis: 0;
@@ -3490,8 +3489,7 @@ section.typography .btn {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  text-decoration: none; }
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out; }
 @media screen and (prefers-reduced-motion: reduce) {
   section.typography .btn {
     -webkit-transition: none;

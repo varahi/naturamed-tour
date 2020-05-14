@@ -1383,7 +1383,6 @@ section.slider-banner .slider-banner-title-2 {
     line-height: 50px;
     color: #fff;
     text-transform: uppercase;
-    padding-bottom: 10px;
 }
 @media screen and (max-width: 570px) {
     section.slider-banner .slider-banner-title-2 {
@@ -1937,7 +1936,7 @@ section.popular-destinations .popular-destinations-slider-item-price {
     padding-top: 10px;
 }
 section.popular-destinations .popular-destinations-slider-item-title-wrapper {
-    height: 195px;
+    height: 205px;
     display: grid;
     grid-template-columns: 1fr;
     align-items: end;
@@ -4920,21 +4919,3 @@ section.footer-menu .footer-menu-copyright {
     background: #587eb4;
 }
 /* callback-modal */
-/* fix old-style */
-.wrap-text p.date {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    font-size: 14px;
-    line-height: 18px;
-}
-.wrap-text p.title {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    font-size: 16px;
-    line-height: 20px;
-}
-div.person.text-center {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-/* fix old-style */
