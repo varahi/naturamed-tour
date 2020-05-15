@@ -1,19 +1,19 @@
 <?php
 return array(
 	'BE' => array(
-		'debug' => FALSE,
+		'debug' => TRUE,
 		'explicitADmode' => 'explicitAllow',
 		'installToolPassword' => '$P$CLidd/ypKyS/jVala4nxluUKymOjdW/',
 		'loginSecurityLevel' => 'rsa',
 	),
 	'DB' => array(
-		'database' => 'typo3_dev',
+		'database' => 'a39200_nattest',
 		'extTablesDefinitionScript' => 'extTables.php',
-		'host' => '172.17.0.1',
-		'password' => 'dev',
+		'host' => 'a39200.mysql.mchost.ru',
+		'password' => 'aZe8$GBl3oj',
 		'port' => 3306,
 		'socket' => '',
-		'username' => 'root',
+		'username' => 'a39200_nattest',
 	),
 	'EXT' => array(
 		'extConf' => array(
@@ -55,7 +55,7 @@ return array(
 	'FE' => array(
 		'activateContentAdapter' => FALSE,
 		'cHashIncludePageId' => TRUE,
-		'debug' => FALSE,
+		'debug' => TRUE,
 		'loginSecurityLevel' => 'rsa',
 	),
 	'GFX' => array(
@@ -79,7 +79,7 @@ return array(
 		'caching' => array(
 			'cacheConfigurations' => array(
 				'extbase_object' => array(
-					'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\ApcBackend',
+					'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
 					'frontend' => 'TYPO3\\CMS\\Core\\Cache\\Frontend\\VariableFrontend',
 					'groups' => array(
 						'system',
@@ -90,17 +90,17 @@ return array(
 				),
 			),
 		),
-		'clearCacheSystem' => FALSE,
+		'clearCacheSystem' => TRUE,
 		'compat_version' => '6.2',
-		'devIPmask' => '',
-		'displayErrors' => 0,
-		'enableDeprecationLog' => FALSE,
+		'devIPmask' => '*',
+		'displayErrors' => 1,
+		'enableDeprecationLog' => 'file',
 		'encryptionKey' => 'e737adf6d07856a44d5f65f2d629332573ee071fe9937139394b6e9f29d570093e4bf6f160761783a7ef15d1d36c2e2f',
-		'exceptionalErrors' => 20480,
+		'exceptionalErrors' => 28674,
 		'isInitialInstallationInProgress' => FALSE,
 		'sitename' => 'naturamed-tour',
-		'sqlDebug' => 0,
-		'systemLogLevel' => 2,
+		'sqlDebug' => 1,
+		'systemLogLevel' => 0,
 		't3lib_cs_convMethod' => 'mbstring',
 		't3lib_cs_utils' => 'mbstring',
 		'trustedHostsPattern' => '.*',

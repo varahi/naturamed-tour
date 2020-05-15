@@ -1,0 +1,20 @@
+{namespace vh=In2code\Powermail\ViewHelpers}
+
+	<f:comment>
+		Per default the HTML-Output is parsed through a htmlspecialchars() function for security reasons.
+		If you are aware of possible security issues from your editory, you can enable html output via TypoScript constants:
+			plugin.tx_powermail.settings.setup.misc.htmlForHtmlFields = 1
+	</f:comment>
+
+<div id="powermail_fieldwrap_{field.uid}" class="powermail_fieldwrap powermail_fieldwrap_html powermail_fieldwrap_{field.uid} {field.css}">
+	<span id="powermail_field_{field.marker}">
+		<f:if condition="{settings.misc.disableRemoveXss}">
+			<f:then>
+				<f:format.raw>{field.text}</f:format.raw>
+			</f:then>
+			<f:else>
+				<f:format.raw>{field.text}</f:format.raw>
+			</f:else>
+		</f:if>
+	</span>
+</div>

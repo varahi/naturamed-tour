@@ -575,6 +575,15 @@ return array (
       array (
       ),
     ),
+    't3adminer' => 
+    array (
+      'state' => 'active',
+      'packagePath' => 'typo3conf/ext/t3adminer/',
+      'classesPath' => 'Classes/',
+      'suggestions' => 
+      array (
+      ),
+    ),
     'realurl' => 
     array (
       'manifestPath' => '',
@@ -777,6 +786,17 @@ return array (
       'composerName' => 'typo3/cms-openid',
       'state' => 'inactive',
       'packagePath' => 'typo3/sysext/openid/',
+      'classesPath' => 'Classes/',
+      'suggestions' => 
+      array (
+      ),
+    ),
+    'phpmyadmin' => 
+    array (
+      'manifestPath' => '',
+      'composerName' => 'mehrwert/phpmyadmin',
+      'state' => 'inactive',
+      'packagePath' => 'typo3conf/ext/phpmyadmin/',
       'classesPath' => 'Classes/',
       'suggestions' => 
       array (

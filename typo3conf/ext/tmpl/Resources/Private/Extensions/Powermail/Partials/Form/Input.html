@@ -1,22 +1,22 @@
 {namespace vh=In2code\Powermail\ViewHelpers}
 
-<f:if condition="{field.description}">
-	<f:then>
-		<f:form.textfield
-				type="{vh:Validation.FieldTypeFromValidation(field:field)}"
-				property="{field.marker}"
-				placeholder="{field.placeholder}"
-				value="{vh:Misc.PrefillField(field:field, mail:mail)}"
-				additionalAttributes="{data-inputmask: '{field.description}'}"
-				id="powermail_field_{field.marker}" />
-	</f:then>
-	<f:else>
-		<f:form.textfield
-				type="{vh:Validation.FieldTypeFromValidation(field:field)}"
-				property="{field.marker}"
-				placeholder="{field.placeholder}"
-				value="{vh:Misc.PrefillField(field:field, mail:mail)}"
-				id="powermail_field_{field.marker}" />
-	</f:else>
-</f:if>
-
+	<f:if condition="{field.description}">
+		<f:then>
+			<f:form.textfield
+					type="{vh:Validation.FieldTypeFromValidation(field:field)}"
+					property="{field.marker}"
+					placeholder="{field.placeholder}"
+					class="powermail_field powermail_input {vh:Validation.ErrorClass(field:field, class:'powermail_field_error')} {field.prefillValue}"
+					additionalAttributes="{data-inputmask: '{field.description}'}"
+					id="powermail_field_{field.marker}" />
+		</f:then>
+		<f:else>
+			<f:form.textfield
+					type="{vh:Validation.FieldTypeFromValidation(field:field)}"
+					property="{field.marker}"
+					placeholder="{field.placeholder}"
+					class="powermail_field powermail_input {vh:Validation.ErrorClass(field:field, class:'powermail_field_error')} {field.prefillValue}"
+					additionalAttributes="{vh:Validation.ValidationDataAttribute(field:field)}"
+					id="powermail_field_{field.marker}" />
+		</f:else>
+	</f:if>
