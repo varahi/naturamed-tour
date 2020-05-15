@@ -23,7 +23,7 @@ lib.formQuestions
 lib.formQuestions = RECORDS
 lib.formQuestions {
     wrap = <div class="footer-form-questions">|</div>
-    source = 588
+    source = 590
     dontCheckPid = 1
     tables = tt_content
 }
@@ -33,7 +33,7 @@ lib.formMailing
 lib.formMailing = RECORDS
 lib.formMailing {
     wrap = <div class="footer-form-mailing">|</div>
-    source = 590
+    source = 589
     dontCheckPid = 1
     tables = tt_content
 }
