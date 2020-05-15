@@ -27,3 +27,13 @@ lib.formQuestions {
     dontCheckPid = 1
     tables = tt_content
 }
+
+// Pid 105
+lib.formMailing
+lib.formMailing = RECORDS
+lib.formMailing {
+    wrap = <div class="footer-form-mailing">|</div>
+    source = 590
+    dontCheckPid = 1
+    tables = tt_content
+}

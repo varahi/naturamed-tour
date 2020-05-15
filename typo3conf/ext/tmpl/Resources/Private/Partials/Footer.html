@@ -4,25 +4,7 @@
             <f:cObject typoscriptObjectPath="lib.formQuestions" />
         </div>
         <div class="footer-form-column-2">
-            <div class="footer-form-mailing">
-                <form action="post">
-                    <fieldset>
-                        <div class="footer-form-height">
-                            <legend>
-                                <span>Да, я хочу первым узнавать</span>
-                                <span>о новостях и акциях компании</span>
-                            </legend>
-                            <ul class="footer-form-mailing-checkbox">
-                                <li><input type="radio" id="agent" name="agent-client"><label for="agent">Я представляю агентство</label></li>
-                                <li><input type="radio" id="client" name="agent-client"><label for="client">Я клиент</label></li>
-                            </ul>
-                        </div>
-                        <input class="footer-form-input" placeholder="Ваше имя" type="text">
-                        <input class="footer-form-input" placeholder="Ваш e-mail" type="email">
-                    </fieldset>
-                    <button type="submit">Отправить</button>
-                </form>
-            </div>
+            <f:cObject typoscriptObjectPath="lib.formMailing" />
         </div>
     </section>
     <section class="footer-menu">
