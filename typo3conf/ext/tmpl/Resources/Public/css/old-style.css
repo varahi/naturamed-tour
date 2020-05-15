@@ -4548,9 +4548,15 @@ section.typography .nav-link:hover, section.typography .nav-link:focus {
 section.typography .nav-link.disabled {
   color: #6c757d; }
 section.typography .nav-tabs {
-  border-bottom: 1px solid #dee2e6; }
+  border-bottom: 1px solid #dee2e6;
+  padding-top: 0px;
+  padding-bottom: 0px; }
 section.typography .nav-tabs .nav-item {
-  margin-bottom: -1px; }
+  margin-bottom: -1px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-left: 0px;
+  list-style: none; }
 section.typography .nav-tabs .nav-link {
   border: 1px solid transparent;
   border-top-left-radius: 0.25rem;
@@ -9349,7 +9355,25 @@ section.typography #sanatorii-detail .nav-tabs .nav-item .nav-link, section.typo
   padding-left: 0;
   padding-right: 0;
   margin-left: 1rem;
-  margin-right: 10px; }
+  margin-right: 10px;
+  text-decoration: none; }
+section.typography .sanatorii-tabs .nav-tabs li {
+  margin-left: 0px;
+  list-style: none;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 32px; }
+section.typography .sanatorii-tabs .nav-tabs li h2 {
+  font-family: 'PT Sans Bold';
+  font-size: 17px;
+  line-height: 26px;
+  text-transform: uppercase;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-bottom: 8px transparent solid;
+  cursor: pointer; }
+section.typography .sanatorii-tabs .nav-tabs li.active h2 {
+  border-bottom: 8px #335f7c solid; }
 section.typography #sanatorii-detail .nav-tabs .nav-item .nav-link:hover, section.typography #sanatorii .nav-tabs .nav-item .nav-link:hover {
   border-bottom: #335f7c 8px solid; }
 section.typography #sanatorii-detail .nav-tabs .nav-item .nav-link.active, section.typography #sanatorii .nav-tabs .nav-item .nav-link.active {

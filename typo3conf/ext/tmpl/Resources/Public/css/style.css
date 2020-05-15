@@ -1056,6 +1056,10 @@ section.slider .slider-filter-wrapper {
     background: linear-gradient(90deg,#3c5985 0,#597eb4 20%,#597eb4 80%,#3c5985);
     margin: 0 auto;
 }
+section.slider .slider-filter-wrapper iframe {
+    width: 100% !important;
+    z-index: 10000 !important;
+}
 @media screen and (max-width: 1110px) {
     section.slider .slider-filter-wrapper {
         width: 523px;

@@ -29,12 +29,9 @@
                         </f:if>
                         <f:render partial="Detail/Opengraph" arguments="{newsItem: newsItem, settings:settings}" />
                     </n:format.nothing>
-                    <div class="article-h1">
-				        <div class="article-h1-line"></div>
-				        <div class="article-h1-text">
-				            <h1 itemprop="headline">{newsItem.title}</h1>
-				        </div>
-				    </div>
+                    <div class="header">
+                        <h3 itemprop="headline">{newsItem.title}</h3>
+                    </div>
                     <section id="sanatorii-detail">
                         <div class="container">
                             <div class="wrap">
@@ -89,60 +86,60 @@
                             </div>
                             <div class="wrap pb-20 mb-20 hr-bottom-10">
                                 <div class="row">
-                                    <div data-container=".sanatorii-tabs-1" class="col-12 sanatorii-tabs sanatorii-tabs-1">
-                                        <ul class="nav nav-tabs mb-30">
+                                    <div class="col-12">
+                                        <ul id="myTab" role="tablist" class="nav nav-tabs mb-30">
                                             <f:if condition="{newsItem.bodytext}">
-                                                <li><h2>Описание</h2></li>
+                                                <li class="nav-item first-item">
+                                                    <a id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true" class="nav-link active"><h2>Описание</h2></a>
+                                                </li>
                                             </f:if>
                                             <f:if condition="{newsItem.txPbnewsjobsTreatment}">
-                                                <li><h2>Программы лечения</h2></li>
+                                                <li class="nav-item">
+                                                    <a id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false" class="nav-link"><h2>Программы лечения</h2></a>
+                                                </li>
                                             </f:if>
                                             <f:if condition="{newsItem.txPbnewsjobsHabitation}">
-                                                <li><h2>Проживание</h2></li>
+                                                <li class="nav-item">
+                                                    <a id="tab3-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false" class="nav-link"><h2>Проживание</h2></a>
+                                                </li>
                                             </f:if>
                                             <f:if condition="{newsItem.txPbnewsjobsFood}">
-                                                <li><h2>Питание</h2></li>
+                                                <li class="nav-item">
+                                                    <a id="tab4-tab" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false" class="nav-link"><h2>Питание</h2></a>
+                                                </li>
                                             </f:if>
                                             <f:if condition="{newsItem.txPbnewsjobsInfra}">
-                                                <li><h2>Инфраструктура</h2></li>
+                                                <li class="nav-item">
+                                                    <a id="tab5-tab" data-toggle="tab" href="#tab5" role="tab" aria-controls="tab5" aria-selected="false" class="nav-link"><h2>Инфраструктура</h2></a>
+                                                </li>
                                             </f:if>
                                             <f:if condition="{newsItem.txPbnewsjobsProezd}">
-                                                <li><h2>Проезд</h2></li>
+                                                <li class="nav-item">
+                                                    <a id="tab6-tab" data-toggle="tab" href="#tab6" role="tab" aria-controls="tab6" aria-selected="false" class="nav-link"><h2>Проезд</h2></a>
+                                                </li>
                                             </f:if>
                                             <f:if condition="{newsItem.txPbnewsjobsComments}">
-                                                <li><h2>Цены</h2></li>
+                                                <li class="nav-item">
+                                                    <a id="tab7-tab" data-toggle="tab" href="#tab7" role="tab" aria-controls="tab7" aria-selected="false" class="nav-link"><h2>Цены</h2></a>
+                                                </li>
                                             </f:if>
                                             <!--f:if condition="{newsItem.txPbnewsjobsPriceny}">
-                                            <li><h2>Новый год 2020</h2></li>
+                                            <li class="nav-item">
+                                                <a id="tab8-tab" data-toggle="tab" href="#tab8" role="tab" aria-controls="tab8" aria-selected="false" class="nav-link"><h2>Новый год 2020</h2></a>
+                                            </li>
                                             </f:if-->
                                         </ul>
-                                        <div>
-                                            <div>
+                                        <div id="myTabContent" class="tab-content">
+                                            <div id="tab1" role="tabpanel" aria-labelledby="tab1-tab" class="tab-pane fade show active">
                                                 <f:format.html>{newsItem.bodytext}</f:format.html>
                                             </div>
-                                            <div>
-                                                <f:format.html>{newsItem.txPbnewsjobsTreatment}</f:format.html>
-                                            </div>
-                                            <div>
-                                                <f:format.html>{newsItem.txPbnewsjobsHabitation}</f:format.html>
-                                            </div>
-                                            <div>
-                                                <f:format.html>{newsItem.txPbnewsjobsFood}</f:format.html>
-                                            </div>
-                                            <div>
-                                                <f:format.html>{newsItem.txPbnewsjobsInfra}</f:format.html>
-                                            </div>
-                                            <div>
-                                                <f:format.html>{newsItem.txPbnewsjobsProezd}</f:format.html>
-                                            </div>
-                                            <div>
-                                                <f:format.html>{newsItem.txPbnewsjobsComments}</f:format.html>
-                                            </div>
-                                            <!--
-                                            <div>
-                                                <f:format.html>{newsItem.txPbnewsjobsPriceny}</f:format.html>
-                                            </div>
-                                            -->
+                                            <div id="tab2" role="tabpanel" aria-labelledby="tab2-tab" class="tab-pane fade"><f:format.html>{newsItem.txPbnewsjobsTreatment}</f:format.html></div>
+                                            <div id="tab3" role="tabpanel" aria-labelledby="tab3-tab" class="tab-pane fade"><f:format.html>{newsItem.txPbnewsjobsHabitation}</f:format.html></div>
+                                            <div id="tab4" role="tabpanel" aria-labelledby="tab4-tab" class="tab-pane fade"><f:format.html>{newsItem.txPbnewsjobsFood}</f:format.html></div>
+                                            <div id="tab5" role="tabpanel" aria-labelledby="tab5-tab" class="tab-pane fade"><f:format.html>{newsItem.txPbnewsjobsInfra}</f:format.html></div>
+                                            <div id="tab6" role="tabpanel" aria-labelledby="tab6-tab" class="tab-pane fade"><f:format.html>{newsItem.txPbnewsjobsProezd}</f:format.html></div>
+                                            <div id="tab7" role="tabpanel" aria-labelledby="tab6-tab" class="tab-pane fade"><f:format.html>{newsItem.txPbnewsjobsComments}</f:format.html></div>
+                                            <!--div id="tab8" role="tabpanel" aria-labelledby="tab6-tab" class="tab-pane fade"><f:format.html>{newsItem.txPbnewsjobsPriceny}</f:format.html></div-->
                                         </div>
                                     </div>
                                 </div>

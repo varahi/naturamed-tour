@@ -5,9 +5,10 @@ page {
         10_fancybox = EXT:tmpl/Resources/Public/css/jquery.fancybox.min.css
         20_jquery_ui = EXT:tmpl/Resources/Public/css/jquery-ui.min.css
         30_jquery_ui_theme = EXT:tmpl/Resources/Public/css/jquery-ui.theme.min.css
-        40_slick = EXT:tmpl/Resources/Public/css/slick.css
+        50_slick = EXT:tmpl/Resources/Public/css/slick.css
         100_style = EXT:tmpl/Resources/Public/css/style.css
-        110_style = EXT:tmpl/Resources/Public/css/old-style.css
+        110_old-style = EXT:tmpl/Resources/Public/css/old-style.css
+        120_swiper = EXT:tmpl/Resources/Public/css/swiper.min.css
     }
 
     includeJSLibs {
@@ -22,6 +23,7 @@ page {
         50_slick = EXT:tmpl/Resources/Public/js/slick.min.js
         50_tabs = EXT:tmpl/Resources/Public/js/tabs.js
         //60_custom = EXT:tmpl/Resources/Public/js/custom.js
+        90_swiper = EXT:tmpl/Resources/Public/js/swiper.min.js
         100_script = EXT:tmpl/Resources/Public/js/scripts.js
     }
 }
