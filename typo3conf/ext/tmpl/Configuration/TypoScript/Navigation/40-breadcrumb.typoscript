@@ -30,7 +30,7 @@ lib.breadcrumb {
 }
 
 [globalVar = GP:tx_news_pi1|news > 0]
-    lib.breadcrumb >
+    #lib.breadcrumb >
     lib.breadcrumb = COA
     lib.breadcrumb {
         stdWrap.wrap = <ul>|</ul>
@@ -44,14 +44,14 @@ lib.breadcrumb {
                 noBlur = 1
                 NO = 1
                 NO {
-                    wrapItemAndSub = <li>|</li>
+                    wrapItemAndSub = <li><span>|</span>&#124;</li>
                     ATagTitle.field = subtitle // title
                     stdWrap.htmlSpecialChars = 1
                 }
 
                 CUR <.NO
                 CUR {
-                    wrapItemAndSub = <li>&#124;<span>|</span></li>
+                    wrapItemAndSub = <li>|</li>
                     doNotLinkIt = 1
                 }
             }
@@ -70,7 +70,7 @@ lib.breadcrumb {
                 field = title
                 htmlSpecialChars = 1
             }
-            wrap = <li>&#124;<span>|</span></li>
+            wrap = <li><span>|</span></li>
         }
     }
 
