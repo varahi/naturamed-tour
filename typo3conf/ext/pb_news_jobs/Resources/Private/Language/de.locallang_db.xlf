@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2017-10-31T08:33:46Z" product-name="pb_news_jobs">
+		<header/>
+		<body>
+			<trans-unit id="tx_news_domain_model_news.tx_pbnewsjobs_entrydate">
+				<target>Eintrittsdatum</target>
+			</trans-unit>
+			<trans-unit id="tx_news_domain_model_news.tx_pbnewsjobs_location">
+				<target>Ort</target>
+			</trans-unit>
+			<trans-unit id="tx_news_domain_model_news.tx_pbnewsjobs_area">
+				<target>Bereich</target>
+			</trans-unit>
+			<trans-unit id="tx_news_domain_model_news.tx_pbnewsjobs_position">
+				<target>Position</target>
+			</trans-unit>
+			<trans-unit id="tx_news_domain_model_news.tx_pbnewsjobs_jobnumber">
+				<target>Stellenangebotsnummer</target>
+			</trans-unit>
+			<trans-unit id="tx_news_domain_model_news.tx_pbnewsjobs_payment">
+				<target>Vergütung</target>
+			</trans-unit>
+			<trans-unit id="tx_news_domain_model_news.tx_pbnewsjobs_tasks">
+				<target>Aufgaben</target>
+			</trans-unit>
+			<trans-unit id="tx_news_domain_model_news.tx_pbnewsjobs_requirements">
+				<target>Anforderungen</target>
+			</trans-unit>
+			<trans-unit id="tx_news_domain_model_news.tx_pbnewsjobs_contact">
+				<target>Kontakt</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

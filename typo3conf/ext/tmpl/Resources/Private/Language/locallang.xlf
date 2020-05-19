@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2020-05-14T15:50:07Z">
+	<file source-language="en" datatype="plaintext" original="messages" date="2020-05-19T12:53:52Z">
 		<header>
 			<generator>LFEditor</generator>
 		</header>
@@ -133,6 +133,9 @@
 		</trans-unit>
 		<trans-unit id="mask.see_all_reviews">
 			<source>See all reviews</source>
+		</trans-unit>
+		<trans-unit id="news.booking">
+			<source>Book now</source>
 		</trans-unit>
 		<trans-unit id="news.see_all_news">
 			<source>See all news</source>

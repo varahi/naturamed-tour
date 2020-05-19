@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" target-language="ru" datatype="plaintext" original="messages" date="2020-05-14T15:50:07Z">
+	<file source-language="en" target-language="ru" datatype="plaintext" original="messages" date="2020-05-19T12:53:52Z">
 		<header>
 			<generator>LFEditor</generator>
 		</header>
@@ -36,6 +36,10 @@
 		<trans-unit id="mask.see_all_reviews" approved="yes">
 			<source>See all reviews</source>
 			<target>Смотреть все отзывы</target>
+		</trans-unit>
+		<trans-unit id="news.booking" approved="yes">
+			<source>Book now</source>
+			<target>Забронировать</target>
 		</trans-unit>
 		<trans-unit id="news.see_all_news" approved="yes">
 			<source>See all news</source>

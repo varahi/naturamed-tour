@@ -1,0 +1,28 @@
+#plugin.tx_news {
+#	_LOCAL_LANG.default{
+#		pbnewsjobs.entrydate		= Entry Date
+#		pbnewsjobs.location			= Location
+#		pbnewsjobs.area				= Area
+#		pbnewsjobs.position			= Position
+#		pbnewsjobs.jobnumber		= Job Number
+#		pbnewsjobs.payment			= Payment
+#		pbnewsjobs.tasks			= Tasks
+#		pbnewsjobs.requirements		= Requirements
+#		pbnewsjobs.contact			= Contact
+#	}
+#}
+
+#config.tx_extbase.persistence.classes {
+#    GeorgRinger\News\Domain\Model\News {
+#        subclasses {
+#            3 = PeterBenke\PbNewsJobs\Domain\Model\News
+#        }
+#    }
+
+#    PeterBenke\PbNewsJobs\Domain\Model\News {
+#        mapping {
+#            recordType = 3
+#            tableName = tx_news_domain_model_news
+#        }
+#    }
+#}

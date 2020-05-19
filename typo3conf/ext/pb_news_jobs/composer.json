@@ -1,0 +1,32 @@
+{
+  "name": "peterbenke/pb-news-jobs",
+  "type": "typo3-cms-extension",
+  "description": "Extends the Extension news with additional fields for jobs offers.",
+  "keywords": [
+    "TYPO3",
+    "extension",
+    "frontend",
+    "news",
+    "jobs"
+  ],
+  "homepage": "http://www.typomotor.de",
+  "authors": [
+    {
+      "name": "Peter Benke",
+      "role": "Developer",
+      "homepage": "http://www.typomotor.de"
+    }
+  ],
+  "license": [
+    "GPL-2.0+"
+  ],
+  "require": {
+    "typo3/cms-core": ">=7.6.0 <=8.7.99",
+    "georgringer/news": ">=5.0.0,<6.9.99"
+  },
+  "autoload": {
+    "psr-4": {
+      "PeterBenke\\PbNewsJobs\\": "Classes"
+    }
+  }
+}

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-10-31T08:33:46Z" product-name="pb_news_jobs">
+		<header/>
+		<body>
+			<trans-unit id="tx_news_domain_model_news.tx_pbnewsjobs_predlog">
+				<source>Выгодное предложение</source>
+			</trans-unit>
+			<trans-unit id="tx_news_domain_model_news.tx_pbnewsjobs_goodnum">
+				<source>Оценка(число)</source>
+			</trans-unit>
+			<trans-unit id="tx_news_domain_model_news.tx_pbnewsjobs_goodword">
+				<source>Оценка(слово)</source>
+			</trans-unit>
+			<trans-unit id="tx_news_domain_model_news.tx_pbnewsjobs_price">
+				<source>Цена от</source>
+			</trans-unit>
+			<trans-unit id="tx_news_domain_model_news.tx_pbnewsjobs_stars">
+				<source>Звезд</source>
+			</trans-unit>
+			<trans-unit id="tx_news_domain_model_news.tx_pbnewsjobs_commentsnum">
+				<source>Участник акции</source>
+			</trans-unit>
+			<trans-unit id="tx_news_domain_model_news.tx_pbnewsjobs_treatment">
+				<source>Программы лечения</source>
+			</trans-unit>
+			<trans-unit id="tx_news_domain_model_news.tx_pbnewsjobs_habitation">
+				<source>Проживание</source>
+			</trans-unit>
+			<trans-unit id="tx_news_domain_model_news.tx_pbnewsjobs_food">
+				<source>Питание</source>
+			</trans-unit>
+			<trans-unit id="tx_news_domain_model_news.tx_pbnewsjobs_comments">
+				<source>Цены</source>
+			</trans-unit>
+			<trans-unit id="tx_news_domain_model_news.tx_pbnewsjobs_infra">
+				<source>Инфраструктура</source>
+			</trans-unit>
+			<trans-unit id="tx_news_domain_model_news.tx_pbnewsjobs_proezd">
+				<source>Проезд</source>
+			</trans-unit>
+			<trans-unit id="tx_news_domain_model_news.tx_pbnewsjobs_priceny">
+				<source>Прайс НГ</source>
+			</trans-unit>
+			<trans-unit id="tab1">
+				<source>Данные санатория</source>
+			</trans-unit>
+			<trans-unit id="stars.0">
+				<source>нет звезд</source>
+			</trans-unit>
+			<trans-unit id="stars.1">
+				<source>1</source>
+			</trans-unit>
+			<trans-unit id="stars.2">
+				<source>2</source>
+			</trans-unit>
+			<trans-unit id="stars.3">
+				<source>3</source>
+			</trans-unit>
+			<trans-unit id="stars.4">
+				<source>4</source>
+			</trans-unit>
+			<trans-unit id="stars.5">
+				<source>5</source>
+			</trans-unit>
+			<trans-unit id="btn.0">
+				<source>Маленькая форма</source>
+			</trans-unit>
+			<trans-unit id="btn.1">
+				<source>Большая форма</source>
+			</trans-unit>
+			<trans-unit id="tx_news_domain_model_news.tx_pbnewsjobs_whereclick">
+				<source>Где кликнули</source>
+			</trans-unit>
+			<trans-unit id="tx_news_domain_model_news.tx_pbnewsjobs_htmlcode">
+				<source>Html код "забронировать"</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
+
+
