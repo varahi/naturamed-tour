@@ -1,0 +1,40 @@
+lib.search = TEXT
+lib.search.wrap = <div class="header-search"><div class="header-search-wrapper">|</div></div>
+lib.search.value (
+        <form action="search/" method="post" class="search">
+          <input name="tx_indexedsearch[sword]" type="text" placeholder="Поиск" type="search" />
+          <input name="tx_indexedsearch[_sections]" value="0" type="hidden" />
+          <input name="tx_indexedsearch[pointer]" value="0" type="hidden" />
+          <input name="tx_indexedsearch[ext]" value="0" type="hidden" />
+        </form>
+)
+
+/*
+lib.headerSearch = USER
+lib.headerSearch {
+    userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+    extensionName = IndexedSearch
+    pluginName = Pi2
+    vendorName = TYPO3\CMS
+    switchableControllerActions {
+        Search {
+            1 = form
+            2 = search
+        }
+    }
+    features {
+        requireCHashArgumentForActionArguments = 0
+    }
+    view < plugin.tx_indexedsearch.view
+    view.partialRootPaths.10 = EXT:tmpl/Resources/Private/Extensions/Indexed_Search/Partials/
+    view.templateRootPaths.10 = EXT:tmpl/Resources/Private/Extensions/Indexed_Search/Templates/
+
+    settings =< plugin.tx_indexedsearch.settings
+}
+
+[globalVar = TSFE:id = 106]
+    lib.headerSearch >
+[global]
+
+lib.headerSearch >
+*/

@@ -2,3 +2,7 @@
 .footer-form-column-2 legend.powermail_legend{
     display: none;
 }
+.tx-indexedsearch-whatis,
+.tx-indexedsearch-browsebox {
+    display: none;
+}

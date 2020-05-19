@@ -22,3 +22,17 @@ plugin.tx_tmpl {
 
 config.contentObjectExceptionHandler = 0
 
+plugin.tx_indexedsearch {
+    templateFile >
+    templateFile = EXT:tmpl/Resources/Private/Extensions/Indexed_Search/indexed_search.html
+    show {
+        rules = 0
+        advancedSearchLink = 0
+    }
+    blind {
+        freeIndexUid = 0
+    }
+}
+plugin.tx_indexedsearch.search.rootPidList = 1
+page.config.index_enable = 1
+page.config.index_externals = 0
