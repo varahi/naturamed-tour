@@ -120,42 +120,58 @@
                                             <f:if condition="{newsItem.txPbnewsjobsProezd}">
                                                 <li><h2>Проезд</h2></li>
                                             </f:if>
-                                            <!--
-                                            <f:if condition="{newsItem.txPbnewsjobsComments}">
-                                                <li><h2>Цены</h2></li>
-                                            </f:if>
-                                            <f:if condition="{newsItem.txPbnewsjobsPriceny}">
-                                            <li><h2>Новый год 2020</h2></li>
-                                            </f:if>
-                                            -->
+
+                                            <f:comment>
+                                                <f:if condition="{newsItem.txPbnewsjobsComments}">
+                                                    <li><h2>Цены</h2></li>
+                                                </f:if>
+                                                <f:if condition="{newsItem.txPbnewsjobsPriceny}">
+                                                    <li><h2>Новый год 2020</h2></li>
+                                                </f:if>
+                                            </f:comment>
+
                                         </ul>
                                         <div>
-                                            <div>
-                                                <f:format.html>{newsItem.bodytext}</f:format.html>
-                                            </div>
-                                            <div>
-                                                <f:format.html>{newsItem.txPbnewsjobsTreatment}</f:format.html>
-                                            </div>
-                                            <div>
-                                                <f:format.html>{newsItem.txPbnewsjobsHabitation}</f:format.html>
-                                            </div>
-                                            <div>
-                                                <f:format.html>{newsItem.txPbnewsjobsFood}</f:format.html>
-                                            </div>
-                                            <div>
-                                                <f:format.html>{newsItem.txPbnewsjobsInfra}</f:format.html>
-                                            </div>
-                                            <div>
-                                                <f:format.html>{newsItem.txPbnewsjobsProezd}</f:format.html>
-                                            </div>
-                                            <!--
-                                            <div>
-                                                <f:format.html>{newsItem.txPbnewsjobsComments}</f:format.html>
-                                            </div>
-                                            <div>
-                                                <f:format.html>{newsItem.txPbnewsjobsPriceny}</f:format.html>
-                                            </div>
-                                            -->
+                                            <f:if condition="{newsItem.bodytext}">
+                                                <div>
+                                                    <f:format.html>{newsItem.bodytext}</f:format.html>
+                                                </div>
+                                            </f:if>
+                                            <f:if condition="{newsItem.txPbnewsjobsTreatment}">
+                                                <div>
+                                                    <f:format.html>{newsItem.txPbnewsjobsTreatment}</f:format.html>
+                                                </div>
+                                            </f:if>
+                                            <f:if condition="{newsItem.txPbnewsjobsHabitation}">
+                                                <div>
+                                                    <f:format.html>{newsItem.txPbnewsjobsHabitation}</f:format.html>
+                                                </div>
+                                            </f:if>
+                                            <f:if condition="{newsItem.txPbnewsjobsFood}">
+                                                <div>
+                                                    <f:format.html>{newsItem.txPbnewsjobsFood}</f:format.html>
+                                                </div>
+                                            </f:if>
+                                            <f:if condition="{newsItem.txPbnewsjobsInfra}">
+                                                <div>
+                                                    <f:format.html>{newsItem.txPbnewsjobsInfra}</f:format.html>
+                                                </div>
+                                            </f:if>
+                                            <f:if condition="{newsItem.txPbnewsjobsProezd}">
+                                                <div>
+                                                    <f:format.html>{newsItem.txPbnewsjobsProezd}</f:format.html>
+                                                </div>
+                                            </f:if>
+
+                                            <f:comment>
+                                                <div>
+                                                    <f:format.html>{newsItem.txPbnewsjobsComments}</f:format.html>
+                                                </div>
+                                                <div>
+                                                    <f:format.html>{newsItem.txPbnewsjobsPriceny}</f:format.html>
+                                                </div>
+                                            </f:comment>
+
                                         </div>
                                     </div>
                                 </div>
@@ -163,13 +179,15 @@
                         </div>
                     </section>
 
-                    <!--f:render partial="Detail/MediaContainer" arguments="{media: newsItem.media, settings:settings}" /-->
-
-                    <!-- main text -->
-                    <!--div class="news-text-wrap" itemprop="articleBody">
-                        <f:format.html>{newsItem.bodytext}</f:format.html>
-                    </div-->
-
+                    <f:comment>
+                        <!--f:render partial="Detail/MediaContainer" arguments="{media: newsItem.media, settings:settings}" /-->
+                    </f:comment>
+                    <f:comment>
+                        <!-- main text -->
+                        <!--div class="news-text-wrap" itemprop="articleBody">
+                            <f:format.html>{newsItem.bodytext}</f:format.html>
+                        </div-->
+                    </f:comment>
 
                 </f:then>
                 <f:else>
