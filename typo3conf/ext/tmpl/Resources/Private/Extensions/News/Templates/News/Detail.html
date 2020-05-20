@@ -61,7 +61,7 @@
                                                                 </f:if>
                                                             </f:for>
                                                             <p></p>
-                                                            <div class="text-left color-orange">
+                                                            <div class="text-left color-orange sanatorii-stars">
                                                                 <f:switch expression="{newsItem.txPbnewsjobsStars}">
                                                                     <f:case value="1"><i class="im im-star"></i></f:case>
                                                                     <f:case value="2"><i class="im im-star"></i> <i class="im im-star"></i></f:case>
@@ -69,10 +69,16 @@
                                                                     <f:case value="4"><i class="im im-star"></i> <i class="im im-star"></i> <i class="im im-star"></i> <i class="im im-star"></i></f:case>
                                                                     <f:case value="5"><i class="im im-star"></i> <i class="im im-star"></i> <i class="im im-star"></i> <i class="im im-star"></i> <i class="im im-star"></i></f:case>
                                                                 </f:switch>
-                                                                <a class="btn btn-success" data-fancybox data-src="#hidden-content" href="javascript:;"><f:translate key="news.booking" extensionName="tmpl" /></a>
-                                                                <!-- Html code booking -->
-                                                                <f:format.raw>{newsItem.txPbnewsjobsHtmlcode}</f:format.raw>
                                                             </div>
+                                                            <f:if condition="{newsItem.txPbnewsjobsHtmlcode}">
+                                                            <div class="sanatorii-button-popup">
+                                                                <a class="btn btn-success" data-fancybox data-src="#hidden-content" href="javascript:;"><f:translate key="news.booking" extensionName="tmpl" /></a>
+                                                            </div>                                                               
+                                                            <!-- Html code booking -->
+                                                            <div id="hidden-content" class="sanatorii-text-popup">
+                                                            <f:format.raw>{newsItem.txPbnewsjobsHtmlcode}</f:format.raw>
+                                                            </div>
+                                                            </f:if>
                                                             <div class="text-left pt-10">
                                                                 <strong>
                                                                     {newsItem.txPbnewsjobsCommentsnum}
@@ -114,12 +120,14 @@
                                             <f:if condition="{newsItem.txPbnewsjobsProezd}">
                                                 <li><h2>Проезд</h2></li>
                                             </f:if>
+                                            <!--
                                             <f:if condition="{newsItem.txPbnewsjobsComments}">
                                                 <li><h2>Цены</h2></li>
                                             </f:if>
-                                            <!--f:if condition="{newsItem.txPbnewsjobsPriceny}">
+                                            <f:if condition="{newsItem.txPbnewsjobsPriceny}">
                                             <li><h2>Новый год 2020</h2></li>
-                                            </f:if-->
+                                            </f:if>
+                                            -->
                                         </ul>
                                         <div>
                                             <div>
@@ -140,10 +148,10 @@
                                             <div>
                                                 <f:format.html>{newsItem.txPbnewsjobsProezd}</f:format.html>
                                             </div>
+                                            <!--
                                             <div>
                                                 <f:format.html>{newsItem.txPbnewsjobsComments}</f:format.html>
                                             </div>
-                                            <!--
                                             <div>
                                                 <f:format.html>{newsItem.txPbnewsjobsPriceny}</f:format.html>
                                             </div>

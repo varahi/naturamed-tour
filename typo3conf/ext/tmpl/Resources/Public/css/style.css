@@ -1934,6 +1934,7 @@ section.popular-destinations .popular-destinations-slider-item-price {
     font-family: 'PT Sans Bold';
     font-size: 14px;
     line-height: 18px;
+    height: 28px;
     color: #fff;
     text-align: right;
     padding-left: 20px;
@@ -4940,5 +4941,17 @@ section.footer-menu .footer-menu-copyright {
 div.person.text-center {
     padding-top: 10px;
     padding-bottom: 10px;
+}
+.sanatorii-stars i:before {
+    font-size: 20px;
+}
+.sanatorii-button-popup {
+    overflow: hidden;
+    padding-top: 10px;
+}
+.sanatorii-text-popup {
+    display: none;
+    width: 100%;
+    max-width: 1204px;
 }
 /* fix old-style */
