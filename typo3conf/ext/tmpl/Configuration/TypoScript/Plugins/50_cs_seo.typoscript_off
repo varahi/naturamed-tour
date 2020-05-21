@@ -16,24 +16,6 @@ plugin.tx_csseo.sitemap {
 
             # int; page uid where the details are shown
             detailPid = 44
-
-            # comma separated list; configure the available languages, e.g.: 0,1
-            languageUids = {$plugin.tx_csseo.sitemap.extensions.news.languageUids}
-
-            # comma separated list; display only records with this categories
-            categories = {$plugin.tx_csseo.sitemap.extensions.news.categories}
-
-            # string; if categories were saved in the same table, set here the field name
-            categoryField =
-
-            # string; if categories were saved in a MM-Table set here the name of the table
-            categoryMMTable = sys_category_record_mm
-
-            # boolean; true if the MM table has a column 'tablenames' which contains the current record table
-            categoryMMTablenames = 1
-
-            # string; if set the column 'fieldname' of the MM-table must be this
-            categoryMMFieldname = categories
         }
 
         sanatoriums {

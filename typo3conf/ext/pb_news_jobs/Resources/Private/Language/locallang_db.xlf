@@ -75,6 +75,10 @@
 			<trans-unit id="tx_news_domain_model_news.tx_pbnewsjobs_htmlcode">
 				<source>Html код "забронировать"</source>
 			</trans-unit>
+			<trans-unit id="tx_news_domain_model_news.tx_pbnewsjobs_custom_meta">
+				<source>Использовать кастомные мета теги</source>
+			</trans-unit>
+
 		</body>
 	</file>
 </xliff>
