@@ -297,13 +297,12 @@ $tempColumns = array(
 //RTE fields End    
 
 
-t3lib_div::loadTCA('tx_news_domain_model_news');
+//t3lib_div::loadTCA('tx_news_domain_model_news');
 
-t3lib_extMgm::addStaticFile($_EXTKEY,'Configuration/TypoScript', 'News Jobs');
-
-t3lib_extMgm::addTCAcolumns('tx_news_domain_model_news',$tempColumns,1);
-t3lib_extMgm::addToAllTCAtypes('tx_news_domain_model_news','--div--;LLL:EXT:pb_news_jobs/Resources/Private/Language/locallang_db.xlf:tab1,
-tx_pbnewsjobs_predlog;;;;1-1-1, tx_pbnewsjobs_goodnum,tx_pbnewsjobs_goodword,tx_pbnewsjobs_price,tx_pbnewsjobs_stars,tx_pbnewsjobs_commentsnum,
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY,'Configuration/TypoScript', 'News Jobs');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tx_news_domain_model_news',$tempColumns,1);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('tx_news_domain_model_news',
+    '--div--;LLL:EXT:pb_news_jobs/Resources/Private/Language/locallang_db.xlf:tab1,tx_pbnewsjobs_predlog;;;;1-1-1, tx_pbnewsjobs_goodnum,tx_pbnewsjobs_goodword,tx_pbnewsjobs_price,tx_pbnewsjobs_stars,tx_pbnewsjobs_commentsnum,
 tx_pbnewsjobs_treatment;;;richtext[]:rte_transform[mode=ts_css|imgpath=uploads/tx_pbnewsjobs/rte/],
 tx_pbnewsjobs_habitation;;;richtext[]:rte_transform[mode=ts_css|imgpath=uploads/tx_pbnewsjobs/rte/],
 tx_pbnewsjobs_food;;;richtext[]:rte_transform[mode=ts_css|imgpath=uploads/tx_pbnewsjobs/rte/],
@@ -318,9 +317,9 @@ tx_pbnewsjobs_whereclickny,
 tx_pbnewsjobs_htmlcode');
 
 
-
- 
-
+//\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tx_news_domain_model_news', $metaColumns, 1);
+//\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('tx_news_domain_model_news', 'tx_pbnewsjobs_custom_meta');
+//\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('tx_news_domain_model_news', '--div--; Seo Tab,tx_pbnewsjobs_custom_meta;;;;1-1-1', '');
 
 //Добавляем новый тип новостей
 #$GLOBALS['TCA']['tx_news_domain_model_news']['columns']['type']['config']['items'][] = Array('Новый тип новостей', 3);

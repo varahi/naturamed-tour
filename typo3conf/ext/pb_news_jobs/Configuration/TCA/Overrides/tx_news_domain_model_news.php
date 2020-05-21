@@ -204,11 +204,20 @@ $tempColumns = array(
             'softref' => 'rtehtmlarea_images,typolink_tag,images,email[subst],url',
         )
     ),
+
+    //17. Use custom meta data
+    'tx_pbnewsjobs_custom_meta' => array(
+        'exclude' => 1,
+        'label' => 'LLL:EXT:pb_news_jobs/Resources/Private/Language/locallang_db.xml:tx_news_domain_model_news.tx_pbnewsjobs_custom_meta',
+        'config' => array(
+            'type' => 'check',
+            'default' => 0
+        )
+    ),
 	
 );
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tx_news_domain_model_news', $tempColumns, true);
-
 
 //Добавляем новый тип новостей
 #$GLOBALS['TCA']['tx_news_domain_model_news']['columns']['type']['config']['items'][] = Array('Новый тип новостей', 3);

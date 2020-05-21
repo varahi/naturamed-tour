@@ -123,6 +123,11 @@ class Tx_PbNewsJobs_Domain_Model_News extends Tx_News_Domain_Model_News {
      */
     protected $txPbnewsjobsHtmlcode;
 
+    /**
+     * @var string
+     */
+    protected $txPbnewsjobsCustomMeta;
+
 	/**
 	 * @param string $txPbnewsjobsEntrydate
 	 */
@@ -387,6 +392,20 @@ class Tx_PbNewsJobs_Domain_Model_News extends Tx_News_Domain_Model_News {
      */
     public function gettxPbnewsjobsHtmlcode(){
         return $this->txPbnewsjobsHtmlcode;
+    }
+
+    /**
+     * @param string $txPbnewsjobsCustomMeta
+     */
+    public function setTxPbnewsjobsCustomMeta($txPbnewsjobsCustomMeta){
+        $this->txPbnewsjobsCustomMeta = $txPbnewsjobsCustomMeta;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTxPbnewsjobsCustomMeta(){
+        return $this->txPbnewsjobsCustomMeta;
     }
 
 }

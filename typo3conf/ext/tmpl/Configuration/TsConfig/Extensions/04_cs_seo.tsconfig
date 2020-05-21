@@ -14,4 +14,13 @@ tx_csseo {
         # cs_seo description field fallback = news description field
         description = description
     }
+
+    # enable evaluation for news
+    1.evaluation {
+    # additional params to initialize the detail view, the pipe will be replaced by the uid
+        getParams = &tx_myext_pi1[controller]=MyController&tx_myext_pi1[action]=MyAction&tx_myext_pi1[mymod]=|
+    # detail pid for the current records, only if set the table will be available
+        detailPid =
+    }
+
 }
