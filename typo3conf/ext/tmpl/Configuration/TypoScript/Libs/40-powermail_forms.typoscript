@@ -37,3 +37,13 @@ lib.formMailing {
     dontCheckPid = 1
     tables = tt_content
 }
+
+// Pid 84
+lib.formReservation
+lib.formReservation = RECORDS
+lib.formReservation {
+    wrap = <div id="zabronirovat" class="callback-modal">|</div>
+    source = 440
+    dontCheckPid = 1
+    tables = tt_content
+}

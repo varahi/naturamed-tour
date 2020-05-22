@@ -19,10 +19,14 @@ lib.breadcrumb {
                 ATagTitle.field = subtitle // title
                 stdWrap.htmlSpecialChars = 1
             }
-
+            ACT <.NO
+            ACT {
+                wrapItemAndSub = <li><span>|</span>&#124;</li>
+                doNotLinkIt = 0
+            }
             CUR <.NO
             CUR {
-                wrapItemAndSub = <li>&#124;<span>|</span></li>
+                wrapItemAndSub = <li><span>|</span></li>
                 doNotLinkIt = 1
             }
         }

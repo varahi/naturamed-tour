@@ -179,6 +179,14 @@
 		<trans-unit id="tt_content.layout_h6">
 			<source>Layout h6</source>
 		</trans-unit>
+
+			<trans-unit id="news.sanatorium_profile">
+				<source>Профиль санатория</source>
+			</trans-unit>
+			<trans-unit id="news.sanatorium_reserv">
+				<source>Забронировать</source>
+			</trans-unit>
+
 		</body>
 	</file>
 </xliff>
