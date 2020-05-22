@@ -8,3 +8,19 @@ page.meta {
     //robots               = noindex,nofollow
 }
 
+
+[globalVar = GP:tx_news_pi1|news > 0]
+    page {
+        config {
+            noPageTitle = 0
+        }
+        headerData {
+            776 >
+        }
+        meta {
+            description >
+            author >
+            keywords >
+        }
+    }
+[end]
