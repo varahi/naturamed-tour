@@ -6,12 +6,6 @@
         <div class="wrap-text">
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <p class="date">
-                        <time datetime="{f:format.date(date:newsItem.datetime, format:'Y-m-d')}">
-                            <f:format.date format="{f:translate(key:'dateFormat')}">{newsItem.datetime}</f:format.date>
-                            <meta itemprop="datePublished" content="{f:format.date(date:newsItem.datetime, format:'Y-m-d')}" />
-                        </time>
-                    </p>
                     <p class="title">
                         <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}"> <span itemprop="headline">{newsItem.title}</span> </n:link>
                     </p>

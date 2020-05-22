@@ -213,18 +213,12 @@
                         </f:if>
                         <f:render partial="Detail/Opengraph" arguments="{newsItem: newsItem, settings:settings}" />
                     </n:format.nothing>
-                    <div class="header">
-                        <h3 itemprop="headline">{newsItem.title}</h3>
+                    <div class="csc-header csc-header-n1">
+                        <div class="article-h1">
+                            <div class="article-h1-line"></div>
+                            <div class="article-h1-text"><h1 itemprop="headline">{newsItem.title}</h1></div>
+                        </div>
                     </div>
-                    <div class="footer">
-                        <p>
-                            <!-- date -->
-                            <span class="news-list-date">
-						<time datetime="{f:format.date(date:newsItem.datetime, format:'Y-m-d')}">
-							<f:format.date format="{f:translate(key:'dateFormat')}">{newsItem.datetime}</f:format.date>
-							<meta itemprop="datePublished" content="{f:format.date(date:newsItem.datetime, format:'Y-m-d')}" />
-						</time>
-					</span>
 
                             <f:if condition="{newsItem.categories}">
                                 <!--f:render partial="Category/Items" arguments="{categories:newsItem.categories, settings:settings}" /-->
@@ -245,7 +239,6 @@
 							<f:translate key="author_simple" /> <span itemprop="name">{newsItem.author}</span>
 						</span>
                             </f:if>
-                        </p>
                     </div>
 
                     <f:if condition="{newsItem.teaser}">

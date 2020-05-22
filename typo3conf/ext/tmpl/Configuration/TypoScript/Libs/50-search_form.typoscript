@@ -3,6 +3,7 @@ lib.search.wrap = <div class="header-search"><div class="header-search-wrapper">
 lib.search.value (
         <form action="search/" method="post" class="search">
           <input name="tx_indexedsearch[sword]" placeholder="Поиск" type="search" />
+          <button type="submit">Поиск</button>
           <input name="tx_indexedsearch[_sections]" value="0" type="hidden" />
           <input name="tx_indexedsearch[pointer]" value="0" type="hidden" />
           <input name="tx_indexedsearch[ext]" value="0" type="hidden" />

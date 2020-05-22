@@ -128,10 +128,11 @@
                     </div>
                 </div>
             </div>
-
             <div class="col-12 col-md-5 news-sanatorii2">
+                <!--div class="d-flex justify-content-between"-->
                 <div class="mwrap grid-news-list-button">
-                    <div class="profile d-block float-left"> <b><f:translate key="news.sanatorium_profile" extensionName="tmpl" /></b>
+                    <div class="profile d-block float-left">
+                        <b><f:translate key="news.sanatorium_profile" extensionName="tmpl" /></b>
                         <div>
                             <f:for each="{newsItem.categories}" as="category" iteration="catiterator">
                                 <f:if condition="{category.parentcategory.uid} == 5">
@@ -140,6 +141,7 @@
                                     </f:then>
                                 </f:if>
                             </f:for>
+
                         </div>
                     </div>
                     <div class="price d-block float-left">
@@ -149,35 +151,6 @@
                     </div>
                 </div>
             </div>
-
-            <f:comment>
-                <!-- Old template -->
-                <div class="col-12 col-md-5 news-sanatorii2">
-                    <!--div class="d-flex justify-content-between"-->
-                    <div class="mwrap">
-                        <div class="profile w-50 d-block float-left">
-                            <b>Профиль санатория</b>
-                            <div>
-                                <f:for each="{newsItem.categories}" as="category" iteration="catiterator">
-                                    <f:if condition="{category.parentcategory.uid} == 5">
-                                        <f:then>
-                                            <div>{category.title}</div>
-                                        </f:then>
-                                    </f:if>
-                                </f:for>
-
-                            </div>
-                        </div>
-                        <div class="price w-50 d-block float-left">
-                            <p class="text-center">от {newsItem.txPbnewsjobsPrice}</p>
-                            <p><a href="#"  data-toggle="modal" data-target="#modalForm1" class="btn btn-success">Забронировать</a></p>
-
-                        </div>
-                    </div>
-                </div>
-            </f:comment>
-
-
         </div>
     </div>
 </section>

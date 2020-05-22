@@ -283,7 +283,21 @@ header .header-search-wrapper input {
     font-size: 15px;
     line-height: 36px;
     color: #3c3c3c;
-    background: url("../images/search-header.png") center right no-repeat;
+    background: #fff;
+}
+header .header-search-wrapper form {
+    display: grid;
+    grid-template-columns: 1fr 20px;
+}
+header .header-search-wrapper form button {
+    width: 20px;
+    height: 36px;
+    background: url("../images/search-header.png") center no-repeat;
+    font-size: 0px;
+    cursor: pointer;
+}
+header .header-search-wrapper form input:focus + button {
+    background: url("../images/search-header-hover.png") center no-repeat;
 }
 @media screen and (max-width: 1300px) {
     header .header-search-wrapper input {
@@ -4964,5 +4978,18 @@ body .button-order-orange a {
 body .button-order-orange a:hover {
     background-color: #333 !important;
     border: 1px #333 solid !important;
+}
+.grid-news-list-button {
+    display: grid;
+    grid-template-columns: 1fr 206px;
+    grid-column-gap: 10px;
+    align-items: start;
+    padding-bottom: 20px;
+}
+section.typography .hr-bottom-30 {
+    overflow: hidden;
+}
+section.typography section#sanatorii {
+    margin-bottom: 20px;
 }
 /* fix old-style */
