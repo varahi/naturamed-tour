@@ -1,0 +1,14 @@
+plugin.tx_powermail {
+    _LOCAL_LANG {
+        default {
+            datepicker_format_date = d.m.Y
+            datepicker_format_time = d.m.Y H:i:s
+            datepicker_format_datetime = H:i:s
+        }
+        ru {
+            datepicker_format_date = Y-m-d
+            datepicker_format_time = Y-m-d H:i:s
+            datepicker_format_datetime = H:i:s
+        }
+    }
+}
