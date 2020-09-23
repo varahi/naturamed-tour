@@ -5,12 +5,6 @@
 			<generator>LFEditor</generator>
 		</header>
 		<body>
-			<trans-unit id="flexforms_general.news_special_class">
-				<source>Add special class for link in list view</source>
-			</trans-unit>
-			<trans-unit id="flexforms_general.news_additional_config">
-				<source>Additional configuration</source>
-			</trans-unit>
 		<trans-unit id="flexforms_general.cooperation_class">
 			<source>Cooperation class</source>
 		</trans-unit>
