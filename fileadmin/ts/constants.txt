@@ -1,0 +1,17 @@
+#plugin.tx_fluidbootstraptheme.view {
+#	templateRootPath = fileadmin/templates/Resources/Private/Templates/
+#	partialRootPath = fileadmin/templates/Resources/Private/Partials/
+#	layoutRootPath = fileadmin/templates/Resources/Private/Layouts/
+#}
+
+#plugin.tx_fluidbootstraptheme.view {
+#	templateRootPath{
+#        0 = fileadmin/templates/Resources/Private/Templates/
+#    }
+#	partialRootPath{
+#        0 = fileadmin/templates/Resources/Private/Partials/
+#    }
+#	layoutRootPath{
+#        0 = fileadmin/templates/Resources/Private/Layouts/
+#    }
+#}

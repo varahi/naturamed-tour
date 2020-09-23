@@ -1,0 +1,114 @@
+RTE.default.userElements {
+  10 = Кнопки
+  10 {
+    1 = Table
+    1.description = Кнопка забронировать маленькая форма
+    1.content = <div class="color-white order"><a class="btn btn-success collapsed mb-2" data-toggle="modal" data-target="#modalForm1">Забронировать<span class="order-value d-none">"Где кликнули"</span></a></div>
+
+    2 = Table
+    2.description = Кнопка подбор тура большая форма
+    2.content = <div class="color-white order"><a class="btn btn-success collapsed mb-2" data-toggle="modal" data-target="#modalForm2">Подбор тура<span class="order-value d-none">"Где кликнули"</span></a></div>
+
+    3 = Table
+    3.description = Кнопка забронировать детокс
+    3.content = <div class="color-white order"><a class="btn btn-success collapsed mb-2" data-toggle="modal" data-target="#modalForm3">Забронировать<span class="order-value d-none">"Где кликнули"</span></a></div>
+
+    4 = Table
+    4.description = Кнопка забронировать маленькая форма версия2
+    4.content = <div class="color-white order"><a class="btn btn-success collapsed mb-2" data-toggle="modal" data-target="#modalForm1">Забронировать</a><div class="order-value d-none">"Где кликнули"</div></div>
+
+    5 = Table
+    5.description = Кнопка подбор тура большая форма версия2
+    5.content = <div class="color-white order"><a class="btn btn-success collapsed mb-2" data-toggle="modal" data-target="#modalForm2">Подбор тура</a><div class="order-value d-none">"Где кликнули"</div></div>
+
+    6 = Table
+    6.description = Кнопка забронировать детокс версия2
+    6.content = <div class="color-white order"><a class="btn btn-success collapsed mb-2" data-toggle="modal" data-target="#modalForm3">Забронировать</a><div class="order-value d-none">"Где кликнули"</div></div>
+
+#    4 = Table
+#    4.description = Кнопка оставить заявку версия2
+#    4.content = <div class="color-white order"><a class="btn btn-success collapsed mb-2" data-toggle="modal" data-target="#orderModal">Оставить заявку<span class="order-value d-none">"Где кликнули"</span></a></div>
+
+  }
+}
+
+RTE.buttons.image.options.magic.maxWidth = 600
+RTE.buttons.image.options.plain.maxWidth = 1140
+RTE.default.buttons.image.options.magic.maxWidth = 600
+RTE.default.buttons.image.options.plain.maxWidth = 1140
+
+#RTE.buttons.link.properties.class.allowedClasses = 
+
+#Запретить title у всех ссылок rte 
+#RTE.default.proc.entryHTMLparser_db.tags.a.fixAttrib.title.unset = 1
+#RTE.default.proc.allowedClasses =
+
+#RTE.default.showButtons := addToList(user)
+RTE.default.showButtons = *
+RTE.default.hideButtons := removeFromList(user)
+RTE.default.hideButtons = textcolor, bgcolor, fontstyle, fontsize
+
+RTE.default.proc.HTMLparser_db.allowTags = html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td 
+
+##Свои классы
+RTE.default.buttons.textstyle.showTagFreeClasses = 1
+
+RTE.default.contentCSS = fileadmin/css/rte.css
+RTE.default.proc.allowedClasses := addToList(color-orange,color-green)
+RTE.default.buttons.textstyle.tags.span.allowedClasses := addToList(color-orange,color-green)
+
+
+RTE.classes{
+color-orange {
+             name = Оранжевый цвет текста
+             value = color:#ff960d;
+}
+color-green {
+             name = Зеленый цвет текста
+             value = color:#7ca25c;
+}
+}
+
+
+
+####################################################################################
+############################Свои классы powermail###################################
+####################################################################################
+
+TCEFORM {
+    tx_powermail_domain_model_forms {
+        css {
+            #removeItems = layout1, layout2, layout3
+            addItems {
+#                blue = Blue Form
+#                green = Green Form
+				 row = row
+                 col-4 = col-4
+                 col-5 = col-5
+                 col-6 = col-6
+                 col-7 = col-7
+                 col-12 = col-12
+#				 vig-checkbox-html = checkbox HTML
+            }
+        }
+    }
+    tx_powermail_domain_model_pages < .tx_powermail_domain_model_forms
+    tx_powermail_domain_model_fields < .tx_powermail_domain_model_forms
+}
+
+####################################################################################
+###################################tx_news##########################################
+####################################################################################
+
+tx_news.templateLayouts {
+        10 = Новости
+        15 = Новости на главной
+        20 = Акции
+        22 = Акции на главной
+        30 = Спецпредложения
+        40 = Отзывы
+        45 = Отзывы на главной
+        50 = Лечебные программы
+        60 = Санатории
+}
+#TCEFORM.tx_news_domain_model_news.author_email.label = Стоимость

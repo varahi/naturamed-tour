@@ -1,0 +1,76 @@
+plugin.tx_vhs.settings.asset{
+
+
+	font-awesome {
+		#path = fileadmin/templates/Resources/Public/Stylesheets/font-awesome.css
+        #path = https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+        path = https://use.fontawesome.com/releases/v5.7.1/css/all.css
+		external = 1
+		group = cdn
+		standalone = 1
+		type = css
+	}
+
+	swiper2 {
+		path = fileadmin/templates/Resources/Public/Stylesheets/swiper.min.css
+		external = 0
+		group = my
+		standalone = 1
+		type = css
+	}
+	
+	styles {
+		path = fileadmin/templates/Resources/Public/Stylesheets/style.css
+		external = 0
+		group = my
+		standalone = 1
+		type = css
+	}
+	
+	jquery-min {
+		path = fileadmin/templates/Resources/Public/Javascript/jquery-3.2.1.min.js
+		external = 0
+		group = mjs
+		standalone = 1
+		allowMoveToFooter = 0
+		type = js
+	}
+	
+	popper {
+		path = fileadmin/templates/Resources/Public/Javascript/popper.min.js
+		external = 0
+		group = mjs
+		standalone = 1
+		allowMoveToFooter = 0
+		type = js
+	}
+	
+	bootstrap-min {
+		path = fileadmin/templates/Resources/Public/Javascript/bootstrap.min.js
+		external = 0
+		group = mjs
+		standalone = 1
+		allowMoveToFooter = 0
+		type = js
+	}
+	
+	swiper {
+		path = fileadmin/templates/Resources/Public/Javascript/swiper.min.js
+		external = 0
+		group = mjs
+		standalone = 1
+		allowMoveToFooter = 0
+		type = js
+	}
+	
+	myjs {
+		path = fileadmin/templates/Resources/Public/Javascript/script.js
+		external = 0
+		group = mjs
+		standalone = 1
+		allowMoveToFooter = 1
+		type = js
+	}
+	
+
+}

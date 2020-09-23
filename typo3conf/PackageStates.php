@@ -232,6 +232,17 @@ return array (
       array (
       ),
     ),
+    'indexed_search' => 
+    array (
+      'manifestPath' => '',
+      'composerName' => 'typo3/cms-indexed-search',
+      'state' => 'active',
+      'packagePath' => 'typo3/sysext/indexed_search/',
+      'classesPath' => 'Classes/',
+      'suggestions' => 
+      array (
+      ),
+    ),
     'info' => 
     array (
       'manifestPath' => '',
@@ -692,6 +703,17 @@ return array (
       array (
       ),
     ),
+    'dd_googlesitemap' => 
+    array (
+      'manifestPath' => '',
+      'composerName' => 'dmitryd/typo3-dd-googlesitemap',
+      'state' => 'active',
+      'packagePath' => 'typo3conf/ext/dd_googlesitemap/',
+      'classesPath' => 'Classes/',
+      'suggestions' => 
+      array (
+      ),
+    ),
     'adodb' => 
     array (
       'manifestPath' => '',
@@ -703,12 +725,33 @@ return array (
       array (
       ),
     ),
+    'cs_seo' => 
+    array (
+      'manifestPath' => '',
+      'composerName' => 'clickstorm/cs_seo',
+      'state' => 'inactive',
+      'packagePath' => 'typo3conf/ext/cs_seo/',
+      'classesPath' => 'Classes/',
+      'suggestions' => 
+      array (
+        0 => 'realurl',
+      ),
+    ),
     'dbal' => 
     array (
       'manifestPath' => '',
       'composerName' => 'typo3/cms-dbal',
       'state' => 'inactive',
       'packagePath' => 'typo3/sysext/dbal/',
+      'classesPath' => 'Classes/',
+      'suggestions' => 
+      array (
+      ),
+    ),
+    'dd_googlesitemap_dmf' => 
+    array (
+      'state' => 'inactive',
+      'packagePath' => 'typo3conf/ext/dd_googlesitemap_dmf/',
       'classesPath' => 'Classes/',
       'suggestions' => 
       array (
@@ -731,17 +774,6 @@ return array (
       'composerName' => 'typo3/cms-filemetadata',
       'state' => 'inactive',
       'packagePath' => 'typo3/sysext/filemetadata/',
-      'classesPath' => 'Classes/',
-      'suggestions' => 
-      array (
-      ),
-    ),
-    'indexed_search' => 
-    array (
-      'manifestPath' => '',
-      'composerName' => 'typo3/cms-indexed-search',
-      'state' => 'inactive',
-      'packagePath' => 'typo3/sysext/indexed_search/',
       'classesPath' => 'Classes/',
       'suggestions' => 
       array (

@@ -1,0 +1,138 @@
+#lib.field_webdata = USER
+#lib.field_webdata {
+#includeLibs = fileadmin/php/showorderinfo.php
+#userFunc = agmikeClass->myOrder
+#}
+
+
+lib.field_header_phone = TEXT
+lib.field_header_phone.value = {$header_phone}
+
+
+lib.field_form_feedback = CONTENT
+lib.field_form_feedback {
+table = tt_content
+select.orderBy = sorting
+select.where = colPos=0
+select.languageField = sys_language_uid
+select.pidInList = 82
+}
+
+lib.field_form_subscribe = CONTENT
+lib.field_form_subscribe {
+table = tt_content
+select.orderBy = sorting
+select.where = colPos=0
+select.languageField = sys_language_uid
+select.pidInList = 11
+}
+
+lib.field_form_order = CONTENT
+lib.field_form_order {
+table = tt_content
+select.orderBy = sorting
+select.where = colPos=0
+select.languageField = sys_language_uid
+select.pidInList = 84 #форма забронировать
+}
+
+lib.field_form_callback = CONTENT
+lib.field_form_callback {
+table = tt_content
+select.orderBy = sorting
+select.where = colPos=0
+select.languageField = sys_language_uid
+select.pidInList = 83 #форма заказа звонка
+}
+
+#lib.breadcrumb = HMENU
+#lib.breadcrumb {
+#special = rootline
+#special.range = 0|-1
+#1 = TMENU
+#1 {
+#NO.linkWrap = <li>|<i class="im im-arrow1-right"></i></li>
+#CUR = 1
+#CUR.doNotLinkIt = 1
+#}
+#}
+
+lib.breadcrumb = COA
+lib.breadcrumb {
+stdWrap.wrap = <ol class="breadcrumb">|</ol>
+
+10 = HMENU
+10 {
+    special = rootline
+    #special.range =  1
+
+    1 = TMENU
+    1 {
+        noBlur = 1
+
+        NO = 1
+        NO {
+            wrapItemAndSub = <li class="breadcrumb-item">|</li>
+            ATagTitle.field = title // subtitle
+            stdWrap.htmlSpecialChars = 1
+        }
+
+        CUR <.NO
+        CUR {
+            wrapItemAndSub = <li class="breadcrumb-item active">|</li>
+            doNotLinkIt = 1
+        }
+    }
+}
+
+# Add news title if on single view
+20 = RECORDS
+20 {
+    if.isTrue.data = GP:tx_news_pi1|news
+    dontCheckPid = 1
+    tables = tx_news_domain_model_news
+    source.data = GP:tx_news_pi1|news
+    source.intval = 1
+    conf.tx_news_domain_model_news = TEXT
+    conf.tx_news_domain_model_news {
+        field = title
+        htmlSpecialChars = 1
+    }
+    wrap =  <li>|</li>
+}
+}
+
+#add list news on page
+lib.akciinews = USER
+lib.akciinews {
+  userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+  extensionName = News
+  pluginName = Pi1
+  vendorName = GeorgRinger
+
+  switchableControllerActions {
+        News {
+          1 = list
+        }
+  }
+
+  settings < plugin.tx_news.settings
+  settings {
+        categories = 2
+        limit = 1
+        detailPid = 45
+        templateLayout = 20
+        overrideFlexformSettingsIfEmpty := addToList(detailPid)
+        startingpoint = 41
+        list {
+            media {
+                image {
+                    maxWidth = 800
+                    maxHeight = 600
+                    width = 800c
+                    height = 600c
+                    }
+                }
+            }
+  }
+}

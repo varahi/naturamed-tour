@@ -1,0 +1,306 @@
+#<INCLUDE_TYPOSCRIPT: source="FILE: fileadmin/ts/config.txt">
+[globalVar = TSFE:beUserLogin > 0]
+#page.config.admPanel = 1
+page.config.no_cache = 1
+[end]
+
+page.shortcutIcon = /fileadmin/favicon.ico
+#RealURL
+config.simulateStaticDocuments = 0
+config.baseURL = {$baseUrl}
+config.tx_realurl_enable = 1
+#config.prefixLocalAnchors = all
+
+[browser = msie] && [version= <9]
+page.includeJS {
+file1 = http://html5shim.googlecode.com/svn/trunk/html5.js
+}
+[global]
+#разрешаем классы в таблицах
+lib.parseFunc_RTE.externalBlocks.table.stdWrap.HTMLparser.tags.table.fixAttrib.class.list >
+lib.parseFunc_RTE.externalBlocks.table.stdWrap.HTMLparser.tags.table.fixAttrib.class.default = table table-bordered table-hover table-striped table-responsive
+
+tt_content.stdWrap.innerWrap >
+#tt_content.stdWrap.innerWrap.override = <div class="row" id="uid:{field:uid}"><div class="col-md-12"> | </div><div class="clearfix"></div></div>
+#tt_content.stdWrap.innerWrap.cObject.override = <div class="accordion-item">|</div>
+#tt_content.stdWrap.innerWrap.override{
+#cObject = TEXT
+#cObject.value = <div class="row" id="c{field:uid}"><div class="col-md-12"> | </div><div class="clearfix"></div></div>
+#cObject.insertData = 1
+#}
+
+
+#Оборачиваем стандартные элементы контента в нужный контейнер:
+#tt_content.header.10.wrap = <div class="container"><div class="row"><div class="col-12"> | </div></div></div>
+
+lib.stdheader.10.1.dataWrap = <div class="container"><div class="row"><div class="col-12"><h1{register:headerClass}>|</h1></div></div></div>
+tt_content.text.20.wrap = <div class="container"><div class="row"><div class="col-12"> | </div></div></div>
+tt_content.image.20.wrap = <div class="container"><div class="row"><div class="col-12"> | </div></div></div>
+tt_content.textpic.20.wrap = <div class="container"><div class="row"><div class="col-12"> | </div></div></div>
+tt_content.media.20.wrap = <div class="container"><div class="row"><div class="col-12"> | </div></div></div>
+#tt_content.html.wrap = <div class="container"><div class="row"><div class="col-12"> | </div></div></div>
+#/Оборачиваем стандартные элементы контента в нужный контейнер:
+
+
+
+[globalVar = TSFE:id = 1]
+#page.bodyTag = <body class="body__home option-com_content view-category task- itemid-101"> 
+[end]
+
+
+#выключаем jQuery в powermail
+page {
+includeJSFooterlibs {
+powermailJQuery = 
+powermailJQuery.external = 1
+}
+}
+
+config {
+	doctype = html5
+	xmlprologue = none
+	xhtml_cleaning = none
+	htmlTag_setParams = none
+	no_cache = 0
+	uniqueLinkVars = 1
+	pageTitleFirst = 1
+	linkVars = L
+	renderCharset = utf-8
+	metaCharset = utf-8
+	removeDefaultJS = 1
+	inlineStyle2TempFile = 1
+	admPanel = 0
+	debug = 0
+	cache_period = 86400
+	sendCacheHeaders = 0
+	intTarget =
+	extTarget =
+	disablePrefixComment = 1
+	index_enable = 1
+	index_externals = 1
+	headerComment = Created by AgMike
+	
+}
+#config.doctype = <!DOCTYPE html>
+[browser = msie] && [version = <9]
+[end]
+#html тэги в заголовках
+lib.stdheader {
+	10.setCurrent.htmlSpecialChars = 0
+}
+
+
+# Настройки для основного языка - РУССКОГО
+config.linkVars = L
+config.sys_language_uid = 0
+config.uniqueLinkVars = 1
+config.sys_language_overlay = 1
+config.language = ru
+config.locale_all = ru_RU
+config.sys_language_overlay = 1
+config.sys_language_mode = content_fallback
+#config.sys_language_mode = ignore
+config.htmlTag_langKey = ru-RU
+#config.htmlTag_setParams = lang="ru" dir="ltr" class="no-js"
+config.htmlTag_setParams = lang="en"
+
+plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 0
+#plugin.tx_indexedsearch.templateFile = indexed_search.tmpl
+
+lib.footerCopy = TEXT
+lib.footerCopy.value = {$ruFooterCopy}
+lib.slogan = TEXT
+lib.slogan.value = {$ruSlogan}
+lib.headerform = TEXT
+lib.headerform.value = {$ruHeaderForm}
+lib.footeraddress = TEXT
+lib.footeraddress.value = {$ruAddress}
+lib.footertime = TEXT
+lib.footertime.value = {$ruTime}
+lib.headercontacts = TEXT
+lib.headercontacts.value = {$ruContacts}
+lib.headersearch = TEXT
+lib.headersearch.value = {$ruSearch}
+
+[globalVar = GP:L = 0]
+config.language = ru
+config.locale_all = ru_RU
+config.htmlTag_langKey = ru-RU
+config.sys_language_uid = 0
+config.index_enable = 1
+config.index_externals = 1
+config.index_metatags = 0  # Ausschließen der Metatags
+
+[global]
+
+
+# Настройки для АНГЛИЙСКОГО языка
+[globalVar = GP:L = 3]
+config.language = en
+config.locale_all = en_EN
+config.htmlTag_langKey = en-EN
+config.sys_language_uid = 3
+config.htmlTag_setParams = lang="en" dir="ltr" class="no-js"
+
+plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 3
+#plugin.tx_indexedsearch.templateFile = indexed_search.tmpl
+
+#page.includeCSS {
+#file1 = fileadmin/templates/v2/res/eng.css
+#}
+
+lib.footerCopy = TEXT
+lib.footerCopy.value = {$enFooterCopy}
+
+[global]
+
+plugin.feadmin.dmailsubscription {
+	// Edit setup
+	edit = 1
+	edit {
+		fields = email
+		required = email
+	}
+
+	// Create setup
+	create = 1
+	create {
+		fields = email
+		required = email
+	}
+
+	authcodeFields = uid
+	authcodeFields.addKey =
+	authcodeFields.addDate =
+
+	evalErrors.email.uniqueLocal = Вы уже подписаны!
+	evalErrors.email.email = Неверный e-mail
+	evalErrors.captcha.captcha = Captcha введена неверно.
+
+}
+
+page {
+	typeNum = 0
+	#shortcutIcon = fileadmin/favicon.ico
+	meta {
+		viewport = width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0
+		robots = index,follow
+		google = notranslate
+		apple-mobile-web-app-capable = no
+	}
+
+	headerData {
+		// Flip ahead browsing for IE10/11
+		// http://msdn.microsoft.com/en-us/library/ie/jj883726(v=vs.85).aspx
+		10 = HMENU
+		10 {
+			special = browse
+			special {
+				items = prev|next
+			}
+			1 = TMENU
+			1.NO {
+				allWrap = <link rel="prev" href="|" /> |*| <link rel="next" href="|" />
+				doNotLinkIt = 1
+				stdWrap {
+					typolink {
+						parameter.data = field:uid
+						useCacheHash = 1
+						returnLast = url
+					}
+				}
+			}
+		}
+
+		// Open Graph
+		// http://ogp.me/
+		20 = COA
+		20 {
+			// og:image
+			10 = FILES
+			10 {
+				references {
+					data = levelfield:-1, media, slide
+				}
+
+				maxItems = 1
+				renderObj = TEXT
+				renderObj {
+					data = file:current:publicUrl
+					wrap = <meta property="og:image" content="|" />
+				}
+			}
+		}
+	}
+
+}
+#page end
+
+
+########################search#############################
+page {
+  headerData.20977 = TEXT
+  headerData.20977.value (
+    <script type="text/javascript">
+      function notEmpty(){
+        var myTextField = document.getElementById('sword');
+        if(myTextField.value == 0) {
+          return false;
+        }
+        else {
+          return true;
+        }
+      }
+    </script>
+  )
+}
+
+
+lib.SEARCHBOX = COA
+lib.SEARCHBOX {
+#show.advancedSearchLink = 0
+#show.rules = 0
+#show.alwaysShowPageLinks = 1
+
+#pid of root page is 1 and pid of the search result page is 9
+#search.rootPidList = 1
+#search.targetPid = 1
+#view.defaultPid = 57
+#result_link_target = 57
+
+   stdWrap.prefixComment = 2 | lib.SEARCHBOX
+   10 = TEXT
+   10.typolink.parameter = {$searchpage}
+#   10.typolink.parameter = 57
+   10.typolink.returnLast = url
+   10.wrap = <form onsubmit="return notEmpty()" action="|" method="post" id="indexedsearch" name="searchform"><fieldset>
+  
+   20 = COA
+   20 {
+      10 = TEXT
+      10.data = GP : tx_indexedsearch |sword
+      10.htmlSpecialChars = 1
+#      10.wrap = <input  name="tx_indexedsearch[sword]" value="|" id="sword" class="searchinput" type="text" /><input type="submit" id="indexedsearchbutton"  class="searchbutton"  alt="Search" title="Поиск" value="Поиск" />
+      10.wrap = <div class="input-group header-search"><input type="text" class="form-control searchinput"  placeholder="Поиск"  name="tx_indexedsearch[sword]" value="|" id="sword" /><span class="input-group-addon"><button type="submit" id="indexedsearchbutton"> <span class="fa fa-arrow-right"></span> </button></span></div>
+      
+      20 = COA
+      20 {
+         20 = TEXT
+         20.value = <input type="hidden" name="tx_indexedsearch[sections]" value="0" />
+      }
+   }
+   wrap = |</fieldset></form>
+}
+#######################/search#############################
+
+
+###################################################
+#### EXCLUDE PAGE FROM EXTERNAL SEARCH RESULTS ####
+#### IF NO SEARCH IS SET FOR THIS PAGE         ####
+###################################################
+#[globalVar = TSFE:page|no_search = 1]
+#	page.meta.robots = noindex,follow
+#[end]
+
+
+

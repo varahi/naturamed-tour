@@ -1,29 +1,32 @@
 <?php
 return array(
 	'BE' => array(
-		'debug' => TRUE,
+		'debug' => FALSE,
 		'explicitADmode' => 'explicitAllow',
 		'installToolPassword' => '$P$CLidd/ypKyS/jVala4nxluUKymOjdW/',
 		'loginSecurityLevel' => 'rsa',
+		'versionNumberInFilename' => '0',
 	),
 	'DB' => array(
-		'database' => 'a39200_nattest',
+		'database' => 'a39200_nattour',
 		'extTablesDefinitionScript' => 'extTables.php',
 		'host' => 'a39200.mysql.mchost.ru',
-		'password' => 'aZe8$GBl3oj',
+		'password' => '3xY9zU5S!88',
 		'port' => 3306,
 		'socket' => '',
-		'username' => 'a39200_nattest',
+		'username' => 'a39200_nattour',
 	),
 	'EXT' => array(
 		'extConf' => array(
 			'dce' => 'a:5:{s:16:"filebasedDcePath";s:0:"";s:21:"disableAutoClearCache";s:1:"0";s:29:"disableAutoClearFrontendCache";s:1:"0";s:17:"disableCodemirror";s:1:"0";s:17:"enableUpdateCheck";s:1:"0";}',
+			'dd_googlesitemap' => 'a:0:{}',
 			'extension_builder' => 'a:3:{s:15:"enableRoundtrip";s:1:"1";s:15:"backupExtension";s:1:"1";s:9:"backupDir";s:35:"uploads/tx_extensionbuilder/backups";}',
 			'fluidbootstraptheme' => 'a:2:{s:20:"disablePageTemplates";s:1:"0";s:23:"disableContentTemplates";s:1:"0";}',
 			'fluidcontent' => 'a:0:{}',
 			'fluidpages' => 'a:2:{s:8:"autoload";s:1:"1";s:8:"doktypes";s:0:"";}',
 			'flux' => 'a:3:{s:9:"debugMode";s:1:"0";s:7:"compact";s:1:"0";s:12:"handleErrors";s:1:"0";}',
 			'gridelements' => 'a:2:{s:20:"additionalStylesheet";s:0:"";s:19:"nestingInListModule";s:1:"1";}',
+			'indexed_search' => 'a:18:{s:8:"pdftools";s:9:"/usr/bin/";s:8:"pdf_mode";s:2:"20";s:5:"unzip";s:9:"/usr/bin/";s:6:"catdoc";s:9:"/usr/bin/";s:6:"xlhtml";s:9:"/usr/bin/";s:7:"ppthtml";s:9:"/usr/bin/";s:5:"unrtf";s:9:"/usr/bin/";s:9:"debugMode";s:1:"0";s:18:"fullTextDataLength";s:1:"0";s:23:"disableFrontendIndexing";s:1:"0";s:21:"enableMetaphoneSearch";s:1:"1";s:6:"minAge";s:2:"24";s:6:"maxAge";s:1:"0";s:16:"maxExternalFiles";s:1:"5";s:26:"useCrawlerForExternalFiles";s:1:"0";s:11:"flagBitMask";s:3:"192";s:16:"ignoreExtensions";s:0:"";s:17:"indexExternalURLs";s:1:"0";}',
 			'lfeditor' => 'a:4:{s:13:"viewLanguages";s:0:"";s:15:"defaultLanguage";s:0:"";s:9:"extIgnore";s:23:"/^(CVS|.svn|.git|csh_)/";s:13:"changeXlfDate";s:1:"1";}',
 			'marwein' => 'a:0:{}',
 			'mask' => 'a:4:{s:4:"json";s:62:"typo3conf/ext/tmpl/Resources/Private/Extensions/Mask/mask.json";s:7:"content";s:61:"typo3conf/ext/tmpl/Resources/Private/Extensions/Mask/Content/";s:7:"preview";s:61:"typo3conf/ext/tmpl/Resources/Private/Extensions/Mask/Preview/";s:7:"backend";s:61:"typo3conf/ext/tmpl/Resources/Private/Extensions/Mask/Backend/";}',
@@ -55,7 +58,7 @@ return array(
 	'FE' => array(
 		'activateContentAdapter' => FALSE,
 		'cHashIncludePageId' => TRUE,
-		'debug' => TRUE,
+		'debug' => FALSE,
 		'loginSecurityLevel' => 'rsa',
 	),
 	'GFX' => array(
@@ -75,6 +78,9 @@ return array(
 			'TYPO3\CMS\Install\Updates\TruncateSysFileProcessedFileTable' => 1,
 		),
 	),
+	'MAIL' => array(
+		'transport' => 'mail',
+	),
 	'SYS' => array(
 		'caching' => array(
 			'cacheConfigurations' => array(
@@ -90,17 +96,17 @@ return array(
 				),
 			),
 		),
-		'clearCacheSystem' => TRUE,
+		'clearCacheSystem' => FALSE,
 		'compat_version' => '6.2',
-		'devIPmask' => '*',
-		'displayErrors' => 1,
-		'enableDeprecationLog' => 'file',
+		'devIPmask' => '',
+		'displayErrors' => 0,
+		'enableDeprecationLog' => FALSE,
 		'encryptionKey' => 'e737adf6d07856a44d5f65f2d629332573ee071fe9937139394b6e9f29d570093e4bf6f160761783a7ef15d1d36c2e2f',
-		'exceptionalErrors' => 28674,
+		'exceptionalErrors' => 20480,
 		'isInitialInstallationInProgress' => FALSE,
 		'sitename' => 'naturamed-tour',
-		'sqlDebug' => 1,
-		'systemLogLevel' => 0,
+		'sqlDebug' => 0,
+		'systemLogLevel' => 2,
 		't3lib_cs_convMethod' => 'mbstring',
 		't3lib_cs_utils' => 'mbstring',
 		'trustedHostsPattern' => '.*',

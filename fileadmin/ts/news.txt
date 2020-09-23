@@ -1,0 +1,124 @@
+#plugin.tx_news._LOCAL_LANG.ru.more-link = Подробнее...
+plugin.tx_news{
+    settings{
+    list.media.image.maxWidth = 1200
+    list.media.image.maxHeight = 1200
+    detail.media.image.maxWidth = 1200
+    detail.media.image.maxHeight = 1200
+    list.media.dummyImage = fileadmin/images/dummy-preview-image.png
+        detail.showSocialShareButtons = 0
+        detail.showMetaTags = 1
+        cropMaxCharacters = 10000
+            list{  
+                paginate {
+                    insertAbove = 1
+                    insertBelow = 1
+    }
+}
+}
+}
+
+#skip controller & action V.1
+plugin.tx_news.settings.link.skipControllerAndAction = 1
+
+#skip controller & action V.2 не работает
+#[globalVar = GP:tx_news_pi1|news > 0]
+#	config.defaultGetVars {
+#		tx_news_pi1 {
+#			controller=news
+#			action=detail
+#		}
+#	}
+#[global]
+
+
+##title в новостях #1
+[globalVar = TSFE:id = 49] || [globalVar = TSFE:id = 44]
+    config.noPageTitle = 2
+    temp.newsTitle = RECORDS
+    temp.newsTitle {
+        dontCheckPid = 1
+        tables = tx_news_domain_model_news
+        source.data = GP:tx_news_pi1|news
+        source.intval = 1
+        conf.tx_news_domain_model_news = TEXT
+        conf.tx_news_domain_model_news {
+            field = alternative_title
+			ifEmpty.field = title
+            #alternative_title #title
+            htmlSpecialChars = 1
+        }
+        wrap = <title>|</title>
+    }
+    page.headerData.1 >
+    page.headerData.1 < temp.newsTitle
+[GLOBAL]
+
+#title в новостях #2 (не работает)
+#[globalVar = GP:tx_news_pi1|news > 0]
+#    config.noPageTitle = 2
+#    config.titleTagFunction >
+#[global]
+
+# Basic plugin settings
+
+#lib.news = USER
+#lib.news {
+#                userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+#                pluginName = Pi1
+#                vendorName = GeorgRinger
+#                extensionName = News
+#                controller = News
+#                settings =< plugin.tx_news.settings
+#                persistence =< plugin.tx_news.persistence
+#                view =< plugin.tx_news.view
+#                
+#                switchableControllerActions {
+#                    News {
+#                        1 = list
+#                    }
+#                }                
+#
+#                settings {
+#                    categories = 1
+#                    categoryConjunction = and
+#                    includeSubCategories = 1
+#                    //limit = 30
+#                    detailPid = 133
+#                    //startingpoint = 294
+#                    detail.showSocialShareButtons = 0
+#                    
+#                    //templateLayout = 4
+#                    hidePagination = 0
+#                    list{  
+#                        paginate {
+#                            itemsPerPage = 5
+#                            #пагинация вверху
+#                            insertAbove =
+#                            insertBelow = 1
+#                            #templatePath =
+#                            #prevNextHeaderTags = 1
+#                            #maximumNumberOfLinks = 3                            
+#                            }  
+#                        }                             
+#                    overrideFlexformSettingsIfEmpty := addToList(detailPid)
+#                }                
+#}
+
+#lib.news_list < lib.news
+#lib.news_list {
+#                action = list
+#                switchableControllerActions.News.1 = list
+#}
+#lib.news_detail < lib.news
+#lib.news_detail {
+#                action = detail
+#                switchableControllerActions.News.1 = detail
+#}
+#[globalVar = GP:tx_news_pi1|news > 0]
+#        #page.10.marks.content < lib.news_detail
+#        lib.field_news1 < lib.news_detail       
+#[else]
+#        #page.10.marks.content < lib.news_list
+#        lib.field_news1 < lib.news_list
+#[end]

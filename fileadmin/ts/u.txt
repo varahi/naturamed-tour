@@ -1,0 +1,6 @@
+options{
+	pageTree{
+#		backgroundColor.61 = #00FF7F
+		showPageIdWithTitle = 1
+	}
+}

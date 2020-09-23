@@ -1,0 +1,48 @@
+###########################
+#### RESPONSIVE IMAGES ####
+###########################
+tt_content.image.20.1 {
+	layout {
+		bootstrappackage {
+#			element (
+#				<img src="typo3conf/ext/bootstrap_package/Resources/Public/Images/blank.gif" ###PARAMS######SOURCECOLLECTION######ALTPARAMS######SELFCLOSINGTAGSLASH###>
+#				<noscript>
+#					<img src="###SRC###"###ALTPARAMS###/>
+#				</noscript>
+#			)
+			source = data-###DATAKEY###="###SRC###"
+			source.noTrimWrap = ; ;;
+			source.noTrimWrap.splitChar = ;
+		}
+	}
+
+	sourceCollection >
+	sourceCollection {
+		src {
+			dataKey = src
+		}
+
+		bigger {
+			width = 1140
+			dataKey = bigger
+		}
+
+		large {
+			width = 940
+			dataKey = large
+		}
+
+		medium {
+			width = 720
+			dataKey = medium
+		}
+
+		small {
+			width = 320
+			dataKey = small
+		}
+	}
+
+	params = class="lazyload img-responsive"
+}
+
