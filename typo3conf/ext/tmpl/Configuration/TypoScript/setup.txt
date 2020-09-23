@@ -21,3 +21,6 @@ plugin.tx_tmpl {
 }
 
 config.contentObjectExceptionHandler = 0
+
+lib.currentPageId = TEXT
+lib.currentPageId.data = TSFE:id

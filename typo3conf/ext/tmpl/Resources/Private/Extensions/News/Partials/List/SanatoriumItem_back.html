@@ -1,13 +1,13 @@
 {namespace n=GeorgRinger\News\ViewHelpers}
 
 <f:comment>Санатории</f:comment>
-<section class="sanatorii-item" id="sanatorii">
+<section id="sanatorii">
     <div class="col-12">
-        <div class="sanatorii-item-grid row hr-bottom-30 article item-value-60 articletype-{newsItem.type}{f:if(condition: newsItem.istopnews, then: ' topnews')}" itemscope="itemscope" itemtype="http://schema.org/Article">
+        <div class="row hr-bottom-30 article item-value-60 articletype-{newsItem.type}{f:if(condition: newsItem.istopnews, then: ' topnews')}" itemscope="itemscope" itemtype="http://schema.org/Article">
             <n:excludeDisplayedNews newsItem="{newsItem}"/>
             <!-- header -->
-            <div class="col-12 col-md-7 news-sanatorii sanatorii-item-column-1">
-                <div class="d-flex justify-content-between sanatorii-item-grid-column-1">
+            <div class="col-12 col-md-7 news-sanatorii">
+                <div class="d-flex justify-content-between">
                     <div class="fal-image pr-20">
                         <f:if condition="{newsItem.falMedia}">
                             <!-- fal media preview element -->
@@ -128,11 +128,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-5 news-sanatorii2 sanatorii-item-column-2">
+            <div class="col-12 col-md-5 news-sanatorii2">
                 <!--div class="d-flex justify-content-between"-->
-                <div class="mwrap grid-news-list-button sanatorii-item-grid-column-2">
+                <div class="mwrap grid-news-list-button">
                     <div class="profile d-block float-left">
-                        <b><f:translate key="news.sanatorium_profile" extensionName="tmpl" /></b>
+                        <b>Профиль санатория</b>
                         <div>
                             <f:for each="{newsItem.categories}" as="category" iteration="catiterator">
                                 <f:if condition="{category.parentcategory.uid} == 5">
@@ -145,14 +145,7 @@
                         </div>
                     </div>
                     <div class="price d-block float-left">
-                        <f:comment>
-                        <f:for each="{newsItem.categories}" as="category">
-                            <f:if condition="{category.uid} == 60">
-                                <div class="price-sanatorii-item-preview">От {newsItem.txPbnewsjobsPrice}</div>
-                            </f:if>
-                        </f:for>
-                        </f:comment>
-                        <n:link newsItem="{newsItem}" settings="{settings}" class="btn btn-success more-button-list-sanatorii">Подробнее</n:link>
+                        <a data-fancybox="" data-src="#zabronirovat" class="btn btn-success collapsed mb-2">Забронировать</a>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,43 @@
+$(function() {
+
+    $("form.powermail_form_1").submit(function() {
+        callbackHandler();
+    });
+
+    function callbackHandler() {
+        mgo.postForm({
+            name: document.getElementById('tx_powermail_pi1[field][marker_name]').value,
+            email: document.getElementById('tx_powermail_pi1[field][marker_02]').value,
+            phone: document.getElementById('tx_powermail_pi1[field][marker_01]').value,
+            startDate: document.getElementById('tx_powermail_pi1[field][marker_03]').value,
+            numberOfDays: document.getElementById('tx_powermail_pi1[field][marker_04]').value,
+            numberOfParents: document.getElementById('tx_powermail_pi1[field][marker_05]').value,
+            numberOfChilds: document.getElementById('tx_powermail_pi1[field][marker_06]').value,
+            stars: document.getElementById('tx_powermail_pi1[field][marker_07]').value,
+            comments: document.getElementById('tx_powermail_pi1[field][marker]').value
+        })
+    }
+
+    $("form.powermail_form_4").submit(function() {
+        questionHandler();
+    });
+
+    function questionHandler() {
+        mgo.postForm({
+            name: document.getElementById('tx_powermail_pi1[field][marker_01]').value,
+            phone: document.getElementById('tx_powermail_pi1[field][marker_02]').value
+        })
+    }
+
+    $("form.powermail_form_5").submit(function() {
+        newsHandler();
+    });
+
+    function newsHandler() {
+        mgo.postForm({
+            name: document.getElementById('tx_powermail_pi1[field][marker]').value,
+            phone: document.getElementById('tx_powermail_pi1[field][e_mail]').value
+        })
+    }
+
+});

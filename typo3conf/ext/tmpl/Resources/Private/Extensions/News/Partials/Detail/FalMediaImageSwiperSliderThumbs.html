@@ -14,9 +14,7 @@
 					</a>
 				</f:then>
 				<f:else>
-					<a href="{f:uri.image(image: mediaElement)}" data-fancybox="" data-caption="{mediaElement.alternative}">
-                        <f:image src="{mediaElement.uid}" treatIdAsReference="1" title="{mediaElement.title}" alt="{mediaElement.alternative}" class="w-100 h-100" />
-                    </a>
+                    <f:image src="{mediaElement.uid}" treatIdAsReference="1" title="{mediaElement.title}" alt="{mediaElement.alternative}" class="w-100 h-100" />
 				</f:else>
 			</f:if>
 		</f:else>

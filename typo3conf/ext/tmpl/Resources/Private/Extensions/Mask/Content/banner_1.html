@@ -6,15 +6,17 @@
     </div>
 </f:if>
 
-<div class="sanatorii-rossii-slider-banner-banner-1-text">
-    <div class="sanatorii-rossii-slider-banner-banner-1-title-wrapper">
-        <f:if condition="{data.tx_mask_banner1_title}">
-            <div class="sanatorii-rossii-slider-banner-banner-1-title"><f:format.raw>{data.tx_mask_banner1_title}</f:format.raw></div>
-        </f:if>
-        <f:if condition="{data.tx_mask_banner1_link}">
-            <div class="sanatorii-rossii-slider-banner-banner-1-button">
-                <f:link.page pageUid="{data.tx_mask_banner1_link}">{f:translate(key: 'mask.book_now', extensionName: 'tmpl')}</f:link.page>
-            </div>
-        </f:if>
+<f:link.page pageUid="{data.tx_mask_banner1_link}">
+    <div class="sanatorii-rossii-slider-banner-banner-1-text">
+        <div class="sanatorii-rossii-slider-banner-banner-1-title-wrapper">
+            <f:if condition="{data.tx_mask_banner1_title}">
+                <div class="sanatorii-rossii-slider-banner-banner-1-title"><f:format.raw>{data.tx_mask_banner1_title}</f:format.raw></div>
+            </f:if>
+            <f:if condition="{data.tx_mask_banner1_link}">
+                <div class="sanatorii-rossii-slider-banner-banner-1-button">
+                    <span>Подробнее</span>
+                </div>
+            </f:if>
+        </div>
     </div>
-</div>
+</f:link.page>

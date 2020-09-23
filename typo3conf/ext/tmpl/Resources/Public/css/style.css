@@ -489,7 +489,7 @@ header .header-menu-main menu ul li {
 }
 header .header-menu-main menu ul li a {
     font-family: 'PT Sans Bold';
-    font-size: 18px;
+    font-size: 17px;
     line-height: 60px;
     color: #fff;
     text-decoration: none;
@@ -499,7 +499,7 @@ header .header-menu-main menu ul li a {
 }
 @media screen and (max-width: 1210px) {
     header .header-menu-main menu ul li a {
-        font-size: 15px;
+        font-size: 14px;
     }
 }
 @media screen and (max-width: 1060px) {
@@ -691,10 +691,10 @@ div.breadcrumbs ul li a:hover {
 /* article h1 */
 article .article-h1 {
     text-align: center;
-    height: 41px;
+    height: auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 41px;
+    grid-template-rows: auto;
     align-items: center;
     justify-items: center;
     width: 100%;
@@ -706,8 +706,8 @@ article .article-h1 {
 }
 @media screen and (max-width: 860px) {
     article .article-h1 {
-        height: 21px;
-        grid-template-rows: 21px;
+        height: auto;
+        grid-template-rows: auto;
         margin-top: 0px;
         margin-bottom: 10px;
     }
@@ -735,14 +735,30 @@ article .article-h1-text {
         line-height: 21px;
     }
 }
+article h1 {
+    font-family: 'PT Sans Bold';
+    font-size: 36px;
+    line-height: 41px;
+    color: #3c3c3c;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+@media screen and (max-width: 860px) {
+    article h1 {
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
 /* article h1 */
 /* article h2 */
 article .article-h2 {
     text-align: center;
-    height: 41px;
+    height: auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 41px;
+    grid-template-rows: auto;
     align-items: center;
     justify-items: center;
     width: 100%;
@@ -755,8 +771,8 @@ article .article-h2 {
 }
 @media screen and (max-width: 860px) {
     article .article-h2 {
-        height: 21px;
-        grid-template-rows: 21px;
+        height: auto;
+        grid-template-rows: auto;
         margin-top: 0px;
         margin-bottom: 10px;
     }
@@ -784,14 +800,30 @@ article .article-h2-text {
         line-height: 21px;
     }
 }
+article h2 {
+    font-family: 'PT Sans Bold';
+    font-size: 33px;
+    line-height: 41px;
+    color: #3c3c3c;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+@media screen and (max-width: 860px) {
+    article h2 {
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
 /* article h2 */
 /* article h3 */
 article .article-h3 {
     text-align: center;
-    height: 41px;
+    height: auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 41px;
+    grid-template-rows: auto;
     align-items: center;
     justify-items: center;
     width: 100%;
@@ -804,8 +836,8 @@ article .article-h3 {
 }
 @media screen and (max-width: 860px) {
     article .article-h3 {
-        height: 21px;
-        grid-template-rows: 21px;
+        height: auto;
+        grid-template-rows: auto;
         margin-top: 0px;
         margin-bottom: 10px;
     }
@@ -833,14 +865,30 @@ article .article-h3-text {
         line-height: 21px;
     }
 }
+article h3 {
+    font-family: 'PT Sans Bold';
+    font-size: 30px;
+    line-height: 41px;
+    color: #3c3c3c;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+@media screen and (max-width: 860px) {
+    article h3 {
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
 /* article h3 */
 /* article h4 */
 article .article-h4 {
     text-align: center;
-    height: 41px;
+    height: auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 41px;
+    grid-template-rows: auto;
     align-items: center;
     justify-items: center;
     width: 100%;
@@ -853,8 +901,8 @@ article .article-h4 {
 }
 @media screen and (max-width: 860px) {
     article .article-h4 {
-        height: 21px;
-        grid-template-rows: 21px;
+        height: auto;
+        grid-template-rows: auto;
         margin-top: 0px;
         margin-bottom: 10px;
     }
@@ -878,6 +926,22 @@ article .article-h4-text {
 }
 @media screen and (max-width: 860px) {
     article .article-h4-text {
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
+article h4 {
+    font-family: 'PT Sans Bold';
+    font-size: 24px;
+    line-height: 41px;
+    color: #3c3c3c;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+@media screen and (max-width: 860px) {
+    article h4 {
         font-size: 18px;
         line-height: 21px;
     }
@@ -966,6 +1030,12 @@ article a {
 article a:hover {
     text-decoration: none;
 }
+article b.red {
+    color: #FF0000;
+}
+article h2.new-year {
+    color: #FF0000;
+}
 /* article typography */
 /* typography */
 section.typography {
@@ -976,6 +1046,55 @@ section.typography {
     margin: 0 auto;
     padding-bottom: 30px;
     font-family: 'PT Sans Regular';
+}
+section.typography table {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+section.typography table tr td {
+    border: 1px #dedede solid;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    vertical-align: middle;
+}
+@media screen and (max-width: 760px) {
+    section.typography table tr td {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 5px;
+    }
+}
+section.typography table tr:nth-child(2n+1) td {
+    background: #f9f9f9;
+}
+section.typography table tr th {
+    border: 1px #dedede solid;
+    padding: 10px;
+    background: #ebebeb;
+    font-family: 'PT Sans Bold';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    vertical-align: middle;
+}
+section.typography table tr th p {
+    font-family: 'PT Sans Bold';
+}
+@media screen and (max-width: 760px) {
+    section.typography table tr th {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 5px;
+    }
+}
+section.typography .responsive {
+    overflow:hidden;
+	overflow-x:auto;
+	clear:both;
+	width:100%;
 }
 /* typography */
 /* slider */
@@ -1364,9 +1483,22 @@ section.slider-banner .slider-banner-img img {
         height: 178px;
     }
 }
-section.slider-banner .slider-banner-text {
+section.slider-banner .slider-banner-slide a {
+    display: block;
     margin-top: -377px;
     position: relative;
+    width: 100%;
+    height: 377px;
+    text-decoration: none;
+}
+@media screen and (max-width: 570px) {
+    section.slider-banner .slider-banner-slide a {
+        margin-top: -178px;
+        width: 100%;
+        height: 178px;
+    }
+}
+section.slider-banner .slider-banner-text {
     height: 377px;
     display: grid;
     grid-template-columns: 340px;
@@ -1376,7 +1508,6 @@ section.slider-banner .slider-banner-text {
 @media screen and (max-width: 570px) {
     section.slider-banner .slider-banner-text {
         height: 178px;
-        margin-top: -178px;
         grid-template-columns: 297px;
     }
 }
@@ -1433,7 +1564,7 @@ section.slider-banner .slider-banner-title-3 span {
         font-size: 12px;
     }
 }
-section.slider-banner .slider-banner-button a {
+section.slider-banner .slider-banner-button span {
     display: inline-block;
     font-family: 'PT Sans Bold';
     font-size: 14px;
@@ -1446,7 +1577,7 @@ section.slider-banner .slider-banner-button a {
     width: 182px;
     box-shadow: #666 0px 0px 5px;
 }
-section.slider-banner .slider-banner-button a:hover {
+section.slider-banner .slider-banner-slide a:hover .slider-banner-button span {
     color: #fff;
     background: #333;
 }
@@ -1485,6 +1616,13 @@ section.slider-banner .slider-banner-banner-1-img {
     overflow: hidden;
     position: relative;
 }
+section.slider-banner .slider-banner-banner-1-img:after {
+    display: block;
+    content: "";
+    height: 377px;
+    background: rgba(0,0,0,0.2);
+    position: relative;
+}
 @media screen and (max-width: 570px) {
     section.slider-banner .slider-banner-banner-1-img {
         width: 297px;
@@ -1506,10 +1644,22 @@ section.slider-banner .slider-banner-banner-1-img img {
         height: 178px;
     }
 }
-section.slider-banner .slider-banner-banner-1-text {
+section.slider-banner .slider-banner-banner-1 a {
+    width: 100%;
     height: 377px;
     margin-top: -377px;
     position: relative;
+    display: block;
+    text-decoration: none;
+}
+@media screen and (max-width: 570px) {
+    section.slider-banner .slider-banner-banner-1 a {
+        height: 178px;
+        margin-top: -178px;
+    }
+}
+section.slider-banner .slider-banner-banner-1-text {
+    height: 377px;
     display: grid;
     grid-template-columns: auto;
     align-items: center;
@@ -1518,7 +1668,6 @@ section.slider-banner .slider-banner-banner-1-text {
 @media screen and (max-width: 570px) {
     section.slider-banner .slider-banner-banner-1-text {
         height: 178px;
-        margin-top: -178px;
     }
 }
 section.slider-banner .slider-banner-banner-1-title-wrapper {
@@ -1546,7 +1695,7 @@ section.slider-banner .slider-banner-banner-1-button {
         padding-top: 10px;
     }
 }
-section.slider-banner .slider-banner-banner-1-button a {
+section.slider-banner .slider-banner-banner-1-button span {
     display: inline-block;
     font-family: 'PT Sans Bold';
     font-size: 14px;
@@ -1559,7 +1708,7 @@ section.slider-banner .slider-banner-banner-1-button a {
     width: 182px;
     box-shadow: #666 0px 0px 5px;
 }
-section.slider-banner .slider-banner-banner-1-button a:hover {
+section.slider-banner .slider-banner-banner-1 a:hover span {
     color: #fff;
     background: #333;
 }
@@ -1572,6 +1721,13 @@ section.slider-banner .slider-banner-banner-2-img {
     section.slider-banner .slider-banner-banner-2-img {
         height: 178px;
     }
+}
+section.slider-banner .slider-banner-banner-2-img:after {
+    display: block;
+    content: "";
+    height: 377px;
+    background: rgba(0,0,0,0.2);
+    position: relative;
 }
 section.slider-banner .slider-banner-banner-2-img img {
     width: 629px;
@@ -1588,42 +1744,86 @@ section.slider-banner .slider-banner-banner-2-img img {
         height: 178px;
     }
 }
-section.slider-banner .slider-banner-banner-2-text {
+section.slider-banner .slider-banner-banner-2 a {
+    width: 100%;
     height: 377px;
     margin-top: -377px;
     position: relative;
+    display: block;
+    text-decoration: none;
+}
+@media screen and (max-width: 570px) {
+    section.slider-banner .slider-banner-banner-2 a {
+        height: 178px;
+        margin-top: -178px;
+    }
+}
+section.slider-banner .slider-banner-banner-2-text {
+    height: 377px;
     display: grid;
     grid-template-columns: auto;
     align-items: center;
-    justify-content: center;
+    justify-items: center;
     text-align: center;
 }
 @media screen and (max-width: 570px) {
     section.slider-banner .slider-banner-banner-2-text {
         height: 178px;
-        margin-top: -178px;
+    }
+}
+section.slider-banner .slider-banner-banner-2-logo {
+    grid-area: 1 / 1 / 1 / 1;
+    align-self: start;
+    justify-self: start;
+    padding: 10px;
+}
+@media screen and (max-width: 570px) {
+    section.slider-banner .slider-banner-banner-2-logo {
+        padding: 3px;
+    }
+}
+section.slider-banner .slider-banner-banner-2-logo img {
+    width: 175px;
+}
+@media screen and (max-width: 570px) {
+    section.slider-banner .slider-banner-banner-2-logo img {
+        width: 90px;
     }
 }
 section.slider-banner .slider-banner-banner-2-title-wrapper {
-    width: 248px;
-    background: #fff;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    grid-area: 1 / 1 / 1 / 1;
 }
 @media screen and (max-width: 570px) {
     section.slider-banner .slider-banner-banner-2-title-wrapper {
-        width: 227px;
         padding-top: 15px;
         padding-bottom: 15px;
     }
 }
 section.slider-banner .slider-banner-banner-2-title {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
+    font-family: 'PT Sans Regular';
+    font-size: 29px;
+    line-height: 50px;
+    color: #fff;
+}
+section.slider-banner .slider-banner-banner-2-title span {
+    display: block;
+    font-family: 'PT Sans Bold';
+    font-size: 42px;
+    text-transform: uppercase;
 }
 @media screen and (max-width: 570px) {
     section.slider-banner .slider-banner-banner-2-title {
         padding-bottom: 10px;
+        font-size: 21px;
+        line-height: 28px;
+        padding-bottom: 10px;
+    }
+    section.slider-banner .slider-banner-banner-2-title span {
+        font-size: 21px;
     }
 }
 section.slider-banner .slider-banner-banner-2-title img {
@@ -1634,7 +1834,7 @@ section.slider-banner .slider-banner-banner-2-title img {
         width: 115px;
     }
 }
-section.slider-banner .slider-banner-banner-2-button a {
+section.slider-banner .slider-banner-banner-2-button span {
     display: inline-block;
     font-family: 'PT Sans Bold';
     font-size: 14px;
@@ -1647,7 +1847,7 @@ section.slider-banner .slider-banner-banner-2-button a {
     width: 197px;
     box-shadow: #666 0px 0px 5px;
 }
-section.slider-banner .slider-banner-banner-2-button a:hover {
+section.slider-banner a:hover .slider-banner-banner-2-button span {
     color: #fff;
     background: #333;
 }
@@ -2345,6 +2545,7 @@ section.customer-reviews .customer-reviews-button {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
+    font-size: 0px;
 }
 @media screen and (max-width: 760px) {
     section.customer-reviews .customer-reviews-button {
@@ -3371,7 +3572,7 @@ section.cooperation .cooperation-registration-form-background ul li select {
 section.cooperation .cooperation-registration-form-background ul li select option {
     background: #587eb4;
 }
-section.cooperation .cooperation-registration-form-background button {
+section.cooperation .cooperation-registration-form-background button, section.cooperation .cooperation-registration-form-background input.btn {
     display: block;
     width: 182px;
     font-family: 'PT Sans Bold';
@@ -3387,12 +3588,12 @@ section.cooperation .cooperation-registration-form-background button {
     box-shadow: #666 0px 0px 5px;
 }
 @media screen and (max-width: 880px) {
-    section.cooperation .cooperation-registration-form-background button {
+    section.cooperation .cooperation-registration-form-background button, .cooperation-registration-form-background input.btn {
         margin-top: 30px;
     }
 }
-section.cooperation .cooperation-registration-form-background button:hover {
-    background: #333;
+section.cooperation .cooperation-registration-form-background button:hover, .cooperation-registration-form-background input.btn:hover {
+    background: #333 !important;
 }
 /* cooperation */
 /* sanatorii-rossii */
@@ -3557,9 +3758,21 @@ section.sanatorii-rossii .sanatorii-rossii-slider-banner-img img {
         height: 178px;
     }
 }
-section.sanatorii-rossii .sanatorii-rossii-slider-banner-text {
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-slide a {
     margin-top: -377px;
     position: relative;
+    width: 100%;
+    height: 377px;
+    display: block;
+    text-decoration: none;
+}
+@media screen and (max-width: 570px) {
+    section.sanatorii-rossii .sanatorii-rossii-slider-banner-slide a {
+        margin-top: -178px;
+        height: 178px;
+    }
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-text {
     height: 377px;
     display: grid;
     grid-template-columns: 340px;
@@ -3625,7 +3838,7 @@ section.sanatorii-rossii .sanatorii-rossii-slider-banner-title-3 span {
         font-size: 12px;
     }
 }
-section.sanatorii-rossii .sanatorii-rossii-slider-banner-button a {
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-button span {
     display: inline-block;
     font-family: 'PT Sans Bold';
     font-size: 14px;
@@ -3638,7 +3851,7 @@ section.sanatorii-rossii .sanatorii-rossii-slider-banner-button a {
     width: 182px;
     box-shadow: #666 0px 0px 5px;
 }
-section.sanatorii-rossii .sanatorii-rossii-slider-banner-button a:hover {
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-slide a:hover .sanatorii-rossii-slider-banner-button span {
     color: #fff;
     background: #333;
 }
@@ -3709,10 +3922,22 @@ section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-1-img img {
         height: 178px;
     }
 }
-section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-1-text {
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-1 a {
+    width: 100%;
     height: 377px;
     margin-top: -377px;
     position: relative;
+    display: block;
+    text-decoration: none;
+}
+@media screen and (max-width: 570px) {
+    section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-1 a {
+        height: 178px;
+        margin-top: -178px;
+    }
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-1-text {
+    height: 377px;
     display: grid;
     grid-template-columns: auto;
     align-items: center;
@@ -3721,7 +3946,6 @@ section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-1-text {
 @media screen and (max-width: 570px) {
     section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-1-text {
         height: 178px;
-        margin-top: -178px;
     }
 }
 section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-1-title-wrapper {
@@ -3761,7 +3985,7 @@ section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-1-button {
         padding-top: 10px;
     }
 }
-section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-1-button a {
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-1-button span {
     display: inline-block;
     font-family: 'PT Sans Bold';
     font-size: 14px;
@@ -3774,7 +3998,7 @@ section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-1-button a {
     width: 182px;
     box-shadow: #666 0px 0px 5px;
 }
-section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-1-button a:hover {
+section.sanatorii-rossii a:hover .sanatorii-rossii-slider-banner-banner-1-button span {
     color: #fff;
     background: #333;
 }
@@ -3787,6 +4011,13 @@ section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-img {
     section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-img {
         height: 178px;
     }
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-img:after {
+    display: block;
+    content: "";
+    height: 377px;
+    background: rgba(0,0,0,0.2);
+    position: relative;
 }
 section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-img img {
     width: 629px;
@@ -3803,42 +4034,85 @@ section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-img img {
         height: 178px;
     }
 }
-section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-text {
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2 a {
+    width: 100%;
     height: 377px;
     margin-top: -377px;
     position: relative;
+    display: block;
+    text-decoration: none;
+}
+@media screen and (max-width: 570px) {
+    section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2 a {
+        height: 178px;
+        margin-top: -178px;
+    }
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-text {
+    height: 377px;
     display: grid;
     grid-template-columns: auto;
     align-items: center;
-    justify-content: center;
+    justify-items: center;
     text-align: center;
 }
 @media screen and (max-width: 570px) {
     section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-text {
         height: 178px;
-        margin-top: -178px;
+    }
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-logo {
+    grid-area: 1 / 1 / 1 / 1;
+    align-self: start;
+    justify-self: start;
+    padding: 10px;
+}
+@media screen and (max-width: 570px) {
+    section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-logo {
+        padding: 3px;
+    }
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-logo img {
+    width: 175px;
+}
+@media screen and (max-width: 570px) {
+    section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-logo img {
+        width: 90px;
     }
 }
 section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-title-wrapper {
-    width: 248px;
-    background: #fff;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    grid-area: 1 / 1 / 1 / 1;
 }
 @media screen and (max-width: 570px) {
     section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-title-wrapper {
-        width: 227px;
         padding-top: 15px;
         padding-bottom: 15px;
     }
 }
 section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-title {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
+    font-family: 'PT Sans Regular';
+    font-size: 29px;
+    line-height: 50px;
+    color: #fff;
+}
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-title span {
+    display: block;
+    font-family: 'PT Sans Bold';
+    font-size: 42px;
+    text-transform: uppercase;
 }
 @media screen and (max-width: 570px) {
     section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-title {
+        font-size: 21px;
+        line-height: 28px;
         padding-bottom: 10px;
+    }
+    section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-title span {
+        font-size: 21px;
     }
 }
 section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-title img {
@@ -3849,7 +4123,7 @@ section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-title img {
         width: 115px;
     }
 }
-section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-button a {
+section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-button span {
     display: inline-block;
     font-family: 'PT Sans Bold';
     font-size: 14px;
@@ -3862,7 +4136,7 @@ section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-button a {
     width: 197px;
     box-shadow: #666 0px 0px 5px;
 }
-section.sanatorii-rossii .sanatorii-rossii-slider-banner-banner-2-button a:hover {
+section.sanatorii-rossii a:hover .sanatorii-rossii-slider-banner-banner-2-button span {
     color: #fff;
     background: #333;
 }
@@ -3955,24 +4229,130 @@ section.otdyh-za-rubezhom .filter-background {
     padding-left: 11px;
     padding-right: 11px;
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 680px) {
     section.otdyh-za-rubezhom .filter-background {
-        height: 405px;
+        display: block;
+        height: auto;
+        padding-top: 11px;
+        padding-bottom: 11px;
     }
 }
 section.otdyh-za-rubezhom .filter-wrapper {
     width: 100%;
-    max-width: 1204px;
+    max-width: 900px;
     margin: 0 auto;
-    background: #428bca;
-    height: 490px;
-    border-radius: 5px;
+    height: auto;
 }
-@media screen and (max-width: 760px) {
-    section.otdyh-za-rubezhom .filter-wrapper {
-        height: 302px;
+section.otdyh-za-rubezhom .filter-wrapper .TVExtSearchForm {
+    width: 100%;
+}
+@media screen and (max-width: 680px) {
+    section.otdyh-za-rubezhom .filter-wrapper .TVFlexContainer {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        grid-template-areas: "TVResortHeader TVHotelFilters"
+                             "TVLastBlock TVLastBlock";
+    }
+    section.otdyh-za-rubezhom .filter-wrapper .TVFlexContainer .TVFlexItem {
+        display: block;
+        width: 95%;
+    }
+    section.otdyh-za-rubezhom .filter-wrapper .TVFlexContainer .TVFlexItem.TVResortHeader {
+        grid-area: TVResortHeader;
+    }
+    section.otdyh-za-rubezhom .filter-wrapper .TVFlexContainer .TVFlexItem.TVHotelFilters {
+        grid-area: TVHotelFilters;
+    }
+    section.otdyh-za-rubezhom .filter-wrapper .TVFlexContainer .TVFlexItem.TVLastBlock {
+        grid-area: TVLastBlock;
+    }
+    section.otdyh-za-rubezhom .filter-wrapper .TVTableCountries {
+        width: 100%;
+    }
+    body .TVTableCountries .TVCountriesTable {
+        max-height: 196px !important;
+    }
+    body .TVTableCountries .TVCountryRow {
+        width: 50%;
+    }
+    .tv_drop_panel.TVTouristsPanel {
+        left: 11px !important;
+    }
+    .tv_drop_panel.TVHotelServices {
+        left: 11px !important;
     }
 }
+body .TVTableCountries {
+    width: auto !important;
+    max-width: 600px;
+}
+body .tv_drop_panel.TVCountryPanel {
+    width: 100%;
+    max-width: 600px;
+}
+/* city popup */
+@media screen and (max-width: 800px) {
+    .tv_drop_panel.TVCityPanel {
+        width: 100%;
+        max-width: 320px;
+        min-width: 320px;
+    }
+    .tv_drop_panel.TVCityPanel .TVTableCitiesHeader {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "TVCityNoFlightHeader TVDropPanelClose"
+                             "TVTableCitiesNations TVTableCitiesNations";
+    }
+    .tv_drop_panel.TVCityPanel .TVTableCitiesNations {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-right: 0px;
+    }
+    .tv_drop_panel.TVCityPanel .TVNationContainer {
+        margin-left: 0px !important;
+    }
+    .tv_drop_panel.TVCityPanel .TVCitiesTable {
+        width: 280px !important;
+        max-width: 280px;
+        max-height: none !important;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(35, 24px);
+        grid-auto-flow: column;
+    }
+    .tv_drop_panel.TVCityPanel .TVTableCitiesRow {
+        width: 100%;
+    }
+    .tv_drop_panel.TVCityPanel .TVCityNoFlightHeader {
+        grid-area: TVCityNoFlightHeader;
+    }
+    .tv_drop_panel.TVCityPanel .TVTableCitiesNations {
+        grid-area: TVTableCitiesNations;
+    }
+    .tv_drop_panel.TVCityPanel .TVDropPanelClose {
+        grid-area: TVDropPanelClose;
+    }    
+}
+/* city popup */
+/* calendar popup */
+@media screen and (max-width: 680px) {
+    .tv_drop_panel.TVDatePickerPanel .tv_content {
+        margin: 10px;
+    }
+    .tv_drop_panel.TVDatePickerPanel .TVCalendarControl {
+        width: 300px;
+        min-width: 300px !important;
+    }
+    .tv_drop_panel.TVDatePickerPanel .TVFlyAvailablePrice {
+        display: none;
+    }
+    .TVCalendarControl .TVCalendarControlBody .TVCalendarControlTable table td {
+        height: 28px !important;
+    }
+}
+/* calendar popup */
 section.otdyh-za-rubezhom .last-minute-tours {
     background: #efefef;
     padding-top: 50px;
@@ -3980,6 +4360,25 @@ section.otdyh-za-rubezhom .last-minute-tours {
 }
 section.otdyh-za-rubezhom .last-minute-tours .article-h2-text {
     background: #efefef;
+}
+section.otdyh-za-rubezhom .last-minute-tours-list .TVHotTours {
+    width: 100% !important;
+    max-width: 822px;
+    margin: 0 auto;
+    padding-left: 11px;
+    padding-right: 11px;
+}
+@media screen and (max-width: 860px) {
+    section.otdyh-za-rubezhom .last-minute-tours-list .TVHotTours .TVHotItem {
+        width: 100%;
+        margin-right: 0px !important;
+    }
+    section.otdyh-za-rubezhom .last-minute-tours-list .TVHotTours .TVHotItem .TVHotItemWrap {
+        width: 100% !important;
+    }
+    section.otdyh-za-rubezhom .last-minute-tours-list .TVHotTours .TVHotItem .TVHotDetailI {
+        width: 100% !important;
+    }
 }
 section.otdyh-za-rubezhom .popular-direction {
     padding-top: 50px;
@@ -4269,6 +4668,150 @@ section.otdyh-za-rubezhom .otdyh-za-rubezhom-text-2 p {
     text-align: center;
 }
 /* otdyh-za-rubezhom */
+/* sanatorii-item */
+body section.sanatorii-item .sanatorii-item-grid-column-2 .price.d-block.float-left a {
+    margin-bottom: 0px !important;
+}
+@media screen and (max-width: 1020px) {
+    body section.sanatorii-item .sanatorii-item-grid {
+        display: block;
+    }
+    body section.sanatorii-item .sanatorii-item-column-1 {
+        max-width: 100%;
+    }
+    body section.sanatorii-item .sanatorii-item-column-2 {
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    body section.sanatorii-item .sanatorii-item-grid-column-1 {
+        display: block !important;
+    }
+    body section.sanatorii-item .sanatorii-item-grid-column-1 .news-img-wrap {
+        float: none;
+        width: 100%;
+        overflow: hidden;
+        margin-right: 0px;
+    }
+    body section.sanatorii-item .sanatorii-item-grid-column-2 {
+        display: block;
+    }
+    body section.sanatorii-item .sanatorii-item-grid-column-2 .profile.d-block.float-left {
+        width: 100%;
+        overflow: hidden;
+        padding-bottom: 20px;
+    }
+    body section.sanatorii-item .sanatorii-item-grid-column-2 .price.d-block.float-left {
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    body section.sanatorii-item .sanatorii-item-grid-column-1 .pr-20 {
+        padding-right: 0px !important;
+    }
+} 
+/* sanatorii-item */
+/* best-sanatorii */
+section.best-sanatorii .best-sanatorii-list {
+    text-align: center;
+    font-size: 0px;
+}
+section.best-sanatorii .best-sanatorii-item {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+}
+section.best-sanatorii .best-sanatorii-img {
+    width: 300px;
+    height: 300px;
+}
+section.best-sanatorii .best-sanatorii-img:after {
+    display: block;
+    content: "";
+    width: 300px;
+    height: 300px;
+    background: rgba(0,0,0,0.5);
+    margin-top: -300px;
+    position: relative;
+}
+section.best-sanatorii .best-sanatorii-img img {
+    display: block;
+    width: 300px;
+    height: 300px;
+}
+section.best-sanatorii .best-sanatorii-text {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin-top: -300px;
+}
+section.best-sanatorii .best-sanatorii-title {
+    font-family: 'PT Sans Bold';
+    font-size: 18px;
+    line-height: 20px;
+    color: #fff;
+    height: 175px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: grid;
+    align-items: end;
+}
+section.best-sanatorii .best-sanatorii-title span {
+    display: block;
+}
+section.best-sanatorii .best-sanatorii-location {
+    font-family: 'PT Sans Regular';
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-top: 10px;
+    text-align: left;
+    height: 64px;
+}
+section.best-sanatorii .best-sanatorii-location:before {
+    display: block;
+    content: "";
+    width: 10px;
+    height: 14px;
+    background: url("../images/location.png") left top no-repeat;
+    position: absolute;
+    margin-left: -20px;
+    margin-top: 1px;
+}
+section.best-sanatorii .best-sanatorii-button {
+    padding-top: 10px;
+}
+section.best-sanatorii .best-sanatorii-button a {
+    display: inline-block;
+    background: #e79928;
+    font-family: 'PT Sans Regular';
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+section.best-sanatorii .best-sanatorii-button a:focus {
+    color: #fff;
+}
+section.best-sanatorii .best-sanatorii-button a:hover {
+    color: #fff;
+    background: #333;
+}
+.best-sanatorii-modal {
+    width: 100%;
+    max-width: 1204px;
+    display: none;
+}
+/* best-sanatorii */
 /* main */
 /* footer */
 footer {
@@ -4992,4 +5535,193 @@ section.typography .hr-bottom-30 {
 section.typography section#sanatorii {
     margin-bottom: 20px;
 }
+section.typography .center-bold-spasibo {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+body .fancybox-content {
+    overflow: hidden;
+}
+body .parsley-required {
+    display: block;
+    font-family: 'PT Sans Regular';
+    font-size: 16px;
+    line-height: 20px;
+    color: #FF5D5F;
+    text-align: center;
+    padding-bottom: 10px;
+}
+body .parsley-error {
+    border: 1px #FF0000 solid !important;
+    background: #FFE2E2;
+}
+body .parsley-errors-list {
+    display: none;
+}
+.footer-form-questions .parsley-error {
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 1px #FF0000 solid !important;
+    margin-bottom: 10px !important;
+}
+.footer-form-questions .parsley-error + .parsley-errors-list {
+    display: inline-block;
+    color: #fff;
+    width: 270px;
+}
+.footer-form-questions .parsley-error + .parsley-errors-list li {
+    color: #fff;
+}
+.footer-form-mailing .parsley-error {
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 1px #FF0000 solid !important;
+    margin-bottom: 10px !important;
+}
+.footer-form-mailing .parsley-error + .parsley-errors-list {
+    display: inline-block;
+    color: #fff;
+    width: 270px;
+}
+.footer-form-mailing .parsley-error + .parsley-errors-list li {
+    color: #fff;
+}
+.contact-warning {
+    text-align: center;
+    font-family: 'PT Sans Regular';
+    font-size: 18px;
+}
+.contact-warning span {
+    display: block;
+    color: #e89928;
+    font-size: 20px;
+}
+.more-button-list-sanatorii {
+    width: 100%;
+}
+.price-sanatorii-item-preview {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.price-sanatorii-item-full {
+    font-size: 18px;
+    padding-top: 5px;
+}
+.price-sanatorii-item-full span {
+    font-family: 'PT Sans Bold';
+}
+.sanatorii-action-text {
+    font-family: 'PT Sans Bold';
+    font-size: 15px;
+    color: #FF0000;
+    padding-top: 10px;
+}
+@media screen and (max-width: 1300px) {
+    section.typography #akcii .wrap-text {
+        position: relative !important;
+        height: auto !important;
+        background: #6c8fb3;
+    }
+    section.typography #akcii .wrap-text a {
+        text-decoration: none;
+    }
+    section.typography #akcii .wrap-text a.more {
+        background: #e79928;
+    }
+    section.typography #akcii .wrap-text a.more:hover {
+        background: #333;
+    }
+    section.typography #akcii .wrap-bg {
+        display: none;
+    }
+    section.typography #akcii .wrap > .row.akcii-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        margin: 0px;
+    }
+    section.typography #akcii .wrap > .row.akcii-list > .col-12.col-md-6.mb-20 {
+        max-width: 100%;
+        padding: 0px;
+        margin: 0px !important;
+    }
+    section.typography #akcii .wrap > .row.akcii-list > .col-12.col-md-6.mb-20 > .wrap {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        height: 100%;
+    }
+}
+@media screen and (max-width: 1020px) {
+    section.typography #akcii .wrap-text {
+        padding: 10px !important;
+    }
+    section.typography #akcii .wrap-text .row {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        grid-row-gap: 10px;
+    }
+    section.typography #akcii .wrap-text .row .col-12.col-md-6 {
+        max-width: 100%;
+    }
+    section.typography #akcii .wrap-text .row .text-right {
+        text-align: center !important;
+    }
+}
+@media screen and (max-width: 520px) {
+    section.typography #akcii .wrap > .row.akcii-list {
+        grid-template-columns: 1fr;
+    }
+}
 /* fix old-style */
+/* left and right img */
+.left-img {
+    display: block;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    width: 300px;
+    height: auto;
+}
+.left-img img {
+    display: block;
+    width: 300px;
+    height: auto;
+}
+.right-img {
+    display: block;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    width: 300px;
+    height: auto;
+}
+.right-img img {
+    display: block;
+    width: 300px;
+    height: auto;
+}
+@media screen and (max-width: 620px) {
+    .left-img {
+        float: none;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .right-img {
+        float: none;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+/* left and right img */

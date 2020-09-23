@@ -3,19 +3,6 @@
 <f:comment>Акции</f:comment>
 <div class="col-12 col-md-6 mb-20">
     <div class="wrap">
-        <div class="wrap-text">
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <p class="title">
-                        <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}"> <span itemprop="headline">{newsItem.title}</span> </n:link>
-                    </p>
-                </div>
-                <div class="col-12 col-md-6 text-right">
-                    <n:link newsItem="{newsItem}" settings="{settings}" class="more btn btn-success" title="{newsItem.title}">
-                        <!--f:translate key="more-link"/-->Подробнее </n:link>
-                </div>
-            </div>
-        </div>
         <div class="wrap-img">
             <f:if condition="{newsItem.falMedia}">
                 <!-- fal media preview element -->
@@ -92,6 +79,19 @@
                     </f:if>
                 </f:else>
             </f:if>
+        </div>
+        <div class="wrap-text">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <p class="title">
+                        <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}"> <span itemprop="headline">{newsItem.title}</span> </n:link>
+                    </p>
+                </div>
+                <div class="col-12 col-md-6 text-right">
+                    <n:link newsItem="{newsItem}" settings="{settings}" class="more btn btn-success" title="{newsItem.title}">
+                        <!--f:translate key="more-link"/-->Подробнее </n:link>
+                </div>
+            </div>
         </div>
         <div class="wrap-bg"></div>
     </div>

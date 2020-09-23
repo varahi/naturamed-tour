@@ -8,20 +8,22 @@
                 </f:for>
             </div>
         </f:if>
-        <div class="slider-banner-text">
-            <div class="slider-banner-text-wrapper">
-                <f:if condition="{data.tx_mask_html_code}">
-                    <f:format.raw>{data.tx_mask_html_code}</f:format.raw>
-                </f:if>
-                <f:if condition="{data.header_link}">
-                    <div class="slider-banner-button">
-                        <f:link.page pageUid="{data.header_link}">
-                            <f:translate key="mask.button_book_now" extensionName="tmpl" />
-                        </f:link.page>
-                    </div>
-                </f:if>
+        <f:link.page pageUid="{data.header_link}">
+            <div class="slider-banner-text">
+                <div class="slider-banner-text-wrapper">
+                    <f:if condition="{data.tx_mask_html_code}">
+                        <f:format.raw>{data.tx_mask_html_code}</f:format.raw>
+                    </f:if>
+                    <f:if condition="{data.header_link}">
+                        <div class="slider-banner-button">
+                            <span>
+                                <f:translate key="mask.button_book_now" extensionName="tmpl" />
+                            </span>
+                        </div>
+                    </f:if>
+                </div>
             </div>
-        </div>
+        </f:link.page>
     </div>
 </f:if>
 
@@ -35,19 +37,21 @@
                 </f:for>
             </div>
         </f:if>
-        <div class="sanatorii-rossii-slider-banner-text">
-            <div class="sanatorii-rossii-slider-banner-text-wrapper">
-                <f:if condition="{data.tx_mask_html_code}">
-                    <f:format.raw>{data.tx_mask_html_code}</f:format.raw>
-                </f:if>
-                <f:if condition="{data.header_link}">
-                    <div class="sanatorii-rossii-slider-banner-button">
-                        <f:link.page pageUid="{data.header_link}">
-                            <f:translate key="mask.button_book_now" extensionName="tmpl" />
-                        </f:link.page>
-                    </div>
-                </f:if>
+        <f:link.page pageUid="{data.header_link}">
+            <div class="sanatorii-rossii-slider-banner-text">
+                <div class="sanatorii-rossii-slider-banner-text-wrapper">
+                    <f:if condition="{data.tx_mask_html_code}">
+                        <f:format.raw>{data.tx_mask_html_code}</f:format.raw>
+                    </f:if>
+                    <f:if condition="{data.header_link}">
+                        <div class="sanatorii-rossii-slider-banner-button">
+                            <span>
+                                <f:translate key="mask.button_book_now" extensionName="tmpl" />
+                            </span>
+                        </div>
+                    </f:if>
+                </div>
             </div>
-        </div>
+        </f:link.page>
     </div>
 </f:if>
