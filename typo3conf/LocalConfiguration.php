@@ -8,13 +8,13 @@ return array(
 		'versionNumberInFilename' => '0',
 	),
 	'DB' => array(
-		'database' => 'a39200_nattour',
+		'database' => '',
 		'extTablesDefinitionScript' => 'extTables.php',
 		'host' => 'a39200.mysql.mchost.ru',
-		'password' => '3xY9zU5S!88',
+		'password' => '',
 		'port' => 3306,
 		'socket' => '',
-		'username' => 'a39200_nattour',
+		'username' => '',
 	),
 	'EXT' => array(
 		'extConf' => array(
