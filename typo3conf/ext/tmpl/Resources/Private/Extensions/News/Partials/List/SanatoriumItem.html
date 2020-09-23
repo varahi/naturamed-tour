@@ -97,8 +97,16 @@
                         </div>
                         <div class="header text-left">
                             <b>
-                                <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}"> <span itemprop="headline">{newsItem.title}</span> </n:link>
-                            </b> </div>
+                                <f:if condition="{settings.specialClass}">
+                                    <f:then>
+                                        <n:link class="special-class" newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}"> <span itemprop="headline">{newsItem.title}</span> </n:link>
+                                    </f:then>
+                                    <f:else>
+                                        <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}"> <span itemprop="headline">{newsItem.title}</span> </n:link>
+                                    </f:else>
+                                </f:if>
+                            </b>
+                        </div>
 
                         <!-- teaser -->
                         <div class="teaser-text">
