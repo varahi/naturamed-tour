@@ -2516,6 +2516,9 @@ section.customer-reviews .customer-reviews-text {
         padding-bottom: 30px;
     }
 }
+section.customer-reviews .customer-reviews-text p {
+    padding: 0px;
+}
 section.customer-reviews .customer-reviews-list ul.slick-dots {
     font-size: 0px;
     text-align: center;
@@ -5725,3 +5728,5 @@ body .parsley-errors-list {
     }
 }
 /* left and right img */
+h3.h3-center {
+    text-align: center;

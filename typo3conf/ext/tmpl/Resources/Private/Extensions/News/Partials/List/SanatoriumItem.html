@@ -160,7 +160,14 @@
                             </f:if>
                         </f:for>
                         </f:comment>
-                        <n:link newsItem="{newsItem}" settings="{settings}" class="btn btn-success more-button-list-sanatorii">Подробнее</n:link>
+                        <f:if condition="{settings.specialClass}">
+                            <f:then>
+                                <n:link newsItem="{newsItem}" settings="{settings}" class="btn btn-success more-button-list-sanatorii special-class">Подробнее</n:link>
+                            </f:then>
+                            <f:else>
+                                <n:link newsItem="{newsItem}" settings="{settings}" class="btn btn-success more-button-list-sanatorii">Подробнее</n:link>
+                            </f:else>
+                        </f:if>
                     </div>
                 </div>
             </div>

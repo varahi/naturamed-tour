@@ -101,8 +101,7 @@ $(function () {
       }
     });
     // end swiper //
-    $('.not-attribute-fancy-box').fancybox({
-    });
+    $('.not-attribute-fancy-box').fancybox({});
     $('table').wrap('<div class="responsive"></div>');
     if(location.hash == '#new-year'){
         showPage(6);
@@ -113,5 +112,11 @@ $(function () {
         $(".programm-outdoor-south, .price-sanatorii-item-full, .sanatorii-action-text").hide();
         showPage(0);
         $('html, body').animate({scrollTop: $('.new-year').offset().top -250 }, 'slow');
+    }
+    $('.special-class').each(function(){
+        $(this).attr('href', $(this).attr('href')+'#outdoor-south');
+    });
+    if(location.hash == '#outdoor-south'){
+        $('.sanatorii-button-popup a').attr("data-src","#zabronirovat");
     }
 });
