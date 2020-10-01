@@ -22,4 +22,6 @@ CREATE TABLE tx_news_domain_model_news (
     tx_pbnewsjobs_whereclickny tinytext,
     tx_pbnewsjobs_htmlcode text,
     tx_pbnewsjobs_custom_meta tinyint(4) DEFAULT '0' NOT NULL,
+    tx_pbnewsjobs_htmlcode_tabs text,
+    tx_pbnewsjobs_show_htmlcode_tabs tinyint(4) DEFAULT '0' NOT NULL,
 );

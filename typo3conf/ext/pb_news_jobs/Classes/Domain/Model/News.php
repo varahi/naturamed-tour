@@ -128,6 +128,16 @@ class Tx_PbNewsJobs_Domain_Model_News extends Tx_News_Domain_Model_News {
      */
     protected $txPbnewsjobsCustomMeta;
 
+    /**
+     * @var string
+     */
+    protected $txPbnewsjobsHtmlcodeTabs;
+
+    /**
+     * @var string
+     */
+    protected $txPbnewsjobsShowHtmlcodeTabs;
+
 	/**
 	 * @param string $txPbnewsjobsEntrydate
 	 */
@@ -406,6 +416,38 @@ class Tx_PbNewsJobs_Domain_Model_News extends Tx_News_Domain_Model_News {
      */
     public function getTxPbnewsjobsCustomMeta(){
         return $this->txPbnewsjobsCustomMeta;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTxPbnewsjobsHtmlcodeTabs()
+    {
+        return $this->txPbnewsjobsHtmlcodeTabs;
+    }
+
+    /**
+     * @param string $txPbnewsjobsHtmlcodeTabs
+     */
+    public function setTxPbnewsjobsHtmlcodeTabs($txPbnewsjobsHtmlcodeTabs)
+    {
+        $this->txPbnewsjobsHtmlcodeTabs = $txPbnewsjobsHtmlcodeTabs;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTxPbnewsjobsShowHtmlcodeTabs()
+    {
+        return $this->txPbnewsjobsShowHtmlcodeTabs;
+    }
+
+    /**
+     * @param string $txPbnewsjobsShowHtmlcodeTabs
+     */
+    public function setTxPbnewsjobsShowHtmlcodeTabs($txPbnewsjobsShowHtmlcodeTabs)
+    {
+        $this->txPbnewsjobsShowHtmlcodeTabs = $txPbnewsjobsShowHtmlcodeTabs;
     }
 
 }

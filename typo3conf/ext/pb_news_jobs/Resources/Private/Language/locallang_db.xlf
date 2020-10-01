@@ -78,7 +78,12 @@
 			<trans-unit id="tx_news_domain_model_news.tx_pbnewsjobs_custom_meta">
 				<source>Использовать кастомные мета теги</source>
 			</trans-unit>
-
+			<trans-unit id="tx_news_domain_model_news.tx_pbnewsjobs_htmlcode_tabs">
+				<source>Html код для нестандартных табов</source>
+			</trans-unit>
+			<trans-unit id="tx_news_domain_model_news.tx_pbnewsjobs_show_htmlcode_tabs">
+				<source>Отображать Html код для нестандартных табов</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

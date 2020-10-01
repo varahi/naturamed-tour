@@ -214,6 +214,28 @@ $tempColumns = array(
             'default' => 0
         )
     ),
+
+    //18. Show html code for tabs
+    'tx_pbnewsjobs_show_htmlcode_tabs' => array(
+        'exclude' => 1,
+        'label' => 'LLL:EXT:pb_news_jobs/Resources/Private/Language/locallang_db.xml:tx_news_domain_model_news.tx_pbnewsjobs_show_htmlcode_tabs',
+        'config' => array(
+            'type' => 'check',
+            'default' => 0
+        )
+    ),
+
+    //19. Html code for custom tabs
+    'tx_pbnewsjobs_htmlcode_tabs' => array(
+        'exclude' => 1,
+        'label' => 'LLL:EXT:pb_news_jobs/Resources/Private/Language/locallang_db.xml:tx_news_domain_model_news.tx_pbnewsjobs_htmlcode_tabs',
+        'config' => array(
+            'type' => 'text',
+            'cols' => 40,
+            'rows' => 20,
+            'softref' => 'rtehtmlarea_images,typolink_tag,images,email[subst],url',
+        )
+    ),
 	
 );
 

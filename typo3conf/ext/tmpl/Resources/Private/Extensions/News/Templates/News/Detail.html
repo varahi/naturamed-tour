@@ -111,127 +111,130 @@
                             <div class="wrap pb-20 mb-20 hr-bottom-10">
                                 <div class="row">
                                     <div data-container=".sanatorii-tabs-1" class="col-12 sanatorii-tabs sanatorii-tabs-1">
-                                        <ul class="nav nav-tabs mb-30">
-                                            <f:for each="{newsItem.categories}" as="category">
-                                                <f:if condition="{category.uid} == 66">
+                                        <f:if condition="{newsItem.txPbnewsjobsShowHtmlcodeTabs} == '1' ">
+                                            <f:then>
+                                                <f:format.raw>{newsItem.txPbnewsjobsHtmlcodeTabs}</f:format.raw>
+                                            </f:then>
+                                            <f:else>
+                                                <ul class="nav nav-tabs mb-30">
+                                                    <f:for each="{newsItem.categories}" as="category">
+                                                        <f:if condition="{category.uid} == 66">
+                                                            <f:if condition="{newsItem.txPbnewsjobsPriceny}">
+                                                                <li><h2 class="new-year">Новый год 2021</h2></li>
+                                                            </f:if>
+                                                        </f:if>
+                                                    </f:for>
+
+                                                    <f:if condition="{newsItem.bodytext}">
+                                                        <li><h2>Описание</h2></li>
+                                                    </f:if>
+                                                    <f:if condition="{newsItem.txPbnewsjobsTreatment}">
+                                                        <li><h2>Программы лечения</h2></li>
+                                                    </f:if>
+                                                    <f:if condition="{newsItem.txPbnewsjobsHabitation}">
+                                                        <li><h2>Проживание</h2></li>
+                                                    </f:if>
+                                                    <f:if condition="{newsItem.txPbnewsjobsFood}">
+                                                        <li><h2>Питание</h2></li>
+                                                    </f:if>
+                                                    <f:if condition="{newsItem.txPbnewsjobsInfra}">
+                                                        <li><h2>Инфраструктура</h2></li>
+                                                    </f:if>
+                                                    <f:if condition="{newsItem.txPbnewsjobsProezd}">
+                                                        <li><h2>Проезд</h2></li>
+                                                    </f:if>
+
+                                                    <f:for each="{newsItem.categories}" as="category">
+                                                        <f:if condition="{category.uid} == 60">
+                                                            <f:if condition="{newsItem.txPbnewsjobsComments}">
+                                                                <li class="programm-outdoor-south"><h2>Цены по программе "Открытый юг"</h2></li>
+                                                            </f:if>
+                                                        </f:if>
+                                                    </f:for>
+
+                                                    <f:comment>
+                                                        <f:if condition="{newsItem.txPbnewsjobsPriceny}">
+                                                            <f:if condition="{newsItem.title} == 'Санаторий «Валуево» (Подмосковье)'">
+                                                                <li><h2 class="new-year">Новый год 2021</h2></li>
+                                                            </f:if>
+                                                            <f:if condition="{newsItem.title} == 'Санаторий «Южное Взморье» (г. Сочи)'">
+                                                                <li><h2 class="new-year">Новый год 2021</h2></li>
+                                                            </f:if>
+                                                        </f:if>
+
+                                                        <f:if condition="{f:cObject(typoscriptObjectPath:'lib.currentPageId')} == 49">
+
+                                                        </f:if>
+
+                                                        <f:if condition="{newsItem.txPbnewsjobsComments}">
+                                                            <li><h2>Цены</h2></li>
+                                                        </f:if>
+                                                        <f:if condition="{newsItem.txPbnewsjobsPriceny}">
+                                                            <li><h2>Новый год 2020</h2></li>
+                                                        </f:if>
+                                                    </f:comment>
+
+                                                </ul>
+                                                <div>
                                                     <f:if condition="{newsItem.txPbnewsjobsPriceny}">
-                                                        <li><h2 class="new-year">Новый год 2021</h2></li>
+                                                        <div>
+                                                            <f:format.html>{newsItem.txPbnewsjobsPriceny}</f:format.html>
+                                                        </div>
                                                     </f:if>
-                                                </f:if>
-                                            </f:for>
-                                            
-                                            <f:if condition="{newsItem.bodytext}">
-                                                <li><h2>Описание</h2></li>
-                                            </f:if>
-                                            <f:if condition="{newsItem.txPbnewsjobsTreatment}">
-                                                <li><h2>Программы лечения</h2></li>
-                                            </f:if>
-                                            <f:if condition="{newsItem.txPbnewsjobsHabitation}">
-                                                <li><h2>Проживание</h2></li>
-                                            </f:if>
-                                            <f:if condition="{newsItem.txPbnewsjobsFood}">
-                                                <li><h2>Питание</h2></li>
-                                            </f:if>
-                                            <f:if condition="{newsItem.txPbnewsjobsInfra}">
-                                                <li><h2>Инфраструктура</h2></li>
-                                            </f:if>
-                                            <f:if condition="{newsItem.txPbnewsjobsProezd}">
-                                                <li><h2>Проезд</h2></li>
-                                            </f:if>
-
-                                            <f:for each="{newsItem.categories}" as="category">
-                                                <f:if condition="{category.uid} == 60">
-                                                    <f:if condition="{newsItem.txPbnewsjobsComments}">
-                                                        <li class="programm-outdoor-south"><h2>Цены по программе "Открытый юг"</h2></li>
+                                                    <f:if condition="{newsItem.bodytext}">
+                                                        <div>
+                                                            <f:format.html>{newsItem.bodytext}</f:format.html>
+                                                        </div>
                                                     </f:if>
-                                                </f:if>
-                                            </f:for>
-                                            
-                                            
-                                            
-                                            <f:comment>
-                                                <f:if condition="{newsItem.txPbnewsjobsPriceny}">
-                                                    <f:if condition="{newsItem.title} == 'Санаторий «Валуево» (Подмосковье)'">
-                                                        <li><h2 class="new-year">Новый год 2021</h2></li>
+                                                    <f:if condition="{newsItem.txPbnewsjobsTreatment}">
+                                                        <div>
+                                                            <f:format.html>{newsItem.txPbnewsjobsTreatment}</f:format.html>
+                                                        </div>
                                                     </f:if>
-                                                    <f:if condition="{newsItem.title} == 'Санаторий «Южное Взморье» (г. Сочи)'">
-                                                        <li><h2 class="new-year">Новый год 2021</h2></li>
+                                                    <f:if condition="{newsItem.txPbnewsjobsHabitation}">
+                                                        <div>
+                                                            <f:format.html>{newsItem.txPbnewsjobsHabitation}</f:format.html>
+                                                        </div>
                                                     </f:if>
-                                                </f:if>
-                                            
-                                                <f:if condition="{f:cObject(typoscriptObjectPath:'lib.currentPageId')} == 49">
+                                                    <f:if condition="{newsItem.txPbnewsjobsFood}">
+                                                        <div>
+                                                            <f:format.html>{newsItem.txPbnewsjobsFood}</f:format.html>
+                                                        </div>
+                                                    </f:if>
+                                                    <f:if condition="{newsItem.txPbnewsjobsInfra}">
+                                                        <div>
+                                                            <f:format.html>{newsItem.txPbnewsjobsInfra}</f:format.html>
+                                                        </div>
+                                                    </f:if>
+                                                    <f:if condition="{newsItem.txPbnewsjobsProezd}">
+                                                        <div>
+                                                            <f:format.html>{newsItem.txPbnewsjobsProezd}</f:format.html>
+                                                        </div>
+                                                    </f:if>
+                                                    <f:for each="{newsItem.categories}" as="category">
+                                                        <f:if condition="{category.uid} == 60">
+                                                            <f:if condition="{newsItem.txPbnewsjobsComments}">
+                                                                <div>
+                                                                    <f:format.html>{newsItem.txPbnewsjobsComments}</f:format.html>
+                                                                </div>
+                                                            </f:if>
+                                                        </f:if>
+                                                    </f:for>
 
-                                                </f:if>
-
-                                                <f:if condition="{newsItem.txPbnewsjobsComments}">
-                                                    <li><h2>Цены</h2></li>
-                                                </f:if>
-                                                <f:if condition="{newsItem.txPbnewsjobsPriceny}">
-                                                    <li><h2>Новый год 2020</h2></li>
-                                                </f:if>
-                                            </f:comment>
-
-                                        </ul>
-                                        <div>
-                                            <f:if condition="{newsItem.txPbnewsjobsPriceny}">
-                                                <div>
-                                                    <f:format.html>{newsItem.txPbnewsjobsPriceny}</f:format.html>
-                                                </div>
-                                            </f:if>
-                                            <f:if condition="{newsItem.bodytext}">
-                                                <div>
-                                                    <f:format.html>{newsItem.bodytext}</f:format.html>
-                                                </div>
-                                            </f:if>
-                                            <f:if condition="{newsItem.txPbnewsjobsTreatment}">
-                                                <div>
-                                                    <f:format.html>{newsItem.txPbnewsjobsTreatment}</f:format.html>
-                                                </div>
-                                            </f:if>
-                                            <f:if condition="{newsItem.txPbnewsjobsHabitation}">
-                                                <div>
-                                                    <f:format.html>{newsItem.txPbnewsjobsHabitation}</f:format.html>
-                                                </div>
-                                            </f:if>
-                                            <f:if condition="{newsItem.txPbnewsjobsFood}">
-                                                <div>
-                                                    <f:format.html>{newsItem.txPbnewsjobsFood}</f:format.html>
-                                                </div>
-                                            </f:if>
-                                            <f:if condition="{newsItem.txPbnewsjobsInfra}">
-                                                <div>
-                                                    <f:format.html>{newsItem.txPbnewsjobsInfra}</f:format.html>
-                                                </div>
-                                            </f:if>
-                                            <f:if condition="{newsItem.txPbnewsjobsProezd}">
-                                                <div>
-                                                    <f:format.html>{newsItem.txPbnewsjobsProezd}</f:format.html>
-                                                </div>
-                                            </f:if>
-                                            <f:for each="{newsItem.categories}" as="category">
-                                                <f:if condition="{category.uid} == 60">
-                                                    <f:if condition="{newsItem.txPbnewsjobsComments}">
+                                                    <f:comment>
                                                         <div>
                                                             <f:format.html>{newsItem.txPbnewsjobsComments}</f:format.html>
                                                         </div>
-                                                    </f:if>
-                                                </f:if>
-                                            </f:for>
+                                                        <div>
+                                                            <f:format.html>{newsItem.txPbnewsjobsPriceny}</f:format.html>
+                                                        </div>
+                                                    </f:comment>
 
-                                            
-                                            
-                                            
-                                            
-                                            <f:comment>
-                                                <div>
-                                                    <f:format.html>{newsItem.txPbnewsjobsComments}</f:format.html>
                                                 </div>
-                                                <div>
-                                                    <f:format.html>{newsItem.txPbnewsjobsPriceny}</f:format.html>
-                                                </div>
-                                            </f:comment>
+                                            </f:else>
+                                        </f:if>
 
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>

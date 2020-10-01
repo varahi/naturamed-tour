@@ -314,7 +314,9 @@ tx_pbnewsjobs_whereclick,
 tx_pbnewsjobs_priceny;;;richtext[]:rte_transform[mode=ts_css|imgpath=uploads/tx_pbnewsjobs/rte/],
 tx_pbnewsjobs_btnny,
 tx_pbnewsjobs_whereclickny,
-tx_pbnewsjobs_htmlcode');
+tx_pbnewsjobs_htmlcode,
+tx_pbnewsjobs_show_htmlcode_tabs,
+tx_pbnewsjobs_htmlcode_tabs');
 
 
 //\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tx_news_domain_model_news', $metaColumns, 1);
